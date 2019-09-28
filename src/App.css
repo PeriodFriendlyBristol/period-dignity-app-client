@@ -20,3 +20,22 @@
 .App-link {
   color: #09d3ac;
 }
+
+.container-middle {
+  background-color: hotpink;
+  height: 80%;
+  position: absolute;
+  top: 5rem;
+  width: 100%;
+}
+
+.search-box-wrapper {
+  background-color: aquamarine;
+  height: 20%;
+}
+
+.map-container {
+  background-color: yellow;
+  height: 80%;
+  position: relative;
+}
