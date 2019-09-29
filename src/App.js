@@ -4,6 +4,8 @@ import logo from './logo.svg';
 
 import './App.css';
 import MaterialIcon from 'material-icons-react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import About from './components/about/about'
 
 function App() {
   //TODO componentize header
@@ -19,36 +21,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header sticky" id="header">
-        <ul>
-          <li>
-            <a>Period Friendly Bristol</a>
-          </li>
-          {/* <li>
-            <img src={logo} className="App-logo mg-left-2" alt="logo" />
-          </li> */}
-        </ul>
       </header>
-      <div className="container-middle">
-        <div className="text-wrapper intro-box">
-          <p>
-          Free menstrual products for people in Bristol
-          </p>
-          <p>
-          Get free products when you need them
-          </p>
-          <p>
-          Donate products to help others
-          </p>
-        </div>
-      </div>
-      <div className="container-middle">
-        <div className="search-box-wrapper">
-          <SearchComponent />
-        </div>
-        <div className="map-container">
-        Map box to be popped into here
-        </div>
-      </div>
       <footer className="footer">
         <div className="div-ul">
           <div>
@@ -77,6 +50,7 @@ function App() {
           </div>
         </div>
       </footer>
+      <Route path="/about" component={About} />
     </div>
 
   );
