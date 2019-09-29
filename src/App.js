@@ -27,9 +27,15 @@ function App() {
         </ul>
       </header>
       <div className="container-middle">
-        <div className="text-wrapper">
+        <div className="text-wrapper intro-box">
           <p>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          Free menstrual products for people in Bristol
+          </p>
+          <p>
+          Get free products when you need them
+          </p>
+          <p>
+          Donate products to help others
           </p>
         </div>
       </div>
