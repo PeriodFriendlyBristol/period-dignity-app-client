@@ -5,11 +5,13 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter,Route } from 'react-router-dom';
 import About from './components/about/about'
+import Results from './containers/results';
 
 ReactDOM.render(
   <BrowserRouter>
     <App />
     <Route path="/about" component={About} />
+    <Route path="/venues" component={Results} />	
   </BrowserRouter>
 , document.getElementById('root'));
 
