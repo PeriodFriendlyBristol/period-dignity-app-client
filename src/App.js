@@ -1,8 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import About from './components/about/about'
 
 function App() {
   //TODO componentize header
@@ -40,7 +38,6 @@ function App() {
         </div>
         <div className="map-container">Map box to be popped into here</div>
       </div>
-      <Route path="/about" component={About} />
     </div>
   );
 }
