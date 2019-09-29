@@ -194,3 +194,8 @@ li a {
   height: 100%;
   width: 20%;
 }
+
+/* Map Component */
+.leaflet-container {
+  height: 50vh;
+}
