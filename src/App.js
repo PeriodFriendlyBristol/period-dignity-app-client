@@ -5,7 +5,6 @@ import logo from './logo.svg';
 import './App.css';
 import MaterialIcon from 'material-icons-react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import About from './components/about/about'
 
 function App() {
   //TODO componentize header
@@ -50,7 +49,7 @@ function App() {
           </div>
         </div>
       </footer>
-      <Route path="/about" component={About} />
+        <div className="map-container">Map box to be popped into here</div>
     </div>
 
   );
