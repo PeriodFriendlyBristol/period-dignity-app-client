@@ -1,5 +1,7 @@
 import React from 'react';
+import SearchComponent from './SearchComponent'
 import logo from './logo.svg';
+
 import './App.css';
 import MaterialIcon from 'material-icons-react';
 
@@ -41,7 +43,7 @@ function App() {
       </div>
       <div className="container-middle">
         <div className="search-box-wrapper">
-          "Search box goes in here"
+          <SearchComponent />
         </div>
         <div className="map-container">
         Map box to be popped into here
@@ -76,6 +78,7 @@ function App() {
         </div>
       </footer>
     </div>
+
   );
 }
 

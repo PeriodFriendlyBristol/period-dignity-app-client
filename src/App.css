@@ -214,3 +214,7 @@ li a {
 
   background: #F2F2F2;
 }
+/* Map Component */
+.leaflet-container {
+  height: 50vh;
+}
