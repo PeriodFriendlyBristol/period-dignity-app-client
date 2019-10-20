@@ -4,14 +4,14 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter,Route } from 'react-router-dom';
-import Results from './containers/results';
 import About from './components/about/about'
+import Results from './containers/results';
 
 ReactDOM.render(
   <BrowserRouter>
     <App />
-    <Route path="/venues" component={Results} />
     <Route path="/about" component={About} />
+    <Route path="/venues" component={Results} />
   </BrowserRouter>
 , document.getElementById('root'));
 

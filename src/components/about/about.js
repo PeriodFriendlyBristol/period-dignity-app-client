@@ -2,14 +2,13 @@ import React from 'react';
 import './about.css';
 import { ReactComponent as Person } from './svg/about.svg';
 
-
 function redirectToPayPal(){
   window.open("http://www.paypal.com/")
 }
 
 function About() {
   return(
-    <div className="about">
+     <div className="about">
       <h1 class="title">
         Period friendly Bristol
       </h1>
