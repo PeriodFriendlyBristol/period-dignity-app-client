@@ -1,6 +1,6 @@
 import React from 'react';
 import './about.css';
-import { ReactComponent as Person } from './about.svg';
+import { ReactComponent as Person } from './svg/about.svg';
 
 function redirectToPayPal(){
   window.open("http://www.paypal.com/")
