@@ -1,0 +1,45 @@
+.host {
+  background-image: url(../../assets/circle_grey.svg);
+  background-position: 120px -120px; /*TODO: find rem equivalent*/;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title {
+  padding: 0 1rem;
+  font-size: larger;
+}
+
+.top-text{
+  padding: 1rem 2rem;
+}
+
+
+.bottom-section {
+  background-color: #D81921;
+}
+
+.padding-left-1 {
+  padding: 0 0 0 1rem;
+}
+
+.call-to-action {
+  text-align: right;
+  color: #FFFFFF;
+  margin: 0 1rem 0 0;
+}
+
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
