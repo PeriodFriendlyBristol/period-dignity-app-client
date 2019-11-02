@@ -1,0 +1,6 @@
+.container-landing {
+  background-image: url(../../assets/circle_grey.svg);
+  background-position: 100px -150px; /*TODO: find rem equivalent*/;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

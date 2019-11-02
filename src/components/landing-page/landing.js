@@ -1,7 +1,8 @@
 import React from 'react';
-import SearchComponent from '../../SearchComponent'
+import Search from '../search/search'
 import human3 from '../../assets/humaaan_3.svg'
 import greyCircle from '../../assets/circle_grey.svg'
+import './landing.css'
 
 class Landing extends React.Component {
   render () {
@@ -17,11 +18,10 @@ class Landing extends React.Component {
                 <li>Donate products to help others</li>
                 </ul> */}
             </div>
-            <img src={greyCircle} className="circle" />
             </div>
                 <img src={human3} className="human3 padding-left-" />
             <div className="search-box-wrapper">
-                <SearchComponent />
+                <Search />
             </div>
         </div>
     )
