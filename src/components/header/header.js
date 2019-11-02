@@ -1,9 +1,17 @@
-window.onscroll = function() {scrollFunction()};
+import React from 'react';
 
-function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("header").style.height = "80px";
-  } else {
-    document.getElementById("header").style.fontSize = "60px";
+class Header extends React.Component {
+  render () {
+    return (
+      <header className="App-header sticky" id="header">
+        <ul>
+          <li>
+            <a>Period Dignity</a>
+          </li>
+        </ul>
+      </header>
+    )
   }
 }
+
+export default Header;
