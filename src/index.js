@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter,Route } from 'react-router-dom';
+import About from './components/about/about'
 import Landing from './components/landing-page/landing';
 import Results from './containers/results';
 
@@ -12,6 +13,7 @@ ReactDOM.render(
     <App />
     <Route path="/" component={Landing} />
     <Route path="/venues" component={Results} />
+    <Route path="/about" component={About} />
   </BrowserRouter>
 , document.getElementById('root'));
 
