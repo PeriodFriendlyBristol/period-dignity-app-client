@@ -57,7 +57,7 @@ class SearchComponent extends React.Component {
 		<div className="landing-text-3">Find a Period Dignity Box near you</div>
         <div>
           <input
-            placeholder="Postcode"
+            placeholder="my postcode, e.g. BS5 9QP"
             value={this.state.postcode}
             onChange={this.postcodeChange}
 			id="search-postcode"
@@ -69,23 +69,6 @@ class SearchComponent extends React.Component {
           <button onClick={this.doMyLocationSearch}>
             Use My Current Location
           </button>
-        </div>
-		<div>
-          <input
-            type="radio"
-            id="search-collect"
-            name="search-type"
-            value="collect"
-            defaultChecked="true"
-          />
-          <label htmlFor="search-collect">Collect</label>
-          <input
-            type="radio"
-            id="search-drop-off"
-            name="search-type"
-            value="drop-off"
-          />
-          <label htmlFor="search-drop-off">Drop-Off</label>
         </div>
       </div>
     );
