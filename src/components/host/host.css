@@ -1,6 +1,6 @@
 .host {
   background-image: url(../../assets/circle_grey.svg);
-  background-position: 120px -120px; /*TODO: find rem equivalent*/;
+  background-position: 100px -150px; /*TODO: find rem equivalent*/;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -14,6 +14,9 @@
   padding: 1rem 2rem;
 }
 
+.top-list{
+
+}
 
 .bottom-section {
   background-color: #D81921;
@@ -33,7 +36,7 @@
 .row {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   width: 100%;
 }
 
