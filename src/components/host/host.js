@@ -33,10 +33,8 @@ function Host() {
           </div>
           <div className="call-to-action column">
             <p>
-              Interested in becoming a host?
-            </p>
+              This information will be reviewed and displayed publicly. Do not enter private/personal information.            </p>
             <p>
-              Please get in touch at <a href="mailto:emailaddress">[email address]</a>
             </p>
           </div>
         </div>
