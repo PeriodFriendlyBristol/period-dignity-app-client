@@ -7,13 +7,9 @@ export default class Venues extends React.Component {
     super(props);
 
     this.state = {
+      venues: null,
       mapData: {
-        markers: [
-          [51.4545, -2.5879],
-          [51.45, -2.585],
-          [51.445, -2.58]
-        ],
-        zoom: 13,
+        zoom: 11,
         lat: 51.4545,
         lng: -2.5879
       }
@@ -21,19 +17,17 @@ export default class Venues extends React.Component {
   }
 
   componentDidMount() {
-    this.getVenues();
-  }
-
-  async getVenues() {
-    const response = await fetch("http://localhost:8000/api/venue/");
-    let venues = await response.json();
-    this.setState({ venues: venues.slice(0, 9) });
+    fetch("http://localhost:8000/api/venue/")
+      .then(response => response.json())
+      .then(venues => {
+        this.setState({ venues: venues.slice(0, 9) });
+      });
   }
 
   render() {
     return (
       <div>
-        <MapComponent mapData={this.state.mapData} />
+        <MapComponent mapData={this.state.mapData} venues={this.state.venues} />
         <VenueList venues={this.state.venues} />
       </div>
     );
