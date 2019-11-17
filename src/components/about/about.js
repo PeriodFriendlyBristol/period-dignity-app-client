@@ -27,7 +27,7 @@ function About() {
           </div>
         </div>
         <div className="bottom-section row">
-          <div className="call-to-action padding-left-1 column" >
+          <div className="call-to-action column" >
             <Person className="person"/>
           </div>
           <div className="call-to-action padding-right-1 column">
