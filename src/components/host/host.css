@@ -80,15 +80,13 @@
 
 input[type="text"],
 input[type="email"],
-input[type="textarea"] {
+.textarea {
   align-items: middle;
   width: 100%;
   border-radius: 0.3rem;
   padding: 0.5rem;
-}
-
-br{
-  display:block;
+  outline: 0;
+  border: none;
 }
 
 /*input[type="textarea"] {

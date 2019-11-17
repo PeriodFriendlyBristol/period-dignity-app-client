@@ -73,37 +73,40 @@ function Host() {
             <div className="form-submit__item">
               <label for="box_location">
                 Where will the box be located?
-                <textarea rows="3" cols="33" name="box_location" id="box_location"/>
+                <textarea className="textarea" name="box_location" id="box_location"/>
               </label>
             </div>
-            <div className="form-submit__item">
-              <label>
-
+            <div className="form-submit__item  wheelchair">
+              <label for="wheelchair">
                 Wheelchair access on site?
-
-                <input type="radio" name="wheelchair" value="yes" />Yes
-                <input type="radio" name="wheelchair" value="no" />No
+                <div className="row">
+                  <input type="radio" name="wheelchair" value="yes" id="wheelchair"/>
+                  Yes
+                  <input type="radio" name="wheelchair" value="no" id="wheelchair"/>
+                  No
+                </div>
               </label>
             </div>
             <div className="form-submit__item">
-              <label>
-
+              <label for="toilet">
                 Accessible toilet available on site?
-                <input type="radio" name="toilet" value="yes" />Yes
-                <input type="radio" name="toilet" value="no" />No
+                <div className="row">
+                  <input type="radio" name="toilet" value="yes" id="toilet"/>
+                  Yes
+                  <input type="radio" name="toilet" value="no" id="toilet"/>
+                  No
+                </div>
               </label>
             </div>
             <div className="form-submit__item">
-              <label>
-
+              <label for="opening_hours">
                 Opening hours
-
-                <textarea name="box_location"/>
+                <textarea className="textarea" name="opening_hours" id="opening_hours"/>
               </label>
             </div>
             <div className="form-submit__item">
-              <label className="tcs">
-                <input type="checkbox" name="terms"/>
+              <label for="terms" className="tcs">
+                <input type="checkbox" name="terms" id="terms"/>
                 <span className="checkbox"></span>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </label>
