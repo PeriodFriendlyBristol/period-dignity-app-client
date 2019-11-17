@@ -44,37 +44,37 @@ function Host() {
             <div className="form-submit__item">
               <label for="email">
                 Email
-                <input type="email" name="email" id="email"/>
+                <input type="email" name="email" id="email" className="row"/>
               </label>
             </div>
             <div className="form-submit__item">
               <label for="number">
                 Phone number
-                <input type="text" name="phone" id="number"/>
+                <input type="text" name="phone" id="number" className="row"/>
               </label>
             </div>
             <div className="form-submit__item">
               <label for="location">
                 Location name
-                <input type="text" name="location_name" id="location"/>
+                <input type="text" name="location_name" id="location" className="row"/>
               </label>
             </div>
             <div className="form-submit__item">
               <label for="address">
                 Address
-                <input type="text" name="address" id="address"/>
+                <input type="text" name="address" id="address" className="row"/>
               </label>
             </div>
             <div className="form-submit__item">
               <label for="postcode">
                 Postcode
-                <input type="text" name="postcode" id="postcode"/>
+                <input type="text" name="postcode" id="postcode" className="row"/>
               </label>
             </div>
             <div className="form-submit__item">
               <label for="box_location">
                 Where will the box be located?
-                <textarea className="textarea" name="box_location" id="box_location"/>
+                <textarea name="box_location" id="box_location" className="textarea row"/>
               </label>
             </div>
             <div className="form-submit__item  wheelchair">
@@ -102,7 +102,7 @@ function Host() {
             <div className="form-submit__item">
               <label for="opening_hours">
                 Opening hours
-                <textarea className="textarea" name="opening_hours" id="opening_hours"/>
+                <textarea name="opening_hours" id="opening_hours" className="textarea row"/>
               </label>
             </div>
             <div className="form-submit__item">
@@ -113,8 +113,7 @@ function Host() {
               </label>
             </div>
             <div className="form-submit__item">
-
-              <input className="button-submit" type="submit" value="I WANT TO BECOME A HOST"/>
+              <input type="submit" value="I WANT TO BECOME A HOST" className="button-submit"/>
             </div>
           </form>
         </div>
