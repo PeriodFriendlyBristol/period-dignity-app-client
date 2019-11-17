@@ -291,3 +291,27 @@ li a {
 .padding-right-1 {
   padding-right: 1rem;
 }
+
+.margin-bottom-half {
+  margin-bottom: 0.5rem;
+}
+
+.margin-top-0 {
+  margin-top: 0;
+}
+
+.div-ul-2 {
+  padding-left: 2.8rem;
+}
+
+.aboutLink {
+  padding-right: 1.3rem;
+}
+
+.findBox {
+  padding-left: 0.2rem;
+}
+
+.hostBox {
+  padding-right: 0.4rem;
+}

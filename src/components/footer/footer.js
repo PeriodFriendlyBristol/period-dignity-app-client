@@ -6,7 +6,7 @@ class Footer extends React.Component {
     return (
       <footer className="footer">
         <div>
-          <ul className="div-ul">
+          <ul className="div-ul margin-bottom-half">
             <li className="icon-left footer-text">
               <MaterialIcon icon="my_location" color="#FBAF1E" />
             </li>
@@ -17,14 +17,14 @@ class Footer extends React.Component {
               <MaterialIcon icon="person" color="white" />
             </li>
           </ul>
-          <ul>
-            <li className="left-li footer-text selected-text" color="#FBAF1E">
+          <ul className="margin-top-0 div-ul-2">
+            <li className="left-li footer-text selected-text findBox" color="#FBAF1E">
               Find a Box
             </li>
-            <li className="center-li footer-text padding-right-half" color="white">
+            <li className="center-li footer-text padding-right-half hostBox" color="white">
               Host a Box
             </li>
-            <li className="right-li footer-text padding-right-1" color="white">
+            <li className="right-li footer-text aboutLink" color="white">
               About
             </li>
           </ul>
