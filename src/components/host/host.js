@@ -10,7 +10,9 @@ function Host() {
       </h1>
       <body>
         <div className="top-section row">
-          <div className="top-text-left column"/>
+          <div className="person top-text-left column">
+            <Person />
+          </div>
           <div className="top-text column">
             <p>
               Once approved, you will need:
@@ -29,8 +31,7 @@ function Host() {
           </div>
         </div>
         <div className="middle-section row">
-          <div className="person padding-left-1 column">
-            <Person />
+          <div className="padding-left-1 column">
           </div>
           <div className="call-to-action column">
             <p>

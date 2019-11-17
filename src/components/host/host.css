@@ -10,6 +10,10 @@
   font-size: larger;
 }
 
+top-section{
+  height: 8rem;
+}
+
 .top-text{
   padding: 1rem 2rem;
 }
@@ -37,8 +41,16 @@
     background-repeat: no-repeat;
 }
 
+.person{
+  position: relative;
+  left: 0;
+  top: 8rem;
+  padding-left: 1rem;
+}
+
 .middle-section {
   background-color: #D81921;
+  height: 8rem;
 }
 
 .bottom-section {
