@@ -2,6 +2,12 @@ import React from 'react';
 import './host.css';
 import { ReactComponent as Person } from './svg/host.svg';
 
+function handleSubmit(event){
+  alert('Thank you for your interest, the team will be in touch')
+  window.open("/");
+  return false;
+}
+
 function Host() {
   return(
      <div className="host">
@@ -40,7 +46,7 @@ function Host() {
           </div>
         </div>
         <div className="bottom-section row">
-          <form className="form-submit">
+          <form className="form-submit" onSubmit={handleSubmit}>
             <div className="form-submit__item">
               <label for="email">
                 Email
