@@ -101,6 +101,10 @@ input[type="email"],
   border: none;
 }
 
+label {
+  line-height: 150%;
+}
+
 /*input[type="textarea"] {
   height: 200%;
 }
