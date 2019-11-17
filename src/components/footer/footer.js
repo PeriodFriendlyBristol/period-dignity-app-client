@@ -5,31 +5,29 @@ class Footer extends React.Component {
   render () {
     return (
       <footer className="footer">
-        <div className="div-ul">
-          <div>
+        <div>
+          <ul className="div-ul">
             <li className="icon-left footer-text">
               <MaterialIcon icon="my_location" color="#FBAF1E" />
             </li>
-            <li className="left-li footer-text selected-text padding-top-half">
-              Find a Box
-            </li>
-          </div>
-          <div>
             <li className="icon-center">
               <MaterialIcon icon="favorite" color="white" />
             </li>
-            <li className="center-li footer-text">
-            Host a Box
-            </li>
-          </div>
-          <div>
             <li className="icon-right">
               <MaterialIcon icon="person" color="white" />
             </li>
-            <li className="right-li footer-text">
-            About
+          </ul>
+          <ul>
+            <li className="left-li footer-text selected-text" color="#FBAF1E">
+              Find a Box
             </li>
-          </div>
+            <li className="center-li footer-text padding-right-half" color="white">
+              Host a Box
+            </li>
+            <li className="right-li footer-text padding-right-1" color="white">
+              About
+            </li>
+          </ul>
         </div>
       </footer>
     )
