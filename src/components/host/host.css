@@ -22,19 +22,19 @@
 
 .custom-bullet-list li{
     position: relative;
-    padding-left: 1rem;
+    padding-left: 3rem;
+    padding-bottom: 2rem;
 }
 
 .custom-bullet-list li::before {
     content: "";
     position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 0.5rem;
-    height: 0.5rem;
-    background: red;
-    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    padding-left: -1rem;
+    margin-left : -2rem;
+    background-image: url(./svg/logo_bullet.svg);
+    background-repeat: no-repeat;
 }
 
 .middle-section {
