@@ -30,7 +30,7 @@ export default class MapComponent extends React.Component {
               ></Marker>
             );
           })}
-          {/*     
+          {/*
           <LeafletConsumer>
             {context => {
               // const map = context.map;

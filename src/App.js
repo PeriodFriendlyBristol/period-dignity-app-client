@@ -1,20 +1,24 @@
-import React from 'react';
-import Header from './components/header/header'
-import Footer from './components/footer/footer'
-import "lato-font";
+import React from "react";
+import Header from "./components/header/header";
+import Footer from "./components/footer/footer";
 
-import './App.css';
+import "./App.css";
 
 function App() {
   const scrollFunction = () => {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    if (
+      document.body.scrollTop > 50 ||
+      document.documentElement.scrollTop > 50
+    ) {
       document.getElementById("header").style.height = "60px";
     } else {
       document.getElementById("header").style.height = "80px";
     }
-  }
+  };
 
-  window.onscroll = () => { scrollFunction() };
+  window.onscroll = () => {
+    scrollFunction();
+  };
 
   return (
     <div className="App">
