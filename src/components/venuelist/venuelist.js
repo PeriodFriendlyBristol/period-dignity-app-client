@@ -32,7 +32,7 @@ export default class VenueList extends React.Component {
             return (
               <li key={`marker-${index}`} className="venue">
                 <img src={require("../../assets/pins/pin-" + index + ".svg")} />
-                <div class="description">
+                <div className="description">
                   <strong>{venue.name}</strong>
                   <p>
                     {venue[dayOpen] ? (

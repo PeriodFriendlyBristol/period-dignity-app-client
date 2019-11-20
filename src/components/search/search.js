@@ -7,6 +7,7 @@ class SearchComponent extends React.Component {
     this.state = {
       postcode: "",
       latlon: "",
+      error: "",
       doSearch: false
     };
 
@@ -19,9 +20,28 @@ class SearchComponent extends React.Component {
     this.setState({ postcode: event.target.value });
   }
 
-  doPostcodeSearch = props => {
-    this.setState({ doSearch: true });
-  };
+  doPostcodeSearch() {
+    console.log(this.state.postcode);
+    if (this.state.postcode) {
+      let url =
+        "http://localhost:8000/api/venue/?postcode=" + this.state.postcode;
+
+      fetch(url)
+        .then(response => {
+          return response.json();
+        })
+        .then(data => {
+          if (data.detail) {
+            console.log(data.detail);
+            this.setState({ error: data.detail });
+          } else {
+            this.setState({ venues: data.slice(0, 9), doSearch: true });
+          }
+        });
+    } else {
+      this.setState({ error: "Please enter a postcode" });
+    }
+  }
 
   doMyLocationSearch = props => {
     if ("geolocation" in navigator) {
@@ -36,16 +56,12 @@ class SearchComponent extends React.Component {
   };
 
   render() {
-    console.log(this.state);
-
     if (this.state.doSearch) {
-      console.log("redirecting");
-      console.log(this.state);
       return (
         <Redirect
           to={{
             pathname: "/venues",
-            state: { postcode: this.state.postcode, latlon: this.state.latlon }
+            state: { venues: this.state.venues, latlon: this.state.latlon }
           }}
         />
       );
@@ -53,16 +69,17 @@ class SearchComponent extends React.Component {
 
     return (
       <div className="padding-top-11 Search-Component-header">
-		  {/* Needs to be moved to the right */}
-		<div className="landing-text-3">Find a Period Dignity Box near you</div>
+        {/* Needs to be moved to the right */}
+        <div className="landing-text-3">Find a Period Dignity Box near you</div>
         <div>
           <input
             placeholder="my postcode, e.g. BS5 9QP"
             value={this.state.postcode}
             onChange={this.postcodeChange}
-			id="search-postcode"
-			className="search-box"
+            id="search-postcode"
+            className="search-box"
           />
+          <p className="error">{this.state.error}</p>
         </div>
         <div>
           <button onClick={this.doPostcodeSearch}>Search</button>
