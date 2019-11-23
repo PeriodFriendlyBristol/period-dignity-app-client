@@ -27,7 +27,7 @@ top-section{
 .custom-bullet-list li{
     position: relative;
     padding-left: 3rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 
 .custom-bullet-list li::before {
@@ -44,7 +44,7 @@ top-section{
 .person{
   position: relative;
   left: 0;
-  top: 8rem;
+  top: 11rem;
   padding-left: 1rem;
 }
 
@@ -261,13 +261,16 @@ label {
   background-color: #84c6ff;
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 600px) {
   .person {
     width: 100%;
     height: 80%;
     position: relative;
-    position: relative;
-    top: 100%;
+    top: 11rem;
     z-index: 1;
+  }
+
+  .column {
+    height: 260px;
   }
 }

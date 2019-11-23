@@ -16,8 +16,8 @@ function Host() {
       </h1>
       <body>
         <div className="top-section row">
-          <div className="person top-text-left column">
-            <Person />
+          <div className="top-text-left column">
+            <Person className="person"/>
           </div>
           <div className="top-text column">
             <p>
