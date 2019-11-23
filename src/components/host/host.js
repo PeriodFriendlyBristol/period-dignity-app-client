@@ -3,8 +3,9 @@ import './host.css';
 import { ReactComponent as Person } from './svg/host.svg';
 
 function handleSubmit(event){
+  event.preventDefault();
   alert('Thank you for your interest, the team will be in touch')
-  window.open("/");
+  window.location.replace("/");
   return false;
 }
 
