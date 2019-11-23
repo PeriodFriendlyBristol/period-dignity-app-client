@@ -113,11 +113,22 @@ function Host() {
               </label>
               </div>
             </div>
-            <div className="form-submit__item">
-              <label for="opening_hours">
-                Opening hours
-                <textarea name="opening_hours" id="opening_hours" className="textarea row"/>
+            <div className="form-submit__item row">
+              Opening hours
+              <div className="row">
+              <label for="day_of_the_week" className="long_column">
+                Day of the week
+                <input type="text" name="day_of_the_week" id="day_of_the_week"/>
               </label>
+              <label for="from_time" className="short_column">
+                From
+                <input type="text" name="from_time" id="from_time"/>
+              </label>
+              <label for="to_time" className="short_column">
+                To
+                <input type="text" name="to_time" id="to_time"/>
+              </label>
+              </div>
             </div>
             <div className="form-submit__item">
               <label for="terms" className="tcs">
