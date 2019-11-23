@@ -42,6 +42,7 @@ top-section{
 }
 
 .person{
+  height: 90%;
   position: relative;
   left: 0;
   top: 11rem;
