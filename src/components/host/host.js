@@ -83,27 +83,35 @@ function Host() {
                 <textarea name="box_location" id="box_location" className="textarea row"/>
               </label>
             </div>
-            <div className="form-submit__item  wheelchair">
-              <label for="wheelchair">
-                Wheelchair access on site?
-                <div className="row">
-                  <input type="radio" name="wheelchair" value="yes" id="wheelchair"/>
-                  Yes
-                  <input type="radio" name="wheelchair" value="no" id="wheelchair"/>
-                  No
-                </div>
+            <div className="form-submit__item row">
+              Wheelchair access on site?
+              <div className="row">
+              <label className="control radio">
+                <input id="radio1" name="radio" type="radio"/>
+                <span className="control-indicator"></span>
+                Yes
               </label>
+              <label className="control radio">
+                <input id="radio2" name="radio" type="radio"/>
+                <span className="control-indicator"></span>
+                No
+              </label>
+              </div>
             </div>
-            <div className="form-submit__item">
-              <label for="toilet">
-                Accessible toilet available on site?
-                <div className="row">
-                  <input type="radio" name="toilet" value="yes" id="toilet"/>
-                  Yes
-                  <input type="radio" name="toilet" value="no" id="toilet"/>
-                  No
-                </div>
+            <div className="form-submit__item row">
+            Accessible toilet available on site?
+              <div className="row">
+              <label className="control radio">
+                <input id="radio1" name="radio" type="radio"/>
+                <span className="control-indicator"></span>
+                Yes
               </label>
+              <label className="control radio">
+                <input id="radio2" name="radio" type="radio"/>
+                <span className="control-indicator"></span>
+                No
+              </label>
+              </div>
             </div>
             <div className="form-submit__item">
               <label for="opening_hours">
