@@ -12,7 +12,7 @@ function Host() {
     setContact(contact => ({ ...contact, [e.target.name]: e.target.value}))
   }
 
-  const sendContact = (e) => {
+  const sendContact = e => {
     e.preventDefault()
         axios.post('https://mailthis.to/testtesttesttest', contact).then(response => {
           window.location.href = 'https://mailthis.to/confirm'
@@ -27,8 +27,8 @@ function Host() {
       </h1>
       <body>
         <div className="top-section row">
-          <div className="person top-text-left column">
-            <Person />
+          <div className="top-text-left column">
+            <Person className="person"/>
           </div>
           <div className="top-text column">
             <p>
@@ -94,33 +94,52 @@ function Host() {
                 <textarea name="box_location" id="box_location" className="textarea row" onChange={getValues}/>
               </label>
             </div>
-            <div className="form-submit__item  wheelchair">
-              <label for="wheelchair">
-                Wheelchair access on site?
-                <div className="row">
-                  <input type="radio" name="wheelchair" value="yes" id="wheelchair" onChange={getValues}/>
-                  Yes
-                  <input type="radio" name="wheelchair" value="no" id="wheelchair" onChange={getValues}/>
-                  No
-                </div>
+            <div className="form-submit__item row">
+              Wheelchair access on site?
+              <div className="row">
+              <label className="control radio">
+                <input id="radio1" name="radio" type="radio" value="yes" onChange={getValues}/>
+                <span className="control-indicator"></span>
+                Yes
               </label>
+              <label className="control radio">
+                <input id="radio2" name="radio" type="radio" value="no" onChange={getValues}/>
+                <span className="control-indicator"></span>
+                No
+              </label>
+              </div>
             </div>
-            <div className="form-submit__item">
-              <label for="toilet">
-                Accessible toilet available on site?
-                <div className="row">
-                  <input type="radio" name="toilet" value="yes" id="toilet" onChange={getValues}/>
-                  Yes
-                  <input type="radio" name="toilet" value="no" id="toilet" onChange={getValues}/>
-                  No
-                </div>
+            <div className="form-submit__item row">
+            Accessible toilet available on site?
+              <div className="row">
+              <label className="control radio">
+                <input id="radio1" name="radio" type="radio"/ value="yes" onChange={getValues}>
+                <span className="control-indicator"></span>
+                Yes
               </label>
+              <label className="control radio">
+                <input id="radio2" name="radio" type="radio" value="no" onChange={getValues}/>
+                <span className="control-indicator"></span>
+                No
+              </label>
+              </div>
             </div>
-            <div className="form-submit__item">
-              <label for="opening_hours">
-                Opening hours
-                <textarea name="opening_hours" id="opening_hours" className="textarea row" onChange={getValues}/>
+            <div className="form-submit__item row">
+              Opening hours
+              <div className="row">
+              <label for="day_of_the_week" className="long_column">
+                Day of the week
+                <input type="text" name="day_of_the_week" id="day_of_the_week" onChange={getValues}/>
               </label>
+              <label for="from_time" className="short_column">
+                From
+                <input type="text" name="from_time" id="from_time" onChange={getValues}/>
+              </label>
+              <label for="to_time" className="short_column">
+                To
+                <input type="text" name="to_time" id="to_time" onChange={getValues}/>
+              </label>
+              </div>
             </div>
             <div className="form-submit__item">
               <label for="terms" className="tcs">
