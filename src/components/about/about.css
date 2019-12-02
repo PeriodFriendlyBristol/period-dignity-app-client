@@ -10,10 +10,19 @@
   font-size: larger;
 }
 
+p{
+  font-size: smaller;
+}
+
 .top-text{
   padding: 1rem 2rem;
 }
 
+.person_donate{
+  position: relative;
+  top: -10%;
+  z-index: 1;
+}
 
 .bottom-section {
   background-color: #D81921;
@@ -23,10 +32,15 @@
   padding: 0 0 0 1rem;
 }
 
+.padding-right-1 {
+  padding: 0 1rem 0 0;
+}
+
 .call-to-action {
   text-align: right;
   color: #FFFFFF;
   margin: 0 1rem 0 0;
+  font-size: 1rem;
 }
 
 .donate {
@@ -35,8 +49,8 @@
   font-weight: 600;
   font-size: large;
   background: #FBAF1E;
-  display: inline-block;
-  margin: 2rem 0 1rem 1rem;
+  display: block;
+  margin: 2rem 0 1rem 0;
   padding: 0.5rem 1rem;
 }
 
@@ -52,4 +66,16 @@
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
+}
+
+@media only screen and (max-width: 420px) {
+  .person_donate {
+    width: 90%;
+    height: 90%;
+    top: -20%;
+  }
+
+  .column {
+    height: 260px;
+  }
 }

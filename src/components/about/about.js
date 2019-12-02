@@ -27,10 +27,10 @@ function About() {
           </div>
         </div>
         <div className="bottom-section row">
-          <div className="person padding-left-1 column">
-            <Person />
+          <div className="call-to-action column" >
+            <Person className="person_donate"/>
           </div>
-          <div className="call-to-action column">
+          <div className="call-to-action padding-right-1 column">
             <button className="donate" onClick={redirectToPayPal}>DONATE</button>
             <p>
               We are just at the beginning of this journey.
