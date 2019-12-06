@@ -152,7 +152,7 @@ function Host() {
             <input type="hidden" name="_confirmation" value="Thank you for your interest, the team will be in touch"/>
             <input type="hidden" name="_after" value="/"/>
             <div className="form-submit__item">
-              <input type="submit" value="I WANT TO BECOME A HOST" className="button-submit"/>
+              <input type="submit" value="I WANT TO BECOME A HOST" className="button submit"/>
             </div>
           </form>
         </div>
