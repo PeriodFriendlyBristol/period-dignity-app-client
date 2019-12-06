@@ -1,13 +1,12 @@
 import React from 'react';
 import Search from '../search/search'
 import human3 from '../../assets/humaaan_3.svg'
-import greyCircle from '../../assets/circle_grey.svg'
 import './landing.css'
 
 class Landing extends React.Component {
   render () {
     return (
-        <div className="container-landing">
+        <div className="container-circle">
             <div className="container-home">
                 <div className="landing-text-1 padding-top-2">
                     Free menstrual products for people in Bristol
