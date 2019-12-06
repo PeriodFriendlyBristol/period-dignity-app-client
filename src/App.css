@@ -1,10 +1,24 @@
+@import url(//fonts.googleapis.com/css?family=Lato:700:400);
+
+body {
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    font-size: calc(16px + 0.2vw);
+    line-height: calc(1.1em + 0.2vw);
+    margin: 0;
+}
+h1 {
+    font-weight: normal;
+    font-size: calc(24px + 1vw);
+}
+h2 {
+    font-size: 1.2em;
+}
+
 .App {
   text-align: center;
 }
 
-* {
-  font-family: lato;
-}
 /* .App-logo {
   height: 2rem;
   padding-bottom: 0;
@@ -31,7 +45,7 @@
 }
 
 
-$lato-font-path: '/bower_component/lato-font/fonts';
+/*$lato-font-path: '/bower_component/lato-font/fonts';
 
 @include lato-include-font('black');
 @include lato-include-font('medium');
@@ -42,7 +56,7 @@ h1 {
 
 p.quote {
     @include lato-font('medium', italic);
-}
+}*/
 
 /* Wrappers and Containers Styles */
 .container-landing {
