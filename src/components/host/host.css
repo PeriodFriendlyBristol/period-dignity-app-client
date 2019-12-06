@@ -68,19 +68,6 @@ top-section{
   margin-bottom: 1rem;
 }
 
-.button-submit {
-  border-radius: 0.3rem;
-  color: #8C0571;
-  font-weight: 600;
-  font-size: large;
-  background: #FBAF1E;
-  width: 100%;
-  padding: 1rem 0;
-  text-align: center;
-  margin:2rem auto;
-  display:block;
-}
-
 .form-submit input:focus{
   outline: 0;
   outline-offset: 0.5px;

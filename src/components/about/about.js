@@ -31,7 +31,7 @@ function About() {
             <Person className="person_donate"/>
           </div>
           <div className="call-to-action padding-right-1 column">
-            <button className="donate" onClick={redirectToPayPal}>DONATE</button>
+            <button className="button donate" onClick={redirectToPayPal}>DONATE</button>
             <p>
               We are just at the beginning of this journey.
             </p>

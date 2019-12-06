@@ -332,3 +332,17 @@ li a {
 .hostBox {
   padding-right: 0.4rem;
 }
+
+/* button */
+.button{
+  border-radius: 0.2rem;
+  color: #8C0571;
+  font-weight: 600;
+  font-size: large;
+  background: #FBAF1E;
+  width: 100%;
+  padding: 1rem 0;
+  text-align: center;
+  margin: 2rem 0 1rem 0;
+  display: block;
+}
