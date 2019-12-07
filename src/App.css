@@ -1,3 +1,20 @@
+@import url(//fonts.googleapis.com/css?family=Lato:700:400);
+
+body {
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    font-size: calc(16px + 0.2vw);
+    line-height: calc(1.1em + 0.2vw);
+    margin: 0;
+}
+h1 {
+    font-weight: normal;
+    font-size: calc(24px + 1vw);
+}
+h2 {
+    font-size: 1.2em;
+}
+
 .App {
   text-align: center;
 }
@@ -121,10 +138,10 @@ li a {
   left: calc(50% - 96px/2 - 120px);
   top: calc(50% - 12px/2 + 12px); */
   /* identical to box height, or 100% */
-  
+
   /* display: flex;
   align-items: flex-end;
-  text-align: center; */ 
+  text-align: center; */
 }
 
 .center-li {
@@ -151,7 +168,7 @@ li a {
   align-items: flex-end;
   text-align: center;
    */
-  color: #FFFFFF;  
+  color: #FFFFFF;
 }
 
 .selected-text {
@@ -166,42 +183,12 @@ li a {
   line-height: 12px;
 }
 
-/* .icon-left {
-  position: absolute;
-  width: 22px;
-  height: 22px;
-  left: calc(50% - 22px/2 - 120px);
-  top: calc(50% - 22px/2 - 8px);
-}
-
-.icon-center {
-  position: absolute;
-  width: 18px;
-  height: 16px;
-  left: calc(50% - 18px/2);
-  top: calc(50% - 16px/2 + 7px);
-  mix-blend-mode: normal;
-  transform: matrix(1, 0, 0, -1, 0, 0);
-}
-
-.icon-right {
-  position: absolute;
-  left: 16.67%;
-  right: 16.67%;
-  top: 16.67%;
-  bottom: 16.67%;
-} */
-
 .div-ul {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   height: 100%;
 }
-
-/* .padding-top-half {
-  padding-top: 2rem;
-} */
 
 .button-wrapper {
   height: 100%;
@@ -218,7 +205,7 @@ li a {
   height: 400px;
   left: 135px;
   top: -196px;
-  
+
   opacity: 0.6;
   color: #F2F2F2;
 }
@@ -287,7 +274,7 @@ li a {
 }
 
 /* assets */
-.human3{
+.human3 {
   position: absolute;
   z-index: 100;
   top: 19.5%;
@@ -319,3 +306,58 @@ li a {
   width: 17px;
   color: #D81921;
 }
+
+.padding-right-half {
+  padding-right: 0.5rem;
+}
+
+.padding-right-1 {
+  padding-right: 1rem;
+}
+
+.margin-bottom-half {
+  margin-bottom: 0.5rem;
+}
+
+.margin-top-0 {
+  margin-top: 0;
+}
+
+.div-ul-2 {
+  padding-left: 2.8rem;
+}
+
+.aboutLink {
+  padding-right: 1.3rem;
+}
+
+.findBox {
+  padding-left: 0.2rem;
+}
+
+.hostBox {
+  padding-right: 0.4rem;
+}
+
+/* button */
+.button{
+  border-radius: 0.2rem;
+  color: #8C0571;
+  font-weight: 600;
+  font-size: large;
+  background: #FBAF1E;
+  width: 100%;
+  padding: 1rem 0;
+  text-align: center;
+  margin: 2rem 0 1rem 0;
+  display: block;
+}
+
+  /* container with grey circle background*/
+.container-circle {
+  background-image: url(assets/circle_grey.svg);
+  background-position: 100px -50px; /*TODO: find rem equivalent*/;
+  background-repeat: no-repeat;
+  background-size: 100% 60%;
+}
+
