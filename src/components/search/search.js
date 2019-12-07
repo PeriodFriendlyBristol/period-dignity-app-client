@@ -22,8 +22,8 @@ class SearchComponent extends React.Component {
   }
 
   doPostcodeSearch() {
-    console.log(this.state.postcode);
     if (this.state.postcode) {
+      //TODO: replace with env variable.
       let url =
         "http://localhost:8000/api/venue/?postcode=" + this.state.postcode;
 
@@ -32,14 +32,17 @@ class SearchComponent extends React.Component {
           return response.json();
         })
         .then(data => {
+          //The server returns an object with a detail property specificing the error.
           if (data.detail) {
-            console.log(data.detail);
+            //There is an error
             this.setState({ error: data.detail });
           } else {
+            //Do search!
             this.setState({ venues: data.slice(0, 9), doSearch: true });
           }
         });
     } else {
+      //Nothing entered
       this.setState({ error: "Please enter a postcode" });
     }
   }
