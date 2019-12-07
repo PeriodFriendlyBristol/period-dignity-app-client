@@ -32,6 +32,7 @@ class SearchComponent extends React.Component {
         })
         .then(data => {
           //The server returns an object with a detail property specificing the error.
+          //Todo check for error status codes as well
           if (data.detail) {
             //There is an error
             this.setState({ error: data.detail });
