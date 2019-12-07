@@ -8,7 +8,7 @@ function redirectToPayPal(){
 
 function About() {
   return(
-     <div className="about">
+     <div className="container-circle">
       <h1 class="title">
         Period friendly Bristol
       </h1>
