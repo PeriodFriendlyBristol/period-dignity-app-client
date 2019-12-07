@@ -301,6 +301,12 @@ li a {
   border-radius: 2px;
 }
 
+.bullet-point {
+  height: 17px;
+  width: 17px;
+  color: #D81921;
+}
+
 .padding-right-half {
   padding-right: 0.5rem;
 }
