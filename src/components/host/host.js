@@ -21,7 +21,7 @@ function Host() {
         })
   }
   return(
-     <div className="host">
+     <div className="container-circle">
       <h1 className="title">
         Host a Period Dignity Box
       </h1>
