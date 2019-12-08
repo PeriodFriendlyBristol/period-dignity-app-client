@@ -52,11 +52,28 @@ class SearchComponent extends React.Component {
     if ("geolocation" in navigator) {
       // TODO: this test should enable/disable the button
       navigator.geolocation.getCurrentPosition(pos => {
-        this.setState({
-          location: pos.coords.latitude + "," + pos.coords.longitude,
-          doSearch: true
-        });
+        let url =
+          "http://localhost:8000/api/venue/?coordinates=" + pos.coords.latitude + ',' + pos.coords.longitude;
+        fetch(url)
+          .then(response => {
+            return response.json();
+          })
+          .then(data => {
+            //The server returns an object with a detail property specificing the error.
+            //Todo check for error status codes as well
+            if (data.detail) {
+              //There is an error
+              this.setState({ error: data.detail });
+            } else {
+              //Do search!
+              this.setState({ venues: data.slice(0, 9), doSearch: true });
+            }
+          });
       });
+    } else {
+      //Geolocation unavailable
+      this.setState({ error: "Geolocation is unavailable" });
+
     }
   };
 
