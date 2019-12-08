@@ -1,5 +1,6 @@
 import React from "react";
 import { Redirect } from "react-router-dom";
+import MaterialIcon from 'material-icons-react';
 
 class SearchComponent extends React.Component {
   constructor(props) {
@@ -52,23 +53,17 @@ class SearchComponent extends React.Component {
     }
 
     return (
-      <div className="padding-top-11 Search-Component-header">
-		  {/* Needs to be moved to the right */}
-		<div className="landing-text-3">Find a Period Dignity Box near you</div>
+      <div className="search-component-container">
+		  <div className="landing-text-3">Find a Period Dignity Box near you</div>
         <div>
+          {/* <MaterialIcon icon="search" color="grey" /> */}
+          {/* move placeholder over */}
           <input
             placeholder="my postcode, e.g. BS5 9QP"
             value={this.state.postcode}
             onChange={this.postcodeChange}
-			id="search-postcode"
-			className="search-box"
-          />
-        </div>
-        <div>
-          <button onClick={this.doPostcodeSearch}>Search</button>
-          <button onClick={this.doMyLocationSearch}>
-            Use My Current Location
-          </button>
+            id="search-postcode"
+            className="search-box"/>
         </div>
       </div>
     );

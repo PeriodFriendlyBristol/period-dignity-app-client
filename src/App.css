@@ -70,7 +70,7 @@ h2 {
 }
 
 .search-box-wrapper {
-  height: 27rem;
+  height: 31rem;
   position: relative;
   width: 100%;
   /* Period red */
@@ -254,7 +254,6 @@ li a {
 .landing-text-3 {
   width: 199px;
   height: 87px;
-  left: 180px;
   top: 432px;
 
   font-family: Lato;
@@ -262,11 +261,11 @@ li a {
   font-weight: 600;
   font-size: 24px;
   line-height: 29px;
-  display: flex;
   align-items: center;
   text-align: right;
 
   color: #FEFEFE;
+  margin-left: 9.5rem;
 }
 
 .padding-top-2 {
@@ -284,21 +283,28 @@ li a {
 .padding-top-8 {
   padding-top: 8.5rem;
 }
-.padding-top-11 {
-  padding-top: 11rem;
-}
+
 .margin-top-3 {
-  margin-top: 3rem
+  margin-top: 3rem;
 }
 
 .search-box {
-  width: 347px;
+  min-width: 347px;
+  width: 85%;
   height: 48px;
   left: 34px;
   top: 552px;
   background: #FFFFFF;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24), 0px 0px 2px rgba(0, 0, 0, 0.12);
   border-radius: 2px;
+}
+
+.search-component-container {
+  position: relative;
+  width: 100%;
+  padding-top: 5.5rem;
+  padding-left: 3.2rem;
+  padding-right: 3.2rem;
 }
 
 .bullet-point {
@@ -360,4 +366,3 @@ li a {
   background-repeat: no-repeat;
   background-size: 100% 60%;
 }
-
