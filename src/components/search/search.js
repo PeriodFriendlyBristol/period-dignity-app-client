@@ -54,9 +54,9 @@ class SearchComponent extends React.Component {
 
     return (
       <div className="search-component-container">
+      {/* // <div className=""> */}
 		  <div className="landing-text-3">Find a Period Dignity Box near you</div>
-        <div>
-          {/* <MaterialIcon icon="search" color="grey" /> */}
+          <MaterialIcon icon="search" color="grey" />
           {/* move placeholder over */}
           <input
             placeholder="my postcode, e.g. BS5 9QP"
@@ -64,7 +64,6 @@ class SearchComponent extends React.Component {
             onChange={this.postcodeChange}
             id="search-postcode"
             className="search-box"/>
-        </div>
       </div>
     );
   }
