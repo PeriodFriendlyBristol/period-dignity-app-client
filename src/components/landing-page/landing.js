@@ -8,18 +8,22 @@ class Landing extends React.Component {
     return (
         <div className="container-circle">
             <div className="container-home">
-                <div className="landing-text-1 padding-top-2">
-                    Free menstrual products for people in Bristol
+                <div className="landing-text-1 ninty-five-padding-top">
+                    Free menstrual products for people in Bristol who need them
                 </div>
             <div className="text-wrapper">
                 {/* <ul>
                 <li>Get free products when you need them</li>
                 <li>Donate products to help others</li>
                 </ul> */}
+                <ul className="top-list custom-bullet-list">
+                    <li>Pick up points all over the city</li>
+                    <li>Donate products to help others</li>
+                </ul>
             </div>
             </div>
-                <img src={human3} className="human3 padding-left-" />
             <div className="search-box-wrapper">
+                <img src={human3} className="human3 padding-left-" />
                 <Search />
             </div>
         </div>

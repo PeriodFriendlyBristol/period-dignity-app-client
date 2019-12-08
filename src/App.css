@@ -1,18 +1,18 @@
 @import url(//fonts.googleapis.com/css?family=Lato:700:400);
 
 body {
-    font-family: Lato, sans-serif;
-    font-weight: 400;
-    font-size: calc(16px + 0.2vw);
-    line-height: calc(1.1em + 0.2vw);
-    margin: 0;
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  font-size: calc(16px + 0.2vw);
+  line-height: calc(1.1em + 0.2vw);
+  margin: 0;
 }
 h1 {
-    font-weight: normal;
-    font-size: calc(24px + 1vw);
+  font-weight: normal;
+  font-size: calc(24px + 1vw);
 }
 h2 {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 .App {
@@ -65,12 +65,13 @@ h2 {
 }
 
 .text-wrapper {
-  padding: 3rem;
+  /* padding: 3rem; */
   height: 20%;
+  padding-left: 12rem;
 }
 
 .search-box-wrapper {
-  height: 31rem;
+  height: 36rem;
   position: relative;
   width: 100%;
   /* Period red */
@@ -264,7 +265,7 @@ li a {
   align-items: center;
   text-align: right;
 
-  color: #FEFEFE;
+  color: #fefefe;
   margin-left: 9.5rem;
 }
 
@@ -274,10 +275,15 @@ li a {
 
 /* assets */
 .human3 {
-  position: absolute;
+  /* /* position: absolute;
   z-index: 100;
-  top: 19.5%;
+  top: 19.5%; */
   left: 7%;
+  /* height: 90%; */
+  position: relative;
+  /* left: 0; */
+  top: -10.3rem;
+  padding-left: 1rem;
 }
 
 .padding-top-8 {
@@ -303,15 +309,16 @@ li a {
 .search-component-container {
   position: relative;
   width: 100%;
-  padding-top: 5.5rem;
+  /* padding-top: 5.5rem; */
   padding-left: 3.2rem;
   padding-right: 3.2rem;
+  margin-top: -16rem;
 }
 
 .bullet-point {
   height: 17px;
   width: 17px;
-  color: #D81921;
+  color: #d81921;
 }
 
 .padding-right-half {
@@ -347,12 +354,12 @@ li a {
 }
 
 /* button */
-.button{
+.button {
   border-radius: 0.2rem;
-  color: #8C0571;
+  color: #8c0571;
   font-weight: 600;
   font-size: large;
-  background: #FBAF1E;
+  background: #fbaf1e;
   width: 100%;
   padding: 1rem 0;
   text-align: center;
@@ -360,16 +367,16 @@ li a {
   display: block;
 }
 
-  /* container with grey circle background*/
+/* container with grey circle background*/
 .container-circle {
   background-image: url(assets/circle_grey.svg);
-  background-position: 100px -50px; /*TODO: find rem equivalent*/;
+  background-position: 100px -50px; /*TODO: find rem equivalent*/
   background-repeat: no-repeat;
   background-size: 100% 80%;
 }
 
 @media only screen and (min-width: 900px) {
-  .container-circle{
+  .container-circle {
     background-size: 100% 50%;
   }
 }

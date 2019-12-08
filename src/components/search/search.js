@@ -1,6 +1,6 @@
 import React from "react";
 import { Redirect } from "react-router-dom";
-import MaterialIcon from 'material-icons-react';
+import MaterialIcon from "material-icons-react";
 
 class SearchComponent extends React.Component {
   constructor(props) {
@@ -53,7 +53,10 @@ class SearchComponent extends React.Component {
       // TODO: this test should enable/disable the button
       navigator.geolocation.getCurrentPosition(pos => {
         let url =
-          "http://localhost:8000/api/venue/?coordinates=" + pos.coords.latitude + ',' + pos.coords.longitude;
+          "http://localhost:8000/api/venue/?coordinates=" +
+          pos.coords.latitude +
+          "," +
+          pos.coords.longitude;
         fetch(url)
           .then(response => {
             return response.json();
@@ -73,7 +76,6 @@ class SearchComponent extends React.Component {
     } else {
       //Geolocation unavailable
       this.setState({ error: "Geolocation is unavailable" });
-
     }
   };
 
@@ -91,25 +93,17 @@ class SearchComponent extends React.Component {
 
     return (
       <div className="search-component-container">
+        {/* // <div className=""> */}
         <div className="landing-text-3">Find a Period Dignity Box near you</div>
-        <div>
-          {/* <MaterialIcon icon="search" color="grey" /> */}
-          {/* move placeholder over */}
-          <input
-            placeholder="my postcode, e.g. BS5 9QP"
-            value={this.state.postcode}
-            onChange={this.postcodeChange}
-            id="search-postcode"
-            className="search-box"
-          />
-          <p className="error">{this.state.error}</p>
-        </div>
-        <div>
-          <button onClick={this.doPostcodeSearch}>Search</button>
-          <button onClick={this.doMyLocationSearch}>
-            Use My Current Location
-          </button>
-        </div>
+        <MaterialIcon icon="search" color="grey" />
+        {/* move placeholder over */}
+        <input
+          placeholder="my postcode, e.g. BS5 9QP"
+          value={this.state.postcode}
+          onChange={this.postcodeChange}
+          id="search-postcode"
+          className="search-box"
+        />
       </div>
     );
   }
