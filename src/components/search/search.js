@@ -8,6 +8,7 @@ class SearchComponent extends React.Component {
     this.state = {
       postcode: "",
       latlon: "",
+      error: "",
       doSearch: false
     };
 
@@ -20,33 +21,69 @@ class SearchComponent extends React.Component {
     this.setState({ postcode: event.target.value });
   }
 
-  doPostcodeSearch = props => {
-    this.setState({ doSearch: true });
-  };
+  doPostcodeSearch() {
+    if (this.state.postcode) {
+      //TODO: replace with env variable.
+      let url =
+        "http://localhost:8000/api/venue/?postcode=" + this.state.postcode;
+
+      fetch(url)
+        .then(response => {
+          return response.json();
+        })
+        .then(data => {
+          //The server returns an object with a detail property specificing the error.
+          //Todo check for error status codes as well
+          if (data.detail) {
+            //There is an error
+            this.setState({ error: data.detail });
+          } else {
+            //Do search!
+            this.setState({ venues: data.slice(0, 9), doSearch: true });
+          }
+        });
+    } else {
+      //Nothing entered
+      this.setState({ error: "Please enter a postcode" });
+    }
+  }
 
   doMyLocationSearch = props => {
     if ("geolocation" in navigator) {
       // TODO: this test should enable/disable the button
       navigator.geolocation.getCurrentPosition(pos => {
-        this.setState({
-          location: pos.coords.latitude + "," + pos.coords.longitude,
-          doSearch: true
-        });
+        let url =
+          "http://localhost:8000/api/venue/?coordinates=" + pos.coords.latitude + ',' + pos.coords.longitude;
+        fetch(url)
+          .then(response => {
+            return response.json();
+          })
+          .then(data => {
+            //The server returns an object with a detail property specificing the error.
+            //Todo check for error status codes as well
+            if (data.detail) {
+              //There is an error
+              this.setState({ error: data.detail });
+            } else {
+              //Do search!
+              this.setState({ venues: data.slice(0, 9), doSearch: true });
+            }
+          });
       });
+    } else {
+      //Geolocation unavailable
+      this.setState({ error: "Geolocation is unavailable" });
+
     }
   };
 
   render() {
-    console.log(this.state);
-
     if (this.state.doSearch) {
-      console.log("redirecting");
-      console.log(this.state);
       return (
         <Redirect
           to={{
             pathname: "/venues",
-            state: { postcode: this.state.postcode, latlon: this.state.latlon }
+            state: { venues: this.state.venues, latlon: this.state.latlon }
           }}
         />
       );
@@ -54,7 +91,7 @@ class SearchComponent extends React.Component {
 
     return (
       <div className="search-component-container">
-		  <div className="landing-text-3">Find a Period Dignity Box near you</div>
+        <div className="landing-text-3">Find a Period Dignity Box near you</div>
         <div>
           {/* <MaterialIcon icon="search" color="grey" /> */}
           {/* move placeholder over */}
@@ -63,7 +100,15 @@ class SearchComponent extends React.Component {
             value={this.state.postcode}
             onChange={this.postcodeChange}
             id="search-postcode"
-            className="search-box"/>
+            className="search-box"
+          />
+          <p className="error">{this.state.error}</p>
+        </div>
+        <div>
+          <button onClick={this.doPostcodeSearch}>Search</button>
+          <button onClick={this.doMyLocationSearch}>
+            Use My Current Location
+          </button>
         </div>
       </div>
     );

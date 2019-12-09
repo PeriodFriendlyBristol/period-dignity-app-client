@@ -24,32 +24,34 @@ export default class VenueList extends React.Component {
 
     if (this.props.venues) {
       return (
-        <ul className="venues-list">
-          {this.props.venues.map((venue, index) => {
-            {
-              index++;
-            }
-            return (
-              <li key={`marker-${index}`} className="venue">
-                <img src={require("../../assets/pins/pin-" + index + ".svg")} />
-                <div class="description">
-                  <strong>{venue.name}</strong>
-                  <p>
-                    {venue[dayOpen] ? (
-                      <span>
-                        {this.capitalize(day)}, open{" "}
-                        {venue[dayOpen].slice(0, -3)}, closes at{" "}
-                        {venue[dayClose].slice(0, -3)}
-                      </span>
-                    ) : (
-                      <span></span>
-                    )}
-                  </p>
-                </div>
-              </li>
-            );
-          })}
-        </ul>
+        < ul className="venues-list" >
+          {
+            this.props.venues.map((venue, index) => {
+              {
+                index++;
+              }
+              return (
+                <li key={`marker-${index}`} className="venue">
+                  <img src={require("../../assets/pins/pin-" + index + ".svg")} />
+                  <div className="description">
+                    <strong>{venue.name}</strong>
+                    <p>
+                      {venue[dayOpen] ? (
+                        <span>
+                          {this.capitalize(day)}, open{" "}
+                          {venue[dayOpen].slice(0, -3)}, closes at{" "}
+                          {venue[dayClose].slice(0, -3)}
+                        </span>
+                      ) : (
+                          <span></span>
+                        )}
+                    </p>
+                  </div>
+                </li>
+              );
+            })
+          }
+        </ul >
       );
     } else {
       return (
