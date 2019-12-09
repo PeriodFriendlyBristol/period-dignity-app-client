@@ -6,7 +6,7 @@ class Footer extends React.Component {
     return (
       <footer className="footer">
         <div>
-          <ul className="div-ul margin-bottom-half">
+          <ul className="div-ul footer-bottom-half">
             <li className="icon-left footer-text">
               <MaterialIcon icon="my_location" color="#FBAF1E" />
             </li>

@@ -1,6 +1,8 @@
 import React from "react";
 import { Redirect } from "react-router-dom";
-import MaterialIcon from 'material-icons-react';
+import { ReactComponent as Person } from './svg/humaaan_3.svg';
+
+
 
 class SearchComponent extends React.Component {
   constructor(props) {
@@ -54,16 +56,25 @@ class SearchComponent extends React.Component {
 
     return (
       <div className="search-component-container">
-      {/* // <div className=""> */}
-		  <div className="landing-text-3">Find a Period Dignity Box near you</div>
-          <MaterialIcon icon="search" color="grey" />
-          {/* move placeholder over */}
-          <input
-            placeholder="my postcode, e.g. BS5 9QP"
-            value={this.state.postcode}
-            onChange={this.postcodeChange}
-            id="search-postcode"
-            className="search-box"/>
+        <div className="flex">
+          <div classname="column">
+            <Person className="human3 padding-left-" />
+          </div>
+          <div className="column padding-right-1">
+            <div className="landing-text-3">Find a Period Friendly Box near you</div>
+          </div>
+      </div>
+        <div className="input-align flex">
+          <div className="row">
+            <input
+                placeholder="my postcode, e.g. BS5 9QP"
+                value={this.state.postcode}
+                onChange={this.postcodeChange}
+                id="search-postcode"
+                className="search-box"
+                icon="search"/>
+          </div>
+        </div>
       </div>
     );
   }
