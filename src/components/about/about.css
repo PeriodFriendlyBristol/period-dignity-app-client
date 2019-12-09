@@ -60,4 +60,32 @@ p{
   .column {
     height: 260px;
   }
+
+  .invisible {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 680px) {
+  .top-text {
+    width: 40%;
+    padding: 10%;
+    margin: 5%;
+  }
+
+  .person_donate {
+    top: -45%;
+    height: 200%;
+    width: 100%;
+    left: -20%;
+  }
+
+
+  #donate-section{
+    margin:  0 20rem 0 -20rem;
+  }
+
+  #donate-section p {
+    text-align: middle;
+  }
 }

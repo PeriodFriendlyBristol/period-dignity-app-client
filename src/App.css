@@ -365,5 +365,5 @@ li a {
   background-image: url(assets/circle_grey.svg);
   background-position: 100px -50px; /*TODO: find rem equivalent*/;
   background-repeat: no-repeat;
-  background-size: 100% 60%;
+  background-size: 100% 80%;
 }

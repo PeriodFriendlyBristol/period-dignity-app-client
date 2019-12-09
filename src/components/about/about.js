@@ -14,7 +14,8 @@ function About() {
       </h1>
       <body>
         <div className="top-section row">
-          <div className="top-text">
+          <div className="invisible column" />
+          <div className="top-text column">
             <p>
               Everyone should be able to get the menstrual products they need. Nobody should be held back in life or stigmatised simply for having a period.
             </p>
@@ -30,7 +31,7 @@ function About() {
           <div className="call-to-action column" >
             <Person className="person_donate"/>
           </div>
-          <div className="call-to-action padding-right-1 column">
+          <div className="call-to-action padding-right-1 column" id="donate-section">
             <button className="button donate" onClick={redirectToPayPal}>DONATE</button>
             <p>
               We are just at the beginning of this journey.
