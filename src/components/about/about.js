@@ -1,6 +1,7 @@
 import React from 'react';
 import './about.css';
 import { ReactComponent as Person } from './svg/about.svg';
+import { ReactComponent as Logo } from '../../assets/period_logo.svg';
 
 function redirectToPayPal(){
   window.open("http://www.paypal.com/")
@@ -25,6 +26,7 @@ function About() {
             <p>
               Period Dignity is part of Bristol’s plan to eradicate period poverty become a period friendly city.
             </p>
+            <Logo className="logo-right"/>
           </div>
         </div>
         <div className="bottom-section row">
