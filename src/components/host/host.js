@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios'
 import './host.css';
 import { ReactComponent as Person } from './svg/host.svg';
+import { ReactComponent as Logo } from '../../assets/period_logo.svg';
 
 function Host() {
   const [contact, setContact] = useState({})
@@ -45,6 +46,7 @@ function Host() {
                 To inform everybody who works on site
               </li>
             </ul>
+            <Logo />
           </div>
         </div>
         <div className="middle-section row">
