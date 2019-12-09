@@ -13,10 +13,14 @@ export default class MapComponent extends React.Component {
   }
 
   render() {
-    const position = [this.props.mapData.lat, this.props.mapData.lng];
+    let position = [this.props.mapDefaults.lat, this.props.mapDefaults.lng];
     if (this.props.venues) {
+      position = [
+        this.props.venues[0].location.latitude,
+        this.props.venues[0].location.longitude
+      ];
       return (
-        <Map center={position} zoom={this.props.mapData.zoom}>
+        <Map center={position} zoom={this.props.mapDefaults.zoom}>
           <TileLayer
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
