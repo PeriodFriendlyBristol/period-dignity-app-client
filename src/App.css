@@ -1,24 +1,28 @@
-@import url(//fonts.googleapis.com/css?family=Lato:700:400);
+/* @import url(//fonts.googleapis.com/css?family=Lato:700, 400); */
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
 
 body {
-    font-family: Lato, sans-serif;
-    font-weight: 400;
-    font-size: calc(16px + 0.2vw);
-    line-height: calc(1.1em + 0.2vw);
-    margin: 0;
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  font-size: calc(16px + 0.2vw);
+  line-height: calc(1.1em + 0.2vw);
+  margin: 0;
 }
 h1 {
-    font-weight: normal;
-    font-size: calc(24px + 1vw);
+  font-weight: normal;
+  font-size: calc(24px + 1vw);
 }
 h2 {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 .App {
   text-align: center;
 }
 
+strong {
+  font-weight: 700;
+}
 /* .App-logo {
   height: 2rem;
   padding-bottom: 0;
@@ -264,7 +268,7 @@ li a {
   align-items: center;
   text-align: right;
 
-  color: #FEFEFE;
+  color: #fefefe;
   margin-left: 9.5rem;
 }
 
@@ -311,7 +315,7 @@ li a {
 .bullet-point {
   height: 17px;
   width: 17px;
-  color: #D81921;
+  color: #d81921;
 }
 
 .padding-right-half {
@@ -347,12 +351,12 @@ li a {
 }
 
 /* button */
-.button{
+.button {
   border-radius: 0.2rem;
-  color: #8C0571;
+  color: #8c0571;
   font-weight: 600;
   font-size: large;
-  background: #FBAF1E;
+  background: #fbaf1e;
   width: 100%;
   padding: 1rem 0;
   text-align: center;
@@ -360,10 +364,10 @@ li a {
   display: block;
 }
 
-  /* container with grey circle background*/
+/* container with grey circle background*/
 .container-circle {
   background-image: url(assets/circle_grey.svg);
-  background-position: 100px -50px; /*TODO: find rem equivalent*/;
+  background-position: 100px -50px; /*TODO: find rem equivalent*/
   background-repeat: no-repeat;
   background-size: 100% 60%;
 }
