@@ -1,6 +1,13 @@
 import React from "react";
-import { Map, Marker, TileLayer, LeafletConsumer } from "react-leaflet";
+import {
+  Map,
+  Marker,
+  TileLayer,
+  ZoomControl,
+  LeafletConsumer
+} from "react-leaflet";
 import L from "leaflet";
+import "./map.css";
 
 export default class MapComponent extends React.Component {
   getIcon(number) {
@@ -20,7 +27,11 @@ export default class MapComponent extends React.Component {
         this.props.venues[0].location.longitude
       ];
       return (
-        <Map center={position} zoom={this.props.mapDefaults.zoom}>
+        <Map
+          center={position}
+          zoom={this.props.mapDefaults.zoom}
+          zoomControl={false}
+        >
           <TileLayer
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -34,6 +45,7 @@ export default class MapComponent extends React.Component {
               ></Marker>
             );
           })}
+          <ZoomControl position="bottomleft" />
           {/*
           <LeafletConsumer>
             {context => {

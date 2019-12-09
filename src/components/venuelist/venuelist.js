@@ -1,5 +1,8 @@
 import React from "react";
 import "./venuelist.css";
+import { ReactComponent as WC } from "./svg/wc-icon.svg";
+import { ReactComponent as Access } from "./svg/accessible-icon.svg";
+
 export default class VenueList extends React.Component {
   constructor(props) {
     super(props);
@@ -31,7 +34,7 @@ export default class VenueList extends React.Component {
             return (
               <li key={`marker-${index}`} className="venue">
                 <img src={require("../../assets/pins/pin-" + index + ".svg")} />
-                <div className="description">
+                <div className="venue-details">
                   <h2>{venue.name}</h2>
                   <p>
                     {venue[dayOpen] ? (
@@ -44,20 +47,10 @@ export default class VenueList extends React.Component {
                       <span></span>
                     )}
                   </p>
-                  <p>
-                    {venue.toilet ? (
-                      <span>toilet</span>
-                    ) : (
-                      <span>no toilet</span>
-                    )}
-                  </p>
-                  <p>
-                    {venue.wheelchair_access ? (
-                      <span>access</span>
-                    ) : (
-                      <span>no access</span>
-                    )}
-                  </p>
+                  <div class="venue-icons">
+                    {venue.toilet ? <WC /> : <WC />}{" "}
+                    {venue.wheelchair_access ? <Access /> : <Access />}
+                  </div>
                   <p>
                     {venue.product_location !== "TBD" ? (
                       <span>venue.product_location</span>
