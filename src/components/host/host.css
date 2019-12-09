@@ -251,7 +251,7 @@ label {
     z-index: 1;
   }
 
-  .column {
-    height: 260px;
+  .top-text {
+    height: 360px;
   }
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import './about.css';
 import { ReactComponent as Person } from './svg/about.svg';
+import { ReactComponent as Logo } from '../../assets/period_logo.svg';
 
 function redirectToPayPal(){
   window.open("http://www.paypal.com/")
@@ -22,6 +23,7 @@ function About() {
             <p>
               The Period Friendly Places vision is for Bristol to be a city of period dignity, in which nobody is held back in life or stigmatised against simply for having a period – this is part of our journey to being a period friendly city.
             </p>
+            <Logo className="logo-right"/>
           </div>
         </div>
         <div className="bottom-section row">
