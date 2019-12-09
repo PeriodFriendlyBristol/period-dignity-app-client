@@ -17,13 +17,10 @@ function About() {
           <div className="invisible column" />
           <div className="top-text column">
             <p>
-              Everyone should be able to get the menstrual products they need. Nobody should be held back in life or stigmatised simply for having a period.
+              Bristol has pledged to take a leading role in making period products available to all who need them, while also combating outdated attitudes to periods.
             </p>
             <p>
-              Many people struggle or are unable to afford menstrual products. This situation and the impact it has is called period poverty.
-            </p>
-            <p>
-              Period Dignity is part of Bristol’s plan to eradicate period poverty become a period friendly city.
+              The Period Friendly Places vision is for Bristol to be a city of period dignity, in which nobody is held back in life or stigmatised against simply for having a period – this is part of our journey to being a period friendly city.
             </p>
           </div>
         </div>
