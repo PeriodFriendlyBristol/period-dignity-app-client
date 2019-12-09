@@ -271,7 +271,22 @@ label {
   }
 
   .form-submit {
-    margin: 0 12rem -2rem 36rem;
+    margin: 0 12rem 0 36rem;
+  }
+
+  .bottom-section {
+    margin-top: -4rem;
+  }
+
+  .call-to-action{
+    margin-right: 12rem;
+    text-align: left;
+    font-size: larger;
+  }
+
+  .call-to-action p {
+    padding-left: 1rem;
+    padding-top: 0.5rem;
 
   }
 }
