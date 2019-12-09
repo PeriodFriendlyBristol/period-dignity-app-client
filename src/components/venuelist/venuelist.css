@@ -25,10 +25,27 @@
   margin: 0;
 }
 
-.description {
+.venue-details {
   padding-left: 10px;
+  width: 100%;
 }
-.description p {
+.venue-details p {
   margin: 0;
   font-weight: 300;
+}
+
+.venue-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.venue-icons svg {
+  height: 0.8em;
+  width: auto;
+  padding: 3px;
+}
+
+.venue-icons #wc {
+  height: 0.6em;
 }
