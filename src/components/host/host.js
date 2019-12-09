@@ -46,7 +46,7 @@ function Host() {
                 To inform everybody who works on site
               </li>
             </ul>
-            <Logo />
+            <Logo classname="logo" />
           </div>
         </div>
         <div className="middle-section row">
