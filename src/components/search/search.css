@@ -15,14 +15,18 @@
   display: block;
   border: none;
   width: 100%;
-  padding: 14px 16px 14px 64px;
+  padding: 18px 16px;
   box-sizing: border-box;
+  font-size: inherit;
 }
 
-.search-component-container i {
+.search-box::placeholder {
+  color: rgba(0, 0, 0, 0.24);
+}
+
+.search-component-container #geo-icon {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  margin-left: 16px;
-  color: rgba(0, 0, 0, 0.54);
+  right: 16px;
 }
