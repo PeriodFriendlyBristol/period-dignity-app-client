@@ -94,14 +94,17 @@ class SearchComponent extends React.Component {
 
     return (
       <div className="search-component-container">
-        <MaterialIcon icon="search" onClick={this.doPostcodeSearch} />
-        <input
-          placeholder="my postcode, e.g. BS5 9QP"
-          value={this.state.postcode}
-          onChange={this.postcodeChange}
-          id="search-postcode"
-          className="search-box"
-        />
+        <div className="search-input-container">
+          <MaterialIcon icon="search" onClick={this.doPostcodeSearch} />
+          <input
+            placeholder="my postcode, e.g. BS5 9QP"
+            value={this.state.postcode}
+            onChange={this.postcodeChange}
+            id="search-postcode"
+            className="search-box"
+          />
+        </div>
+        <p className="error">{this.state.error}</p>
       </div>
     );
   }
