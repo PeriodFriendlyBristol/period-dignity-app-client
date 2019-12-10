@@ -217,7 +217,7 @@ li a {
 
 /* text */
 .landing-text-1 {
-  position: absolute;
+  position: relative;
   width: 341px;
   height: 64px;
   left: 32px;
