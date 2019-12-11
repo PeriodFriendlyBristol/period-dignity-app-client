@@ -13,7 +13,7 @@ class Landing extends React.Component {
                 <div className="text-wrapper">
                     <ul className="top-list custom-bullet-list">
                         <li>Pick up points all over the city</li>
-                        <li>Donate products to help others</li>
+                        <li className="landing-list">Donate products to help others</li>
                         <li>
                             <Logo className="logo" />
                         </li>
