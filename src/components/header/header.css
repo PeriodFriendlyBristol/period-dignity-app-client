@@ -1,0 +1,25 @@
+#header {
+  position: sticky;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  background-color: #d81921;
+  min-height: 60px;
+}
+#header h1 {
+  margin: 0;
+}
+
+#header a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 1rem 1rem;
+}
+
+@media screen and (min-width: 360px) {
+  #header a {
+    padding: 1rem 2rem;
+  }
+}
