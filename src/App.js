@@ -5,6 +5,7 @@ import Footer from "./components/footer/footer";
 import "./App.css";
 
 function App() {
+  console.log(process.env.REACT_APP_API_URL)
   const scrollFunction = () => {
     if (
       document.body.scrollTop > 50 ||

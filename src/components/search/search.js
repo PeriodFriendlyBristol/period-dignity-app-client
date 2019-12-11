@@ -25,7 +25,7 @@ class SearchComponent extends React.Component {
     if (this.state.postcode) {
       //TODO: replace with env variable.
       let url =
-        "http://localhost:8000/api/venue/?postcode=" + this.state.postcode;
+        "{APU_URL}/api/venue/?postcode=" + this.state.postcode;
 
       fetch(url)
         .then(response => {
@@ -53,7 +53,7 @@ class SearchComponent extends React.Component {
       // TODO: this test should enable/disable the button
       navigator.geolocation.getCurrentPosition(pos => {
         let url =
-          "http://localhost:8000/api/venue/?coordinates=" + pos.coords.latitude + ',' + pos.coords.longitude;
+          `process.env.REACT_APP_API_URL` + pos.coords.latitude + ',' + pos.coords.longitude;
         fetch(url)
           .then(response => {
             return response.json();
