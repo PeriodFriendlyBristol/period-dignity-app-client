@@ -65,7 +65,7 @@ class SearchComponent extends React.Component {
             if (data.detail) {
               //There is an error
               this.setState({ error: data.detail });
-            } else if (data === undefined || data.length == 0) {
+            } else if (data === undefined || data.length === 0) {
               //No venues found
               this.setState({ error: "No venues found for that location" });
             } else {
