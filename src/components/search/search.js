@@ -29,11 +29,11 @@ class SearchComponent extends React.Component {
   doPostcodeSearch() {
     if (this.state.postcode) {
       //TODO: replace with env variable.
-      let url =
-        `${process.env.REACT_APP_API_URL}/api/venue/?postcode=${this.state.postcode}`;
+      let url = `${process.env.REACT_APP_API_URL}/api/venue/?postcode=${this.state.postcode}`;
 
       fetch(url)
         .then(response => {
+          console.log(response);
           return response.json();
         })
         .then(data => {
@@ -57,8 +57,7 @@ class SearchComponent extends React.Component {
     if ("geolocation" in navigator) {
       // TODO: this test should enable/disable the button
       navigator.geolocation.getCurrentPosition(pos => {
-        let url =
-          `${process.env.REACT_APP_API_URL}/api/venue/?coordinates=${pos.coords.latitude},${pos.coords.longitude}`;
+        let url = `${process.env.REACT_APP_API_URL}/api/venue/?coordinates=${pos.coords.latitude},${pos.coords.longitude}`;
         fetch(url)
           .then(response => {
             return response.json();
