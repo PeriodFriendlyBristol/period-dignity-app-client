@@ -3,19 +3,18 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import { BrowserRouter, Route, Redirect } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 import Header from "./components/header/header";
 import Nav from "./components/nav/nav";
-import Footer from "./components/footer/footer"
+import Footer from "./components/footer/footer";
 import About from "./components/about/about";
 import Landing from "./components/landing-page/landing";
 import Venues from "./containers/venues";
-import Host from './components/host/host';
-
+import Host from "./components/host/host";
 
 ReactDOM.render(
   <BrowserRouter>
-    <Header/>
+    <Header />
     <Nav />
     <App />
     <Route exact path="/" component={Landing} />
