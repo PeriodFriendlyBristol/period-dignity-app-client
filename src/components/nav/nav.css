@@ -1,0 +1,44 @@
+.navbar {
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  bottom: 0;
+  overflow: hidden;
+  width: 100%;
+  min-height: 60px;
+  height: 3rem;
+  background: #4f4f4f;
+  padding-bottom: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.material-icons{
+  margin: 0;
+  padding: 0;
+  line-height: 1rem;
+}
+
+.nav-list{
+  padding: 0;
+}
+
+.nav-item{
+  text-align: center;
+  font-size: 0.7rem;
+  display: inline-block;
+  list-style-type: none;
+  color: white;
+  width: 33.33%;
+}
+
+.nav-text {
+  display: block;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+}

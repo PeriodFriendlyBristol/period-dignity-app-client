@@ -14,7 +14,7 @@ p{
 .person_donate{
   position: relative;
   top: -10%;
-  z-index: 1;
+  z-index: 0;
 }
 
 .bottom-section {
@@ -82,7 +82,8 @@ p{
 
 
   #donate-section{
-    margin:  0 20rem 0 -20rem;
+    margin-right:  calc(12rem + 10vh);
+    margin-left: calc(-12rem + 10vh);
   }
 
   #donate-section p {

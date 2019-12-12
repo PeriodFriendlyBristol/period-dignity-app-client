@@ -80,13 +80,12 @@ h2 {
   align-items: center;
   justify-content: space-around;
   width: 100%; */
-  position: fixed;
-  color: white;
-  left: 0%;
-  right: 0%;
-  top: 92.26%;
+  position: sticky;
+  width: 100%;
   bottom: 0;
+  height: 2rem;
   background: #4f4f4f;
+  visibility: hidden;
 }
 
 /* Regular 12pt */
@@ -316,5 +315,9 @@ h2 {
 @media only screen and (min-width: 900px) {
   .container-circle {
     background-size: 100% 50%;
+  }
+
+  .footer {
+    visibility: inherit;
   }
 }
