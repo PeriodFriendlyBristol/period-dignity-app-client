@@ -350,7 +350,33 @@ li a {
   /* container with grey circle background*/
 .container-circle {
   background-image: url(assets/circle_grey.svg);
+<<<<<<< HEAD
   background-position: 100px -50px; /*TODO: find rem equivalent*/;
   background-repeat: no-repeat;
   background-size: 100% 60%;
+=======
+  background-position: 100px -20px; /*TODO: find rem equivalent*/
+  background-repeat: no-repeat;
+  background-size: 80% 120%;
+}
+
+.logo{
+  height: 4rem;
+}
+
+@media only screen and (min-width: 900px) {
+  .container-circle {
+    background-position: -180px -100px; /*TODO: find rem equivalent*/
+    background-size: 140% 170%;
+  }
+
+  .footer {
+    visibility: inherit;
+  }
+
+  .logo {
+    height: 100%;
+    float: left;
+  }
+>>>>>>> 1f3d54c... Getting the grey circle as close to the design
 }

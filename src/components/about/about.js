@@ -7,6 +7,7 @@ function redirectToPayPal(){
 }
 
 function About() {
+<<<<<<< HEAD
   return(
      <div className="container-circle">
       <h1 class="title">
@@ -15,6 +16,15 @@ function About() {
       <body>
         <div className="top-section row">
           <div className="top-text">
+=======
+  return (
+    <div>
+      <h1 className="title">Period friendly Bristol</h1>
+      <body>
+        <div className="container-circle top-section row">
+          <div className="invisible column" />
+          <div className="top-text column">
+>>>>>>> 1f3d54c... Getting the grey circle as close to the design
             <p>
               Everyone should be able to get the menstrual products they need. Nobody should be held back in life or stigmatised simply for having a period.
             </p>
@@ -24,6 +34,10 @@ function About() {
             <p>
               Period Dignity is part of Bristol’s plan to eradicate period poverty become a period friendly city.
             </p>
+<<<<<<< HEAD
+=======
+            <Logo className="logo" />
+>>>>>>> 1f3d54c... Getting the grey circle as close to the design
           </div>
         </div>
         <div className="bottom-section row">

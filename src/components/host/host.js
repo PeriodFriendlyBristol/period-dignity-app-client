@@ -21,12 +21,12 @@ function Host() {
         })
   }
   return(
-     <div className="container-circle">
+     <div>
       <h1 className="title">
         Host a Period Dignity Box
       </h1>
       <body>
-        <div className="top-section row">
+        <div className="container-circle top-section row">
           <div className="top-text-left column">
             <Person className="person"/>
           </div>
@@ -45,6 +45,10 @@ function Host() {
                 To inform everybody who works on site
               </li>
             </ul>
+<<<<<<< HEAD
+=======
+            <Logo className="logo" />
+>>>>>>> 1f3d54c... Getting the grey circle as close to the design
           </div>
         </div>
         <div className="middle-section row">
