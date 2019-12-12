@@ -8,8 +8,8 @@ export default class Venues extends React.Component {
 
     this.state = {
       venues: null,
-      mapData: {
-        zoom: 11,
+      mapDefaults: {
+        zoom: 13,
         lat: 51.4545,
         lng: -2.5879
       }
@@ -20,7 +20,7 @@ export default class Venues extends React.Component {
     return (
       <div>
         <MapComponent
-          mapData={this.state.mapData}
+          mapDefaults={this.state.mapDefaults}
           venues={this.props.location.state.venues}
         />
         <VenueList venues={this.props.location.state.venues} />
