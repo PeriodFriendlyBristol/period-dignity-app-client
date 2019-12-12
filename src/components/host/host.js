@@ -15,7 +15,7 @@ function Host() {
 
   const sendContact = e => {
     e.preventDefault()
-        axios.post('https://mailthis.to/testtesttesttest', contact).then(response => {
+        axios.post(`https://mailthis.to/${process.env.REACT_APP_FORM_ALIAS}`, contact).then(response => {
           window.location.href = 'https://mailthis.to/confirm'
         }).catch(err => {
           alert('Something went wrong, please contact us')
