@@ -47,7 +47,7 @@ export default class VenueList extends React.Component {
                       <span></span>
                     )}
                   </p>
-                  <div class="venue-icons">
+                  <div className="venue-icons">
                     {venue.toilet ? <WC /> : <span></span>}{" "}
                     {venue.wheelchair_access ? <Access /> : <span></span>}
                   </div>
