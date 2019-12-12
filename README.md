@@ -1,5 +1,16 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Setting Environment Variables
+
+In development, please create the environment file`.env.development` on root local
+
+and add
+
+```
+REACT_APP_API_URL=http://localhost:8000
+
+```
+
 ## Available Scripts
 
 In the project directory, you can run:

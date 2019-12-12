@@ -1,6 +1,7 @@
 import React from "react";
 import { Redirect } from "react-router-dom";
-import MaterialIcon from 'material-icons-react';
+import { ReactComponent as Geo } from "./svg/geo.svg";
+import "./search.css";
 
 class SearchComponent extends React.Component {
   constructor(props) {
@@ -20,12 +21,16 @@ class SearchComponent extends React.Component {
   postcodeChange(event) {
     this.setState({ postcode: event.target.value });
   }
-
+  _handleKeyDown = e => {
+    if (e.key === "Enter") {
+      this.doPostcodeSearch();
+    }
+  };
   doPostcodeSearch() {
     if (this.state.postcode) {
       //TODO: replace with env variable.
       let url =
-        "http://localhost:8000/api/venue/?postcode=" + this.state.postcode;
+        `${process.env.REACT_APP_API_URL}/api/venue/?postcode=${this.state.postcode}`;
 
       fetch(url)
         .then(response => {
@@ -53,17 +58,21 @@ class SearchComponent extends React.Component {
       // TODO: this test should enable/disable the button
       navigator.geolocation.getCurrentPosition(pos => {
         let url =
-          "http://localhost:8000/api/venue/?coordinates=" + pos.coords.latitude + ',' + pos.coords.longitude;
+          `${process.env.REACT_APP_API_URL}/api/venue/?coordinates=${pos.coords.latitude},${pos.coords.longitude}`;
         fetch(url)
           .then(response => {
             return response.json();
           })
           .then(data => {
             //The server returns an object with a detail property specificing the error.
+            console.log(data);
             //Todo check for error status codes as well
             if (data.detail) {
               //There is an error
               this.setState({ error: data.detail });
+            } else if (data === undefined || data.length == 0) {
+              //No venues found
+              this.setState({ error: "No venues found for that location" });
             } else {
               //Do search!
               this.setState({ venues: data.slice(0, 9), doSearch: true });
@@ -73,7 +82,6 @@ class SearchComponent extends React.Component {
     } else {
       //Geolocation unavailable
       this.setState({ error: "Geolocation is unavailable" });
-
     }
   };
 
@@ -91,25 +99,18 @@ class SearchComponent extends React.Component {
 
     return (
       <div className="search-component-container">
-        <div className="landing-text-3">Find a Period Dignity Box near you</div>
-        <div>
-          {/* <MaterialIcon icon="search" color="grey" /> */}
-          {/* move placeholder over */}
+        <div className="search-input-container">
+          <Geo id="geo-icon" onClick={this.doMyLocationSearch} />
           <input
             placeholder="my postcode, e.g. BS5 9QP"
             value={this.state.postcode}
             onChange={this.postcodeChange}
+            onKeyDown={this._handleKeyDown}
             id="search-postcode"
             className="search-box"
           />
-          <p className="error">{this.state.error}</p>
         </div>
-        <div>
-          <button onClick={this.doPostcodeSearch}>Search</button>
-          <button onClick={this.doMyLocationSearch}>
-            Use My Current Location
-          </button>
-        </div>
+        <p className="error">{this.state.error}</p>
       </div>
     );
   }

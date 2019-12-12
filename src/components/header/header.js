@@ -1,16 +1,15 @@
-import React from 'react';
+import React from "react";
+import "./header.css";
 
 class Header extends React.Component {
-  render () {
+  render() {
     return (
-      <header className="App-header sticky" id="header">
-        <ul>
-          <li>
-            <a>Period Dignity</a>
-          </li>
-        </ul>
+      <header id="header">
+        <a href="/">
+          <h1>Period Friendly Bristol</h1>
+        </a>
       </header>
-    )
+    );
   }
 }
 
