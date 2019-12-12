@@ -82,7 +82,8 @@ p{
 
 
   #donate-section{
-    margin:  0 20rem 0 -20rem;
+    margin-right:  calc(12rem + 10vh);
+    margin-left: calc(-12rem + 10vh);
   }
 
   #donate-section p {
