@@ -361,8 +361,10 @@ Footer {
   /* left: 1rem; */
 }
 
-.flex { 
+.flex {
   display: flex;
+}
+
 @media only screen and (min-width: 900px) {
   .container-circle {
     background-size: 100% 50%;
