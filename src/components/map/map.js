@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  Map,
-  Marker,
-  TileLayer,
-  ZoomControl,
-  LeafletConsumer
-} from "react-leaflet";
+import { Map, Marker, TileLayer, ZoomControl } from "react-leaflet";
 import L from "leaflet";
 import "./map.css";
 
@@ -46,13 +40,6 @@ export default class MapComponent extends React.Component {
             );
           })}
           <ZoomControl position="bottomleft" />
-          {/*
-          <LeafletConsumer>
-            {context => {
-              // const map = context.map;
-            }}
-          </LeafletConsumer>
-          */}
         </Map>
       );
     } else {
