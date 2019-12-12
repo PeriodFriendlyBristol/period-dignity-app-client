@@ -9,9 +9,9 @@ function redirectToPayPal() {
 
 function About() {
   return (
-    <div className="container-circle">
+    <div>
       <h1 className="title">Period friendly Bristol</h1>
-      <div className="top-section row">
+      <div className="container-circle top-section row">
         <div className="invisible column" />
         <div className="top-text column">
           <p>
