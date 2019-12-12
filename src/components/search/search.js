@@ -1,8 +1,8 @@
 import React from "react";
 import { Redirect } from "react-router-dom";
 import { ReactComponent as Person } from './svg/humaaan_3.svg';
-
-
+import { ReactComponent as Geo } from "./svg/geo.svg";
+import "./search.css";
 
 class SearchComponent extends React.Component {
   constructor(props) {
@@ -10,6 +10,7 @@ class SearchComponent extends React.Component {
     this.state = {
       postcode: "",
       latlon: "",
+      error: "",
       doSearch: false
     };
 
@@ -21,34 +22,72 @@ class SearchComponent extends React.Component {
   postcodeChange(event) {
     this.setState({ postcode: event.target.value });
   }
-
-  doPostcodeSearch = props => {
-    this.setState({ doSearch: true });
+  _handleKeyDown = e => {
+    if (e.key === "Enter") {
+      this.doPostcodeSearch();
+    }
   };
+  doPostcodeSearch() {
+    if (this.state.postcode) {
+      let url = `${process.env.REACT_APP_API_URL}/api/venue/?postcode=${this.state.postcode}`;
+      fetch(url)
+        .then(response => {
+          return response.json();
+        })
+        .then(data => {
+          //The server returns an object with a detail property specificing the error.
+          //Todo check for error status codes as well
+          if (data.detail) {
+            //There is an error
+            this.setState({ error: data.detail });
+          } else {
+            //Do search!
+            this.setState({ venues: data.slice(0, 9), doSearch: true });
+          }
+        });
+    } else {
+      //Nothing entered
+      this.setState({ error: "Please enter a postcode" });
+    }
+  }
 
   doMyLocationSearch = props => {
     if ("geolocation" in navigator) {
       // TODO: this test should enable/disable the button
       navigator.geolocation.getCurrentPosition(pos => {
-        this.setState({
-          location: pos.coords.latitude + "," + pos.coords.longitude,
-          doSearch: true
-        });
+        let url = `${process.env.REACT_APP_API_URL}/api/venue/?coordinates=${pos.coords.latitude},${pos.coords.longitude}`;
+        fetch(url)
+          .then(response => {
+            return response.json();
+          })
+          .then(data => {
+            //The server returns an object with a detail property specificing the error.
+            //Todo check for error status codes as well
+            if (data.detail) {
+              //There is an error
+              this.setState({ error: data.detail });
+            } else if (data === undefined || data.length === 0) {
+              //No venues found
+              this.setState({ error: "No venues found for that location" });
+            } else {
+              //Do search!
+              this.setState({ venues: data.slice(0, 9), doSearch: true });
+            }
+          });
       });
+    } else {
+      //Geolocation unavailable
+      this.setState({ error: "Geolocation is unavailable" });
     }
   };
 
   render() {
-    console.log(this.state);
-
     if (this.state.doSearch) {
-      console.log("redirecting");
-      console.log(this.state);
       return (
         <Redirect
           to={{
             pathname: "/venues",
-            state: { postcode: this.state.postcode, latlon: this.state.latlon }
+            state: { venues: this.state.venues, latlon: this.state.latlon }
           }}
         />
       );
@@ -64,17 +103,30 @@ class SearchComponent extends React.Component {
             <div className="landing-text-3">Find a Period Friendly Box near you</div>
           </div>
       </div>
-        <div className="input-align flex">
-          <div className="row">
-            <input
-                placeholder="my postcode, e.g. BS5 9QP"
-                value={this.state.postcode}
-                onChange={this.postcodeChange}
-                id="search-postcode"
-                className="search-box"
-                icon="search"/>
-          </div>
+//         <div className="input-align flex">
+//           <div className="row">
+//             <input
+//                 placeholder="my postcode, e.g. BS5 9QP"
+//                 value={this.state.postcode}
+//                 onChange={this.postcodeChange}
+//                 id="search-postcode"
+//                 className="search-box"
+//                 icon="search"/>
+//           </div>
+//         </div>
+//
+        <div className="search-input-container">
+          <Geo id="geo-icon" onClick={this.doMyLocationSearch} />
+          <input
+            placeholder="my postcode, e.g. BS5 9QP"
+            value={this.state.postcode}
+            onChange={this.postcodeChange}
+            onKeyDown={this._handleKeyDown}
+            id="search-postcode"
+            className="search-box"
+          />
         </div>
+        <p className="error">{this.state.error}</p>
       </div>
     );
   }

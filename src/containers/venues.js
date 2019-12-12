@@ -8,27 +8,22 @@ export default class Venues extends React.Component {
 
     this.state = {
       venues: null,
-      mapData: {
-        zoom: 11,
+      mapDefaults: {
+        zoom: 13,
         lat: 51.4545,
         lng: -2.5879
       }
     };
   }
 
-  componentDidMount() {
-    fetch("http://localhost:8000/api/venue/")
-      .then(response => response.json())
-      .then(venues => {
-        this.setState({ venues: venues.slice(0, 9) });
-      });
-  }
-
   render() {
     return (
       <div>
-        <MapComponent mapData={this.state.mapData} venues={this.state.venues} />
-        <VenueList venues={this.state.venues} />
+        <MapComponent
+          mapDefaults={this.state.mapDefaults}
+          venues={this.props.location.state.venues}
+        />
+        <VenueList venues={this.props.location.state.venues} />
       </div>
     );
   }

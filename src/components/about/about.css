@@ -14,7 +14,7 @@ p{
 .person_donate {
   position: relative;
   top: -10%;
-  z-index: 1;
+  z-index: 0;
 }
 
 .bottom-section {
@@ -59,5 +59,34 @@ p{
 
   .column {
     height: 260px;
+  }
+
+  .invisible {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 680px) {
+  .top-text {
+    width: 40%;
+    padding: 10%;
+    margin: 5%;
+  }
+
+  .person_donate {
+    top: -45%;
+    height: 200%;
+    width: 100%;
+    left: -20%;
+  }
+
+
+  #donate-section{
+    margin-right:  calc(12rem + 10vh);
+    margin-left: calc(-12rem + 10vh);
+  }
+
+  #donate-section p {
+    text-align: middle;
   }
 }

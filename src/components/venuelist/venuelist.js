@@ -1,5 +1,8 @@
 import React from "react";
 import "./venuelist.css";
+import { ReactComponent as WC } from "./svg/wc-icon.svg";
+import { ReactComponent as Access } from "./svg/accessible-icon.svg";
+
 export default class VenueList extends React.Component {
   constructor(props) {
     super(props);
@@ -21,7 +24,6 @@ export default class VenueList extends React.Component {
     let day = this.days[dayIndex];
     let dayOpen = day + "_open";
     let dayClose = day + "_close";
-
     if (this.props.venues) {
       return (
         <ul className="venues-list">
@@ -31,9 +33,12 @@ export default class VenueList extends React.Component {
             }
             return (
               <li key={`marker-${index}`} className="venue">
-                <img src={require("../../assets/pins/pin-" + index + ".svg")} />
-                <div class="description">
-                  <strong>{venue.name}</strong>
+                <img
+                  src={require("../../assets/pins/pin-" + index + ".svg")}
+                  alt={`Location ${index}`}
+                />
+                <div className="venue-details">
+                  <h2>{venue.name}</h2>
                   <p>
                     {venue[dayOpen] ? (
                       <span>
@@ -41,6 +46,17 @@ export default class VenueList extends React.Component {
                         {venue[dayOpen].slice(0, -3)}, closes at{" "}
                         {venue[dayClose].slice(0, -3)}
                       </span>
+                    ) : (
+                      <span></span>
+                    )}
+                  </p>
+                  <div className="venue-icons">
+                    {venue.toilet ? <WC /> : <span></span>}{" "}
+                    {venue.wheelchair_access ? <Access /> : <span></span>}
+                  </div>
+                  <p>
+                    {venue.product_location !== "TBD" ? (
+                      <span>venue.product_location</span>
                     ) : (
                       <span></span>
                     )}
