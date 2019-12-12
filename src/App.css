@@ -81,11 +81,9 @@ h2 {
   justify-content: space-around;
   width: 100%; */
   position: fixed;
-  color: white;
-  left: 0%;
-  right: 0%;
-  top: 92.26%;
+  width: 100%;
   bottom: 0;
+  height: 2rem;
   background: #4f4f4f;
 }
 
