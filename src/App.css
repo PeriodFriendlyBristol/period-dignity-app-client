@@ -44,12 +44,13 @@ h2 {
 }
 
 .text-wrapper {
-  padding: 3rem;
+  /* padding: 3rem; */
   height: 20%;
+  padding-left: 12rem;
 }
 
 .search-box-wrapper {
-  height: 31rem;
+  height: 36rem;
   position: relative;
   width: 100%;
   /* Period red */
@@ -175,7 +176,7 @@ h2 {
 
 /* text */
 .landing-text-1 {
-  position: absolute;
+  position: relative;
   width: 341px;
   height: 64px;
   left: 32px;
@@ -233,10 +234,15 @@ h2 {
 
 /* assets */
 .human3 {
-  position: absolute;
+  /* /* position: absolute;
   z-index: 100;
-  top: 19.5%;
+  top: 19.5%; */
   left: 7%;
+  /* height: 90%; */
+  position: relative;
+  /* left: 0; */
+  top: -10.3rem;
+  padding-left: 1rem;
 }
 
 .padding-top-8 {
@@ -245,26 +251,6 @@ h2 {
 
 .margin-top-3 {
   margin-top: 3rem;
-}
-
-.search-box {
-  min-width: 347px;
-  width: 85%;
-  height: 48px;
-  width: 100%;
-  box-sizing: border-box;
-  margin: 10px;
-  background: #ffffff;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24), 0px 0px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 2px;
-}
-
-.search-component-container {
-  position: relative;
-  width: 100%;
-  padding-top: 5.5rem;
-  padding-left: 3.2rem;
-  padding-right: 3.2rem;
 }
 
 .bullet-point {
