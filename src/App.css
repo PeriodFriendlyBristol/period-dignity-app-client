@@ -85,6 +85,7 @@ h2 {
   bottom: 0;
   height: 2rem;
   background: #4f4f4f;
+  visibility: hidden;
 }
 
 /* Regular 12pt */
@@ -314,5 +315,9 @@ h2 {
 @media only screen and (min-width: 900px) {
   .container-circle {
     background-size: 100% 50%;
+  }
+
+  .footer {
+    visibility: inherit;
   }
 }
