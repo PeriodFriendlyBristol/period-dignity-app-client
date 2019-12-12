@@ -28,12 +28,9 @@ class SearchComponent extends React.Component {
   };
   doPostcodeSearch() {
     if (this.state.postcode) {
-      //TODO: replace with env variable.
       let url = `${process.env.REACT_APP_API_URL}/api/venue/?postcode=${this.state.postcode}`;
-
       fetch(url)
         .then(response => {
-          console.log(response);
           return response.json();
         })
         .then(data => {
@@ -64,7 +61,6 @@ class SearchComponent extends React.Component {
           })
           .then(data => {
             //The server returns an object with a detail property specificing the error.
-            console.log(data);
             //Todo check for error status codes as well
             if (data.detail) {
               //There is an error
