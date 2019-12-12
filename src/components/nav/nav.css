@@ -1,4 +1,6 @@
 .navbar {
+  margin: 0;
+  padding: 0;
   position: fixed;
   bottom: 0;
   overflow: hidden;
@@ -13,9 +15,25 @@ a {
   color: white;
 }
 
+.material-icons{
+  margin: 0;
+  padding: 0;
+  padding-left: 0.1rem;
+  line-height: 1rem;
+}
+
 .nav-item{
-  font-size: 1rem;
-  width: 33%;
+  width: 30%;
+  font-size: 0.8rem;
   display: inline;
   list-style-type: none;
+  padding-right: 1rem;
+  color: white;
+}
+
+.nav-text {
+  display: inline-block;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
 }
