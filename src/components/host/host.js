@@ -112,7 +112,7 @@ function Host() {
               </div>
             </div>
             <div className="form-submit__item row">
-            Accessible toilet available on site?
+              Public accessible toilet available on site?
               <div className="row">
               <label className="control radio">
                 <input id="radio1" name="radio" type="radio" value="yes" onChange={getValues}/>
