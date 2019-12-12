@@ -1,5 +1,6 @@
 import React from "react";
 import { Redirect } from "react-router-dom";
+import { ReactComponent as Person } from './svg/humaaan_3.svg';
 import { ReactComponent as Geo } from "./svg/geo.svg";
 import "./search.css";
 
@@ -94,6 +95,14 @@ class SearchComponent extends React.Component {
 
     return (
       <div className="search-component-container">
+        <div className="flex">
+          <div classname="column">
+            <Person className="human3 padding-left-" />
+          </div>
+          <div className="column padding-right-1">
+            <div className="landing-text-3">Find a Period Friendly Box near you</div>
+          </div>
+      </div>
         <div className="search-input-container">
           <Geo id="geo-icon" onClick={this.doMyLocationSearch} />
           <input
