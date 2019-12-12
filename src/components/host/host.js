@@ -16,7 +16,7 @@ function Host() {
   const sendContact = e => {
     e.preventDefault();
     axios
-      .post("https://mailthis.to/testtesttesttest", contact)
+      .post(`https://mailthis.to/${process.env.REACT_APP_FORM_ALIAS}`, contact)
       .then(response => {
         window.location.href = "https://mailthis.to/confirm";
       })
@@ -170,7 +170,7 @@ function Host() {
               </label>
               <label className="control radio">
                 <input
-                  id="radio-toilet-no"
+                  id="radio-toilet-yes"
                   name="radio"
                   type="radio"
                   value="no"
