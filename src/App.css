@@ -44,10 +44,32 @@ h2 {
 }
 
 .text-wrapper {
-  /* padding: 3rem; */
+  padding: 2rem;
+  @media screen and (min-width: 400px) {
+    body {
+      background-color: lightgreen;
+    }
+  }
   height: 20%;
-  padding-left: 9rem;
+  padding-left: 40%;
 }
+
+@media screen and (min-width: 540px) {
+  .text-wrapper {
+    padding-left: 50%;
+  }
+}
+@media screen and (min-width: 746px) {
+  .text-wrapper {
+    padding-left: 55%;
+  }
+}
+
+/* @media screen and (min-width: 1013px) {
+  .text-wrapper {
+    padding-left: %;
+  }
+} */
 
 .search-box-wrapper {
   height: 36rem;
@@ -262,15 +284,27 @@ Footer {
   width: 87%;
   justify-content: center;
 }
+@media only screen and (max-width: 468px) {
+  .search-box {
+    top: -10.8rem;
+  }
+  
+}
+@media only screen and (min-width: 468px) {
+  .search-box {
+    top: -11.4rem;
+  }
+}
 
 .search-component-container {
   position: relative;
   width: 100%;
   box-sizing: border-box;
   position: relative;
-  width: 100%;
   background: #D81921;
   bottom: 3rem;
+  margin-top: 0rem;
+  height: 536px;
 }
 
 .bullet-point {
@@ -346,7 +380,7 @@ Footer {
   padding-left: 3rem;
   padding-bottom: 1rem;
 }
-/*
+
 .landing-bullet-list li::before {
   content: "";
   position: absolute;
@@ -354,23 +388,29 @@ Footer {
   height: 100%;
   background-image: url(./assets/logo_bullet_point.svg);
   background-repeat: no-repeat;
-} */
+  left: 1rem;
+}
+
+.no-bullet::before {
+  display: none;
+}
 
 .home-container-padding-top {
-  padding-top: 6rem;
-  /* left: 1rem; */
+  padding-top: 1rem;
+  left: 1rem;
 }
 
 .flex { 
   display: flex;
-@media only screen and (min-width: 900px) {
-  .container-circle {
-    background-size: 100% 50%;
+  @media only screen and (min-width: 900px) {
+    .container-circle {
+      background-size: 100% 50%;
+    }
   }
+}
 
-  .footer {
-    visibility: inherit;
-  }
+.footer {
+  visibility: inherit;
 }
 
 .row {
@@ -382,11 +422,12 @@ Footer {
   width: 36%;
   padding-top: -1rem;
   padding-left: 2rem;
+  max-width: 130px;
 }
 
-.landing-list {
+/* .landing-list {
   padding-bottom: 0 !important;
-}
+} */
 
 .pl-0 {
   padding-left: 0;
