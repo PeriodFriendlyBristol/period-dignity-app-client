@@ -1,0 +1,17 @@
+# Node.js image to build and compile the frontend.
+FROM node:12.2.0-alpine as build-stage
+
+# Install requirements.
+WORKDIR /app
+COPY package*.json /app/
+RUN npm install --save --silent
+
+# Build the website files.
+COPY ./ /app/
+RUN npm run build --silent
+
+# NGINX image to serve the website files.
+FROM nginx:1.15
+
+# Copy the built website files.
+COPY --from=build-stage /app/build/ /usr/share/nginx/html
