@@ -20,7 +20,7 @@ a {
 .material-icons{
   margin: 0;
   padding: 0;
-  line-height: 1rem;
+  line-height: 0.5rem;
 }
 
 .nav-list{
@@ -41,4 +41,23 @@ a {
   white-space: nowrap;
   margin: 0;
   padding: 0;
+}
+
+@media only screen and (min-width: 900px) {
+  .navbar {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    background: #d81921;
+    min-height: 60px;
+    height: 5em;
+    padding-bottom: 0;
+  }
+
+  .nav-item{
+    padding-top: 0.5rem;
+  }
+
 }

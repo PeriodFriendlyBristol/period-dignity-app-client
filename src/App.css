@@ -371,6 +371,11 @@ Footer {
   .footer {
     visibility: inherit;
   }
+
+  #header {
+    width: 50%;
+    height: 5em;
+  }
 }
 
 .row {
