@@ -6,7 +6,7 @@ class Nav extends React.Component {
   render () {
     return (
       <nav className="navbar">
-         <ul>
+         <ul className="nav-list">
           <li class="nav-item">
             <a href="/">
               <MaterialIcon icon="search" color="white"/>
