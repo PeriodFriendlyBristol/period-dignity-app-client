@@ -11,7 +11,7 @@ class Landing extends React.Component {
                 Free period products for people in Bristol who need them
                 </div>
                 <div className="text-wrapper">
-                    <ul className="top-list custom-bullet-list">
+                    <ul className="top-list landing-bullet-list">
                         <li>Pick up points all over the city</li>
                         <li className="landing-list">Donate products to help others</li>
                         <li>
