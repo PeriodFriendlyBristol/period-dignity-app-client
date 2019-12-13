@@ -8,6 +8,7 @@ and add
 
 ```
 REACT_APP_API_URL=http://localhost:8000
+REACT_APP_FORM_ALIAS=<your_test_alias>
 
 ```
 
