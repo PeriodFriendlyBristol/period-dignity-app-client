@@ -99,7 +99,7 @@ class SearchComponent extends React.Component {
           <div classname="column human-wrapper">
             <Person className="human3 padding-left-" />
           </div>
-          <div className="column padding-right-1">
+          <div className="column search-wrapper">
             <div className="landing-text-3">
               Find a Period Friendly Box near you
             </div>
