@@ -332,9 +332,7 @@ Footer {
   box-sizing: border-box;
   position: relative;
   background: #D81921;
-  bottom: 3rem;
   margin-top: 0rem;
-  height: 536px;
 }
 
 .bullet-point {
@@ -471,15 +469,6 @@ Footer {
   max-width: 130px;
 }
 
-@media only screen and (min-width: 720px) {
-  .logo {
-    left: -14rem;
-    position: absolute;
-  }
-}
-/* .landing-list {
-  padding-bottom: 0 !important;
-} */
 
 .pl-0 {
   padding-left: 0;
