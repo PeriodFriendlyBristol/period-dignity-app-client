@@ -328,9 +328,13 @@ Footer {
 /* container with grey circle background*/
 .container-circle {
   background-image: url(assets/circle_grey.svg);
-  background-position: 100px -50px; /*TODO: find rem equivalent*/
+  background-position: 100px -20px; /*TODO: find rem equivalent*/
   background-repeat: no-repeat;
-  background-size: 100% 80%;
+  background-size: 80% 120%;
+}
+
+.logo {
+  height: 40%;
 }
 
 .top-list{
@@ -367,11 +371,16 @@ Footer {
 
 @media only screen and (min-width: 900px) {
   .container-circle {
-    background-size: 100% 50%;
+    background-position: 100px -150px; /*TODO: find rem equivalent*/
+    background-size: 100% 170%;
   }
 
   .footer {
     visibility: inherit;
+  }
+
+  .logo {
+    height: 60%;
   }
 
   #header {
@@ -383,7 +392,6 @@ Footer {
 .row {
   flex-direction: row;
   flex: 0 1 auto;
-}
 
 .logo {
   width: 36%;

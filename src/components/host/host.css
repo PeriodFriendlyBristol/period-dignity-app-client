@@ -4,7 +4,6 @@
 }
 
 top-section{
-  height: 8rem;
 }
 
 .top-text{
@@ -272,9 +271,6 @@ label {
     margin: 0 12rem 0 36rem;
   }
 
-  .bottom-section {
-    margin-top: -4rem;
-  }
 
   .call-to-action{
     margin-right: 12rem;

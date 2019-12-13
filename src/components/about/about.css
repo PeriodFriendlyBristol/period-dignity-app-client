@@ -51,10 +51,12 @@ p{
 }
 
 @media only screen and (max-width: 420px) {
+
   .person_donate {
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     top: -20%;
+
   }
 
   .column {
@@ -66,12 +68,13 @@ p{
   }
 }
 
-@media only screen and (min-width: 900px) {
-  .top-text {
-    width: 40%;
-    padding: 10%;
-    margin: 5%;
+@media only screen and (min-width: 680px) {
+  .top-text p{
+    width: 60%;
   }
+}
+
+@media only screen and (min-width: 900px) {
 
   .person_donate {
     top: -45%;

@@ -9,9 +9,9 @@ function redirectToPayPal() {
 
 function About() {
   return (
-    <div className="container-circle">
+    <div>
       <h1 className="title">Period friendly Bristol</h1>
-      <div className="top-section row">
+      <div className="container-circle top-section row">
         <div className="invisible column" />
         <div className="top-text column">
           <p>
@@ -25,7 +25,7 @@ function About() {
             against simply for having a period – this is part of our journey to
             being a period friendly city.
           </p>
-          <Logo className="logo-right" />
+          <Logo className="logo" />
         </div>
       </div>
       <div className="bottom-section row">
