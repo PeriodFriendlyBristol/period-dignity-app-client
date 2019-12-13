@@ -44,10 +44,32 @@ h2 {
 }
 
 .text-wrapper {
-  /* padding: 3rem; */
+  padding: 2rem;
+  @media screen and (min-width: 400px) {
+    body {
+      background-color: lightgreen;
+    }
+  }
   height: 20%;
-  padding-left: 9rem;
+  padding-left: 40%;
 }
+
+@media screen and (min-width: 540px) {
+  .text-wrapper {
+    padding-left: 50%;
+  }
+}
+@media screen and (min-width: 746px) {
+  .text-wrapper {
+    padding-left: 55%;
+  }
+}
+
+/* @media screen and (min-width: 1013px) {
+  .text-wrapper {
+    padding-left: %;
+  }
+} */
 
 .search-box-wrapper {
   height: 36rem;
@@ -213,7 +235,7 @@ Footer {
   /* font-family: Lato;
   font-style: normal; */
   font-weight: 600;
-  /* font-size: 24px; */
+  font-size: 24px;
   line-height: 29px;
   align-items: center;
   text-align: right;
@@ -222,6 +244,28 @@ Footer {
   position: relative;
   padding-top: 1rem;
 /*   margin-left: 9.5rem; */
+  /* top:15%; */
+}
+@media only screen and (max-width: 700px) {
+  .landing-text-3 {
+    max-width: 103px;
+    top: 18%;
+    align-self: flex-end;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .landing-text-3 {
+    font-size: 24px;
+    text-align: center;
+    top: 3rem;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .landing-text-3 {
+    top: 0;
+    padding-right: 0;
+  }
 }
 .padding-top-2 {
   padding-top: 20px;
@@ -251,7 +295,6 @@ Footer {
 }
 
 .search-box {
-  /* iphone 5 */
   height: 48px;
   left: 1.8rem;
   top: -9.7rem;
@@ -262,15 +305,36 @@ Footer {
   width: 87%;
   justify-content: center;
 }
+@media only screen and (max-width: 468px) {
+  .search-box {
+    top: -10.8rem;
+  }
+
+}
+@media only screen and (min-width: 468px) {
+  .search-box {
+      top: -11.4rem;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .search-box {
+    top: -16.5rem;
+    left: 44%;
+    width: 39% !important;
+    max-width: 320px;
+  }
+}
 
 .search-component-container {
   position: relative;
   width: 100%;
   box-sizing: border-box;
   position: relative;
-  width: 100%;
   background: #D81921;
   bottom: 3rem;
+  margin-top: 0rem;
+  height: 536px;
 }
 
 .bullet-point {
@@ -350,7 +414,7 @@ Footer {
   padding-left: 3rem;
   padding-bottom: 1rem;
 }
-/*
+
 .landing-bullet-list li::before {
   content: "";
   position: absolute;
@@ -358,16 +422,22 @@ Footer {
   height: 100%;
   background-image: url(./assets/logo_bullet_point.svg);
   background-repeat: no-repeat;
-} */
+  left: 1rem;
+}
+
+.no-bullet::before {
+  display: none;
+}
 
 .home-container-padding-top {
-  padding-top: 6rem;
-  /* left: 1rem; */
+  padding-top: 1rem;
+  left: 1rem;
 }
 
 .flex {
   display: flex;
 }
+
 
 @media only screen and (min-width: 900px) {
   .container-circle {
@@ -398,10 +468,20 @@ Footer {
   width: 36%;
   padding-top: -1rem;
   padding-left: 2rem;
+  max-width: 130px;
 }
 
-.landing-list {
-  padding-bottom: 0 !important;
+@media only screen and (min-width: 720px) {
+  .logo {
+    left: -14rem;
+    position: absolute;
+    height: 70.25px;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .logo {
+    left: -18rem;
+  }
 }
 
 .pl-0 {
