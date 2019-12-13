@@ -254,6 +254,13 @@ label {
   }
 }
 
+@media only screen and (min-width: 601px) {
+  .person {
+    top: 10rem;
+  }
+}
+
+
 @media only screen and (min-width: 900px) {
   .person {
     width: 100%;
