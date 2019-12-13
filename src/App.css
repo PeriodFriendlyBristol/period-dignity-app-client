@@ -309,7 +309,7 @@ Footer {
   .search-box {
     top: -10.8rem;
   }
-  
+
 }
 @media only screen and (min-width: 468px) {
   .search-box {
@@ -462,6 +462,7 @@ Footer {
 .row {
   flex-direction: row;
   flex: 0 1 auto;
+}
 
 .logo {
   width: 36%;
@@ -469,7 +470,7 @@ Footer {
   padding-left: 2rem;
   max-width: 130px;
 }
-  
+
 @media only screen and (min-width: 720px) {
   .logo {
     left: -14rem;
