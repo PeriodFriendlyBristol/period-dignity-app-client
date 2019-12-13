@@ -392,6 +392,7 @@ Footer {
 .row {
   flex-direction: row;
   flex: 0 1 auto;
+}
 
 .logo {
   width: 36%;
