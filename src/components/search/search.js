@@ -114,7 +114,7 @@ class SearchComponent extends React.Component {
             className="search-box"
           />
         </div>
-        <p className="error">{this.state.error}</p>
+        <div className="error">{this.state.error}</div>
       </div>
     );
   }
