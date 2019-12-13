@@ -1,5 +1,4 @@
 import React from 'react';
-import MaterialIcon from 'material-icons-react'
 
 class Footer extends React.Component {
   render () {
