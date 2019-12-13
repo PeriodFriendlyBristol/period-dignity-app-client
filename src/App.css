@@ -475,11 +475,14 @@ Footer {
   .logo {
     left: -14rem;
     position: absolute;
+    height: 70.25px;
   }
 }
-/* .landing-list {
-  padding-bottom: 0 !important;
-} */
+@media only screen and (min-width: 800px) {
+  .logo {
+    left: -18rem;
+  }
+}
 
 .pl-0 {
   padding-left: 0;

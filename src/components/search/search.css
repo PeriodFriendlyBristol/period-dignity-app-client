@@ -47,3 +47,10 @@
     right: -77%;
   }
 }
+
+@media only screen and (min-width: 920px) {
+  .search-component-container #geo-icon {
+    top: -12.8rem;
+    right: -73%;
+  }
+}
