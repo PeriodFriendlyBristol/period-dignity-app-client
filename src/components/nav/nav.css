@@ -13,15 +13,18 @@
 }
 
 a {
+  display: block;
   text-decoration: none;
   color: white;
 }
 
-
-a:active {
-  color: #FBAF1E;
+.material-icons.md-dark{
+  color: white;
 }
 
+a:active, .material-icons.md-dark:active {
+  color: #FBAF1E;
+}
 
 .nav-list{
   padding: 0;
@@ -34,6 +37,10 @@ a:active {
   list-style-type: none;
   color: white;
   width: 33.33%;
+}
+
+.nav-item:active {
+  color: #FBAF1E;
 }
 
 .nav-text {

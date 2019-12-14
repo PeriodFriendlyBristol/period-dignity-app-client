@@ -2,7 +2,6 @@ import React from 'react';
 import MaterialIcon from 'material-icons-react';
 import './nav.css';
 
-
 class Nav extends React.Component {
   render () {
     return (
@@ -10,19 +9,19 @@ class Nav extends React.Component {
          <ul className="nav-list">
           <li className="nav-item">
             <a href="/">
-              <MaterialIcon icon="search" color="white" alt="Find a Box"/>
+              <MaterialIcon icon="search" alt="Find a Box"/>
               <div className="nav-text">Find a Box</div>
             </a>
           </li>
           <li className="nav-item">
             <a href="/host">
-              <MaterialIcon icon='favorite' color="white" alt="Host a Box"/>
+              <MaterialIcon icon='favorite' alt="Host a Box"/>
               <div className="nav-text">Host a Box</div>
             </a>
           </li>
           <li className="nav-item">
             <a href="/about">
-              <MaterialIcon icon='person' color="white" alt="About"/>
+              <MaterialIcon icon='person' alt="About"/>
               <div className="nav-text">About</div>
             </a>
           </li>
