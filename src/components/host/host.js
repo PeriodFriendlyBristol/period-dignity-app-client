@@ -26,8 +26,8 @@ function Host() {
   };
   return (
     <div>
-      <h1 className="title">Host a Period Dignity Box</h1>
       <div className="container-circle top-section row">
+        <h1 className="host-title row">Host a Period Dignity Box</h1>
         <div className="top-text-left column">
           <Person className="person" />
         </div>

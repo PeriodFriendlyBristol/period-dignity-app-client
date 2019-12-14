@@ -10,9 +10,11 @@ function redirectToPayPal() {
 function About() {
   return (
     <div>
-      <h1 className="title">Period friendly Bristol</h1>
       <div className="container-circle top-section row">
-        <div className="invisible column" />
+        <h1 className="about-title row">Period Friendly Bristol</h1>
+        <div className="top-text-left column">
+          <Person className="person" />
+        </div>
         <div className="top-text column">
           <p>
             Bristol has pledged to take a leading role in making period products
@@ -30,7 +32,6 @@ function About() {
       </div>
       <div className="bottom-section row">
         <div className="call-to-action column">
-          <Person className="person_donate" />
         </div>
         <div
           className="call-to-action padding-right-1 column"
