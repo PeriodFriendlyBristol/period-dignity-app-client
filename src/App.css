@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,500,700&display=swap");
 
 body {
   font-family: Lato, sans-serif;
@@ -24,31 +24,11 @@ h2 {
 }
 
 /* Wrappers and Containers Styles */
-.container-landing {
-  height: 50rem;
-  position: relative;
-  top: 5rem;
-  width: 100%;
-}
-
-.container-home {
-  height: 21rem;
-  /* background-color: #E5E5E5 */
-}
-
 .container-middle {
   height: 24rem;
   position: relative;
   top: 5rem;
   width: 100%;
-}
-
-.search-box-wrapper {
-  height: 36rem;
-  position: relative;
-  width: 100%;
-  /* Period red */
-  background: #d81921;
 }
 
 .map-container {
