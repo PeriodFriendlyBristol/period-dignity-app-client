@@ -29,15 +29,17 @@
   transform: translateY(-50%);
   z-index: 10;
 }
-@media only screen and (max-width: 395px) {
+@media only screen and (max-width: 398px) {
   .search-component-container #geo-icon {
-    top: -6.3rem;
+    top: -9.2rem;
+    left: -5%;
   }
 }
 
 @media only screen and (min-width: 398px) {
   .search-component-container #geo-icon {
-    top: -6.7rem;
+    top: -9rem;
+    left: -5%;
   }
 }
 @media only screen and (min-width: 700px) {
