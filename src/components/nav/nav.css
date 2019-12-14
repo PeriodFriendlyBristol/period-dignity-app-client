@@ -29,7 +29,7 @@ a:active {
 
 .nav-item{
   text-align: center;
-  font-size: 0.7rem;
+  font-size: calc(0.7rem + 1vh);
   display: inline-block;
   list-style-type: none;
   color: white;

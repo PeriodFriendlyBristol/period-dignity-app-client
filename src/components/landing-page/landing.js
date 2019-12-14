@@ -5,8 +5,8 @@ import { ReactComponent as Logo } from './svg/period_logo.svg'
 class Landing extends React.Component {
   render () {
     return (
-        <div className="container-circle">
-            <div className="container-home">
+        <div>
+            <div className="container-circle container-home">
                 <div className="landing-text-1 home-container-padding-top">
                 Free period products for people in Bristol who need them
                 </div>
@@ -14,7 +14,7 @@ class Landing extends React.Component {
                     <ul className="top-list landing-bullet-list">
                         <li>Pick up points all over the city</li>
                         <li className="landing-list">Donate products to help others</li>
-                        <li>
+                        <li className="no-bullet">
                             <Logo className="logo" />
                         </li>
                     </ul>
