@@ -1,13 +1,8 @@
-.title {
-  padding: 0 1rem;
-  font-size: larger;
+.host-title {
+  padding-left: 2rem;
 }
 
 top-section{
-}
-
-.top-text{
-  padding: 1rem 2rem;
 }
 
 .top-list{
@@ -33,7 +28,7 @@ top-section{
     background-size: 70% 100%;
 }
 
-.person{
+.person-host{
   height: 90%;
   position: relative;
   left: 0;
@@ -44,10 +39,6 @@ top-section{
 .middle-section {
   background-color: #D81921;
   height: 8rem;
-}
-
-.bottom-section {
-  padding-bottom: 2rem;
 }
 
 .form-submit{
@@ -94,6 +85,7 @@ label {
   text-align: right;
   color: #FFFFFF;
   padding-right: 1rem;
+  padding-left: 2rem;
 }
 
 
@@ -168,10 +160,10 @@ label {
 
 /* Checkbox modifiers */
 .tcs .checkbox {
-  border-radius: .25rem;
+  border-radius: .05rem;
 }
 .tcs input:checked ~ .checkbox {
-  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBmaWxsPSJ3aGl0ZSIvPgo8cmVjdCB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMgMykiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=);
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgOCA4IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA4IDgiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTYuNCwxTDUuNywxLjdMMi45LDQuNUwyLjEsMy43TDEuNCwzTDAsNC40bDAuNywwLjdsMS41LDEuNWwwLjcsMC43bDAuNy0wLjdsMy41LTMuNWwwLjctMC43TDYuNCwxTDYuNCwxeiINCgkvPg0KPC9zdmc+DQo=);
 }
 
 /* Radio modifiers */
@@ -241,54 +233,42 @@ label {
 }
 
 @media only screen and (max-width: 600px) {
-  .person {
+  .person-host {
     width: 100%;
     height: 80%;
     position: relative;
-    top: 16rem;
+    top: 10rem;
     z-index: 0;
-  }
-
-  .top-text {
-    height: 360px;
   }
 }
 
 @media only screen and (min-width: 601px) {
-  .person {
+  .person-host {
     top: 10rem;
   }
 }
 
 
 @media only screen and (min-width: 900px) {
-  .person {
-    width: 100%;
-    height: 100%;
+  .person-host {
+    width: 50%;
+    height: 120%;
     position: relative;
-    top: 11rem;
     z-index: 0;
   }
-
-  .top-text {
-    height: 360px;
-  }
-
   .form-submit {
-    margin: 0 12rem 0 36rem;
+    padding-right: 12rem;
+    padding-left: calc(26rem + 10vh);
   }
-
 
   .call-to-action{
     margin-right: 12rem;
-    text-align: left;
     font-size: larger;
   }
 
   .call-to-action p {
     padding-left: 1rem;
     padding-top: 0.5rem;
-
   }
 }
 
