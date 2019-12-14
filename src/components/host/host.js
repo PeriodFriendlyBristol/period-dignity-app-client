@@ -26,12 +26,12 @@ function Host() {
   return (
     <div>
       <div className="container-circle top-section row">
-        <h1 className="host-title row">Host a Period Dignity Box</h1>
+        <h2 className="host-title row">Host a Period Friendly Box</h2>
         <div className="top-text-left column">
           <Person className="person-host" alt=""/>
         </div>
         <div className="top-text column">
-          <p>Once approved, you will need:</p>
+          <h3>Once approved, you will need:</h3>
           <ul className="top-list custom-bullet-list">
             <li>A box, ideally clear</li>
             <li>A printed red label</li>

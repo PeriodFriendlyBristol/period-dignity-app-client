@@ -11,7 +11,7 @@ function About() {
   return (
     <div>
       <div className="container-circle top-section row">
-        <h1 className="about-title row">Period Friendly Bristol</h1>
+        <h2 className="about-title row">Period Friendly Bristol</h2>
         <div className="invisible column">
         </div>
         <div className="about-top-text column">

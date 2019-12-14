@@ -390,6 +390,14 @@ Footer {
   border: none;
 }
 
+.button:focus {
+  outline: none;
+}
+
+.button:hover {
+  background: #fcc762;
+}
+
 /* container with grey circle background*/
 .container-circle {
   background-image: url(assets/circle_grey.svg);

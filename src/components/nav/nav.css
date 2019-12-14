@@ -20,6 +20,7 @@ a {
 
 .material-icons.md-dark{
   color: white;
+  font-size: calc(4vh);
 }
 
 a:active, .material-icons.md-dark:active {
@@ -62,9 +63,4 @@ a:active, .material-icons.md-dark:active {
     height: 5em;
     padding-bottom: 0;
   }
-
-  .nav-item{
-    padding-top: 0.5rem;
-  }
-
 }
