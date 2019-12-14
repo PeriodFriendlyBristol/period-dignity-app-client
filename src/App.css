@@ -10,6 +10,7 @@ body {
 h1 {
   font-weight: normal;
   font-size: calc(24px + 1vw);
+  line-height: 29px;
 }
 h2 {
   font-size: 1.2em;
@@ -229,11 +230,7 @@ Footer {
 
 .landing-text-3 {
   min-width: 158px;
-  /* width: 199px; */
   height: 87px;
-
-  /* font-family: Lato;
-  font-style: normal; */
   font-weight: 600;
   font-size: 24px;
   line-height: 29px;
@@ -244,27 +241,35 @@ Footer {
   position: relative;
   padding-top: 1rem;
 /*   margin-left: 9.5rem; */
-  /* top:15%; */
+  top: 12rem;
 }
-@media only screen and (max-width: 700px) {
+/* @media only screen and (max-width: 700px) {
   .landing-text-3 {
     max-width: 103px;
-    top: 18%;
+    top: -12rem;
     align-self: flex-end;
+    padding-left: 55%;
   }
-}
-@media only screen and (min-width: 700px) {
+} */
+/* top: -24rem;
+padding-left: 60%; */
+@media only screen and (min-width: 699px) {
   .landing-text-3 {
     font-size: 24px;
     text-align: center;
-    top: 3rem;
+    top: 15%;
   }
 }
+/* @media only screen and (min-width: 629px) and (max-width: 680px) {
+  .landing-text-3 {
+    top: 2rem !important;
+  }
+} */
 
 @media only screen and (max-width: 430px) {
   .landing-text-3 {
-    top: 0;
-    padding-right: 0;
+    position: relative;
+    /* padding-left: 55%; */
   }
 }
 .padding-top-2 {
@@ -281,11 +286,38 @@ Footer {
   height: 90%;
   width: 90%;
   left: 0;
-  /* iphone 5 */
-  top: -7.1rem;
-  padding-left: 1.4rem;
+}
+.human3 {
+  position: relative;
+  z-index: 0;
+  top: -8.5rem
+}
+@media only screen and (max-width: 420px) {
+  .human3 {
+    height: 90%;
+    width: 90%;
+    position: relative;
+    top: -8.5rem;
+  }
 }
 
+@media only screen and (min-width: 680px) {
+  .human3 {
+    width: auto;
+    height: 150%;
+    position: relative;
+    top: -15.5rem;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .human3 {
+    width: auto;
+    height: 200%;
+    position: relative;
+    top: -21rem;
+  }
+}  
 .padding-top-8 {
   padding-top: 8.5rem;
 }
@@ -297,29 +329,41 @@ Footer {
 .search-box {
   height: 48px;
   left: 1.8rem;
-  top: -9.7rem;
+  /* top: -9.7rem; */
   background: #FFFFFF;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24), 0px 0px 2px rgba(0, 0, 0, 0.12);
   border-radius: 2px;
   position: relative;
   width: 87%;
   justify-content: center;
+  top: -16.9rem;
 }
 @media only screen and (max-width: 468px) {
   .search-box {
-    top: -10.8rem;
+    top: -17rem;
   }
 
 }
-@media only screen and (min-width: 468px) {
+@media only screen and (min-width: 467px) {
   .search-box {
-      top: -11.4rem;
+      top: -16.9rem;
   }
 }
 
+@media only screen and (min-width: 630px) {
+  .search-box {
+      top: -10.4rem !important;
+  }
+}
+
+@media only screen and (min-width: 679px) {
+  .search-box {
+    top: -7.7rem !important;
+  }
+}
 @media only screen and (min-width: 700px) {
   .search-box {
-    top: -16.5rem;
+    top: -15.5rem;
     left: 44%;
     width: 39% !important;
     max-width: 320px;
@@ -327,14 +371,16 @@ Footer {
 }
 
 .search-component-container {
-  position: relative;
+  /* position: relative;
   width: 100%;
   box-sizing: border-box;
   position: relative;
   background: #D81921;
   bottom: 3rem;
   margin-top: 0rem;
-  height: 536px;
+  height: 536px; */
+  background-color: #D81921;
+  padding-bottom: 2rem;
 }
 
 .bullet-point {
@@ -476,7 +522,7 @@ Footer {
 @media only screen and (min-width: 720px) {
   .logo {
     left: -14rem;
-    position: absolute;
+    /* position: absolute;  need to look further into fix */
     height: 70.25px;
   }
 }
@@ -488,4 +534,28 @@ Footer {
 
 .pl-0 {
   padding-left: 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.invisible {
+  display: none;
+}
+
+.call-to-action {
+  text-align: right;
+  color: #FFFFFF;
+  margin: 0 1rem 0 0;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+  .container-height {
+    height: 32rem;
+  }
 }

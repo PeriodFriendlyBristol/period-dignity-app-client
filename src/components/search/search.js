@@ -94,27 +94,29 @@ class SearchComponent extends React.Component {
     }
 
     return (
-      <div className="search-component-container">
-        <div className="flex">
-          <div classname="column">
-            <Person className="human3 padding-left-" />
+      <div className="search-component-container row">
+          <div classname="call-to-action column">
+            <Person className="human3" alt="" />
           </div>
-          <div className="column padding-right-1">
-            <div className="landing-text-3">Find a Period Friendly Box near you</div>
+          <div className="search-input-container call-to-action column">
+            <div className="text-right row">
+              <div className="landing-text-3">Find a Period Friendly Box near you</div>
+            </div>
+            {/* <div className="row"> */}
           </div>
-      </div>
-        <div className="search-input-container">
-          <Geo id="geo-icon" onClick={this.doMyLocationSearch} />
-          <input
-            placeholder="my postcode, e.g. BS5 9QP"
-            value={this.state.postcode}
-            onChange={this.postcodeChange}
-            onKeyDown={this._handleKeyDown}
-            id="search-postcode"
-            className="search-box"
-          />
-        </div>
-        <p className="error">{this.state.error}</p>
+                  <Geo id="geo-icon" onClick={this.doMyLocationSearch} />
+                    <input
+                    placeholder="my postcode, e.g. BS5 9QP"
+                    value={this.state.postcode}
+                    onChange={this.postcodeChange}
+                    onKeyDown={this._handleKeyDown}
+                    id="search-postcode"
+                    className="search-box"
+                  />
+              {/* </div> */}
+            <p className="error">{this.state.error}</p>
+          {/* </div> */}
+          {/* </div> */}
       </div>
     );
   }

@@ -27,30 +27,27 @@
   position: relative;
   top: -6rem;
   transform: translateY(-50%);
-  right: -88%;
   z-index: 10;
 }
 @media only screen and (max-width: 395px) {
   .search-component-container #geo-icon {
-    top: -7.3rem;
+    top: -6.3rem;
   }
 }
 
 @media only screen and (min-width: 398px) {
   .search-component-container #geo-icon {
-    top: -7.7rem;
+    top: -6.7rem;
   }
 }
 @media only screen and (min-width: 700px) {
   .search-component-container #geo-icon {
-    top: -12.8rem;
-    right: -77%;
+    top: -11.8rem;
   }
 }
 
 @media only screen and (min-width: 920px) {
   .search-component-container #geo-icon {
-    top: -12.8rem;
-    right: -73%;
+    top: -11.8rem;
   }
 }
