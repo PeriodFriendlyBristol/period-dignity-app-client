@@ -132,7 +132,7 @@ function Host() {
               <label className="control radio">
                 <input
                   id="radio-wheelchair-yes"
-                  name="radio-wheelchair-yes"
+                  name="radio-wheelchair"
                   type="radio"
                   value="yes"
                   onChange={getValues}
@@ -143,7 +143,7 @@ function Host() {
               <label className="control radio">
                 <input
                   id="radio-wheelchair-no"
-                  name="radio-wheelchair-no"
+                  name="radio-wheelchair"
                   type="radio"
                   value="no"
                   onChange={getValues}
@@ -159,7 +159,7 @@ function Host() {
               <label className="control radio">
                 <input
                   id="radio-toilet-yes"
-                  name="radio-toilet-yes"
+                  name="radio-toilet"
                   type="radio"
                   value="yes"
                   onChange={getValues}
@@ -170,7 +170,7 @@ function Host() {
               <label className="control radio">
                 <input
                   id="radio-toilet-no"
-                  name="radio-toilet-no"
+                  name="radio-toilet"
                   type="radio"
                   value="no"
                   onChange={getValues}
