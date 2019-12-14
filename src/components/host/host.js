@@ -26,12 +26,12 @@ function Host() {
   return (
     <div>
       <div className="container-circle top-section row">
-        <h2 className="host-title row">Host a Period Friendly Box</h2>
+        <h1 className="host-title row">Host a Period Friendly Box</h1>
         <div className="top-text-left column">
           <Person className="person-host" alt=""/>
         </div>
         <div className="top-text column">
-          <h3>Once approved, you will need:</h3>
+          <h2>Once approved, you will need:</h2>
           <ul className="top-list custom-bullet-list">
             <li>A box, ideally clear</li>
             <li>A printed red label</li>
@@ -41,7 +41,7 @@ function Host() {
         </div>
       </div>
       <div className="middle-section row">
-        <div className="padding-left-1 column"></div>
+        <div className="column"></div>
         <div className="call-to-action column">
           <p>
             This information will be reviewed and displayed publicly. Do not

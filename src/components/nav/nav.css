@@ -23,7 +23,12 @@ a {
   font-size: calc(4vh);
 }
 
-a:active, .material-icons.md-dark:active {
+a:active,
+a:hover,
+.material-icons.md-dark:active,
+.material-icons.md-dark:hover,
+.nav-item:active,
+.nav-item:hover {
   color: #FBAF1E;
 }
 
@@ -40,7 +45,7 @@ a:active, .material-icons.md-dark:active {
   width: 33.33%;
 }
 
-.nav-item:active {
+ {
   color: #FBAF1E;
 }
 
