@@ -393,6 +393,7 @@ Footer {
 
 .button:focus {
   outline: none;
+  background: #fcc762;
 }
 
 .button:hover {

@@ -30,7 +30,7 @@ function Host() {
         <div className="top-text-left column">
           <Person className="person-host" alt=""/>
         </div>
-        <div className="top-text column">
+        <div className="top-text-host column">
           <h2>Once approved, you will need:</h2>
           <ul className="top-list custom-bullet-list">
             <li>A box, ideally clear</li>
