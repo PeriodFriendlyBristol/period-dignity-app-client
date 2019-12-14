@@ -9,7 +9,6 @@ function Host() {
 
   const getValues = e => {
     e.persist();
-    e.preventDefault();
     setContact(contact => ({ ...contact, [e.target.name]: e.target.value }));
   };
 
