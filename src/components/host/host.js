@@ -181,37 +181,18 @@ function Host() {
               </label>
             </div>
           </div>
-          <div className="form-submit__item row">
+          <div className="form-submit__item">
+            <label htmlFor="opening_hours">
             Opening hours
-            <div className="row">
-              <label htmlFor="day_of_the_week" className="long_column">
-                Day of the week
-                <input
-                  type="text"
-                  name="day_of_the_week"
-                  id="day_of_the_week"
+              <div className="row">
+                <textarea
+                  name="opening_hours"
+                  id="opening_hours"
+                  className="textarea row"
                   onChange={getValues}
                 />
-              </label>
-              <label htmlFor="from_time" className="short_column">
-                From
-                <input
-                  type="text"
-                  name="from_time"
-                  id="from_time"
-                  onChange={getValues}
-                />
-              </label>
-              <label htmlFor="to_time" className="short_column">
-                To
-                <input
-                  type="text"
-                  name="to_time"
-                  id="to_time"
-                  onChange={getValues}
-                />
-              </label>
-            </div>
+              </div>
+            </label>
           </div>
           <div className="form-submit__item">
             <label htmlFor="terms" className="tcs">
