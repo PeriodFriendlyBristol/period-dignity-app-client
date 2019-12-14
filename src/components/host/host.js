@@ -37,7 +37,7 @@ function Host() {
             <li>A printed red label</li>
             <li>To inform everybody who works on site</li>
           </ul>
-          <Logo className="logo" />
+          <Logo className="app-logo" />
         </div>
       </div>
       <div className="middle-section row">

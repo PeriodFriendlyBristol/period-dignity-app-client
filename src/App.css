@@ -398,7 +398,7 @@ Footer {
   background-size: 90% 120%;
 }
 
-.logo {
+.app-logo {
   width: 80%;
   height: 20%;
 }
@@ -451,7 +451,7 @@ Footer {
     visibility: inherit;
   }
 
-  .logo {
+  .app-logo {
     height: 50%;
     width: 50%;
   }

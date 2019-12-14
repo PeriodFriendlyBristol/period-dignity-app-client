@@ -26,7 +26,7 @@ function About() {
             against simply for having a period – this is part of our journey to
             being a period friendly city.
           </p>
-          <Logo className="logo" />
+          <Logo className="app-logo" />
         </div>
       </div>
       <div className="bottom-section row">
