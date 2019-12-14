@@ -34,7 +34,7 @@ export default class MapComponent extends React.Component {
       return (
         <Map
           center={position}
-          zoom={this.props.mapDefaults.zoom}
+          zoom={this.state.mapDefaults.zoom}
           zoomControl={false}
         >
           <TileLayer
