@@ -490,7 +490,7 @@ Footer {
   }
 
   h1 {
-    padding-left: calc(2rem + 5vh);
+    padding-left: calc(2rem + 8vh);
   }
 }
 @media only screen and (min-width: 800px) {
