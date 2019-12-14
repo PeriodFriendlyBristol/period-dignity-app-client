@@ -9,19 +9,19 @@ class Nav extends React.Component {
          <ul className="nav-list">
           <li class="nav-item">
             <a href="/">
-              <MaterialIcon icon="search" color="white"/>
+              <MaterialIcon icon="search" color="white" alt="Find a Box"/>
               <div className="nav-text">Find a Box</div>
             </a>
           </li>
           <li class="nav-item">
             <a href="/host">
-              <MaterialIcon icon='favorite' color="white"/>
+              <MaterialIcon icon='favorite' color="white" alt="Host a Box"/>
               <div className="nav-text">Host a Box</div>
             </a>
           </li>
           <li class="nav-item">
             <a href="/about">
-              <MaterialIcon icon='person' color="white"/>
+              <MaterialIcon icon='person' color="white" alt="About"/>
               <div className="nav-text">About</div>
             </a>
           </li>
