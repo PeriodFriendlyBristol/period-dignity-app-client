@@ -12,8 +12,7 @@ function About() {
     <div>
       <div className="container-circle top-section row">
         <h1 className="about-title row">Period Friendly Bristol</h1>
-        <div className="top-text-left column">
-          <Person className="person" />
+        <div className="invisible column">
         </div>
         <div className="top-text column">
           <p>
@@ -32,6 +31,7 @@ function About() {
       </div>
       <div className="bottom-section row">
         <div className="call-to-action column">
+          <Person className="person-donate" />
         </div>
         <div
           className="call-to-action padding-right-1 column"

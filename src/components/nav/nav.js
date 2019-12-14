@@ -2,6 +2,7 @@ import React from 'react';
 import MaterialIcon from 'material-icons-react';
 import './nav.css';
 
+
 class Nav extends React.Component {
   render () {
     return (
