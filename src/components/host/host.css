@@ -168,6 +168,9 @@ label {
 }
 
 /* Radio modifiers */
+.radio {
+  margin-top: 0.2rem;
+}
 .radio .control-indicator {
   border-radius: 50%;
 }

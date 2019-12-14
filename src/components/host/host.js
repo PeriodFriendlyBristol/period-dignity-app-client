@@ -110,7 +110,7 @@ function Host() {
                 type="text"
                 name="postcode"
                 id="postcode"
-                className="row"
+                className="long_column"
                 onChange={getValues}
               />
             </label>
@@ -128,7 +128,7 @@ function Host() {
           </div>
           <div className="form-submit__item row">
             Wheelchair access on site?
-            <div className="row">
+            <div className="radio row">
               <label className="control radio">
                 <input
                   id="radio-wheelchair-yes"
@@ -155,7 +155,7 @@ function Host() {
           </div>
           <div className="form-submit__item row">
             Public accessible toilet available on site?
-            <div className="row">
+            <div className="radio row">
               <label className="control radio">
                 <input
                   id="radio-toilet-yes"
