@@ -344,17 +344,17 @@ padding-left: 60%; */
   }
 
 }
-@media only screen and (min-width: 467px) {
-  .search-box {
-      top: -16.9rem;
-  }
-}
-
-@media only screen and (min-width: 630px) {
+@media only screen and (min-width: 504px) {
   .search-box {
       top: -10.4rem !important;
   }
 }
+
+/* @media only screen and (min-width: 630px) {
+  .search-box {
+      top: -10.4rem !important;
+  }
+} */
 
 @media only screen and (min-width: 679px) {
   .search-box {
@@ -522,13 +522,13 @@ padding-left: 60%; */
 @media only screen and (min-width: 720px) {
   .logo {
     left: -14rem;
-    /* position: absolute;  need to look further into fix */
     height: 70.25px;
   }
 }
 @media only screen and (min-width: 800px) {
   .logo {
     left: -18rem;
+    position: relative;
   }
 }
 
