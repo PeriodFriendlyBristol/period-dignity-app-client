@@ -2,6 +2,11 @@
   padding-left: 2rem;
 }
 
+.about-top-text{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 p{
   font-size: smaller;
 }
@@ -13,6 +18,7 @@ p{
 
 .bottom-section {
   background-color: #D81921;
+  padding-bottom: 2rem;
 }
 
 .padding-left-1 {
@@ -46,9 +52,10 @@ p{
 @media only screen and (max-width: 420px) {
 
   .person-donate {
-    width: 100%;
-    height: 100%;
-    margin-top: -30%;
+    width: 160%;
+    height: 120%;
+    position: relative;
+    top: -20%;
   }
 
   .invisible {
@@ -60,9 +67,25 @@ p{
   .top-text p{
     width: 60%;
   }
+
+  .person-donate {
+    width: auto;
+    height: 150%;
+    position: relative;
+    top: -12rem;
+  }
+
+  #donate-section{
+    margin-right:  calc(2rem + 10vh);
+  }
+
+  #donate-section p {
+    text-align: middle;
+  }
+
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1025px) {
   .person-donate {
     width: auto;
     height: 200%;

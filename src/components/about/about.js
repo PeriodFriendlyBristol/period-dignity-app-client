@@ -14,7 +14,7 @@ function About() {
         <h1 className="about-title row">Period Friendly Bristol</h1>
         <div className="invisible column">
         </div>
-        <div className="top-text column">
+        <div className="about-top-text column">
           <p>
             Bristol has pledged to take a leading role in making period products
             available to all who need them, while also combating outdated
