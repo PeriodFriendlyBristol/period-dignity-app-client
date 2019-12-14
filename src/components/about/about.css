@@ -85,13 +85,15 @@ p{
 
 }
 
-@media only screen and (min-width: 1025px) {
+
+
+@media only screen and (min-width: 1024px) {
   .person-donate {
     width: auto;
     height: 200%;
     position: relative;
-    top: -22rem;
-    left: 12rem;
+    top: -20rem;
+    left: -5rem;
   }
 
 
