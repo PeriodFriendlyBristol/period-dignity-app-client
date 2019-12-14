@@ -6,7 +6,7 @@
   bottom: 0;
   overflow: hidden;
   width: 100%;
-  min-height: 60px;
+  min-height: 70px;
   height: 3rem;
   background: #4f4f4f;
   padding-bottom: 0.5rem;
@@ -33,7 +33,7 @@ a:active, .material-icons.md-dark:active {
 
 .nav-item{
   text-align: center;
-  font-size: calc(0.7rem + 1vh);
+  font-size: 0.7rem;
   display: inline-block;
   list-style-type: none;
   color: white;
@@ -57,9 +57,9 @@ a:active, .material-icons.md-dark:active {
     position: absolute;
     top: 0;
     right: 0;
-    width: 50%;
+    width: 30%;
     background: #d81921;
-    min-height: 60px;
+    min-height: 70px;
     height: 5em;
     padding-bottom: 0;
   }
