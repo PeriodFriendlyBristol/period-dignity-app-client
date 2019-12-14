@@ -31,7 +31,7 @@ function About() {
       </div>
       <div className="bottom-section row">
         <div className="call-to-action column">
-          <Person className="person-donate" />
+          <Person className="person-donate" alt=""/>
         </div>
         <div
           className="call-to-action padding-right-1 column"
