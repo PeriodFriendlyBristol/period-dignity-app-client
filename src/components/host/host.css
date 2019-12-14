@@ -78,8 +78,6 @@ label {
 .call-to-action {
   text-align: right;
   color: #FFFFFF;
-  padding-right: 1rem;
-  padding-left: 2rem;
 }
 
 
@@ -241,38 +239,53 @@ label {
 
 @media only screen and (min-width: 601px) {
   .person-host {
+    width: auto;
+    height: 100%;
     top: 10rem;
   }
 
   .form-submit {
     padding-right: 12rem;
-    padding-left: calc(10rem + 10vh);
+    padding-left: calc(16rem + 10vh);
   }
 
   .call-to-action{
     text-align: left;
-    margin-right: 12rem;
-    margin-left: -15rem;
+    margin-left: -3rem;
   }
 
   .call-to-action p {
-    font-size: 1rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .person-host {
+    width: auto;
+    height: 100%;
+    top: 10rem;
   }
 }
 
 
 @media only screen and (min-width: 1025px) {
   .person-host {
-    width: 50%;
-    height: 120%;
+    width: auto;
+    height: 160%;
     position: relative;
     z-index: 0;
+    top: 3rem;
   }
 
   .form-submit {
-    padding-right: 12rem;
-    padding-left: calc(26rem + 10vh);
+    padding-right: 10rem;
+    padding-left: calc(36rem + 10vh);
   }
 
+  .call-to-action{
+    text-align: left;
+    margin-right: 10rem;
+    margin-left: 4rem;
+  }
 }
 
