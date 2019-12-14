@@ -29,14 +29,21 @@
   padding-left: 1rem;
 }
 
-.middle-section {
-  background-color: #D81921;
+.info{
   margin: 0;
+  text-align: right;
+  margin-left: 10rem;
+  font-size: calc(0.2rem + 1vh);
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .form-submit{
   color: #ffffff;
-  padding: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
 }
 
 .form-submit__item:not(:last-of-type){
@@ -244,6 +251,11 @@ label {
     top: 10rem;
   }
 
+  .info {
+    text-align: left;
+     margin: 0;
+  }
+
   .form-submit {
     padding-right: 12rem;
     padding-left: calc(16rem + 10vh);
@@ -251,7 +263,8 @@ label {
 
   .call-to-action{
     text-align: left;
-    margin-left: -3rem;
+    margin-left: -10rem;
+    margin-right: 12rem;
   }
 
   .call-to-action p {
@@ -262,7 +275,7 @@ label {
 @media only screen and (min-width: 767px) {
   .person-host {
     width: auto;
-    height: 100%;
+    height: 110%;
     top: 10rem;
   }
 }
@@ -285,8 +298,8 @@ label {
 
   .call-to-action{
     text-align: left;
-    margin-right: 10rem;
-    margin-left: 4rem;
+    margin-right: 6rem;
+    margin-left: calc(0rem + 1vh);
   }
 }
 

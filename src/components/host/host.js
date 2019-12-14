@@ -40,21 +40,16 @@ function Host() {
           <Logo className="app-logo" />
         </div>
       </div>
-      <div className="middle-section row">
-        <div className="column"></div>
-        <div className="call-to-action column">
-          <p>
-            This information will be reviewed and displayed publicly. Do not
-            enter private/personal information.
-          </p>
-        </div>
-      </div>
       <div className="bottom-section row">
         <form
           onSubmit={sendContact}
           encType="multipart/form-data"
           className="form-submit"
         >
+        <p className="info">
+          This information will be reviewed and displayed publicly. Do not
+          enter private/personal information.
+        </p>
           <div className="form-submit__item">
             <label htmlFor="email">
               Email
