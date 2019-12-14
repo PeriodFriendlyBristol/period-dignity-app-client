@@ -23,12 +23,12 @@ a {
   font-size: calc(4vh);
 }
 
+a:focus,
 a:active,
 a:hover,
+.material-icons.md-dark:focus,
 .material-icons.md-dark:active,
-.material-icons.md-dark:hover,
-.nav-item:active,
-.nav-item:hover {
+.material-icons.md-dark:hover {
   color: #FBAF1E;
 }
 
@@ -45,14 +45,12 @@ a:hover,
   width: 33.33%;
 }
 
- {
+.nav-item: hover{
   color: #FBAF1E;
 }
 
 .nav-text {
   display: block;
-  white-space: nowrap;
-  margin: 0;
   padding-bottom: 1rem;
 }
 

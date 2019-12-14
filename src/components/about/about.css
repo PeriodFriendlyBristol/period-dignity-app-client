@@ -64,6 +64,11 @@ p{
 }
 
 @media only screen and (min-width: 680px) {
+  .about-top-text{
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
   .top-text p{
     width: 60%;
   }
@@ -87,11 +92,22 @@ p{
 
 
 @media only screen and (min-width: 1024px) {
+
   .person-donate {
     width: auto;
     height: 200%;
     position: relative;
     bottom: 90%;
+  }
+
+  .about-top-text{
+    margin: 0;
+    padding-left: 6rem;
+    padding-right: 12rem;
+  }
+
+  .about-top-text p{
+    margin-bottom: 0;
   }
 
 
