@@ -28,7 +28,7 @@ function Host() {
       <div className="container-circle top-section row">
         <h1 className="host-title row">Host a Period Dignity Box</h1>
         <div className="top-text-left column">
-          <Person className="person" />
+          <Person className="person-host" />
         </div>
         <div className="top-text column">
           <p>Once approved, you will need:</p>

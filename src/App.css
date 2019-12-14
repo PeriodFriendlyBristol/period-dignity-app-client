@@ -321,7 +321,7 @@ Footer {
   width: 100%;
   padding: 1rem 0;
   text-align: center;
-  margin: 2rem 0 1rem 0;
+  margin: 2rem 0 3rem 0;
   display: block;
   border: none;
 }
@@ -335,7 +335,8 @@ Footer {
 }
 
 .logo {
-  height: 40%;
+  width: 80%;
+  height: 20%;
 }
 
 .top-list{
@@ -381,7 +382,8 @@ Footer {
   }
 
   .logo {
-    height: 60%;
+    height: 50%;
+    width: 50%;
   }
 
   #header {
@@ -396,7 +398,6 @@ Footer {
 }
 
 .logo {
-  width: 36%;
   padding-top: -1rem;
   padding-left: 2rem;
 }

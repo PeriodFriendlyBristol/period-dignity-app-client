@@ -6,10 +6,6 @@ p{
   font-size: smaller;
 }
 
-.top-text{
-  padding: 1rem 2rem;
-}
-
 .person_donate {
   position: relative;
   z-index: 0;
@@ -42,7 +38,6 @@ p{
 }
 
 .column {
-  display: flex;
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
@@ -68,12 +63,11 @@ p{
 }
 
 @media only screen and (min-width: 900px) {
-
   .person-donate {
-    top: -45%;
+    width: auto;
     height: 200%;
-    width: 100%;
-    left: -20%;
+    position: relative;
+    top: -22rem;
   }
 
 
