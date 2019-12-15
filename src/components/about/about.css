@@ -52,10 +52,10 @@ p{
 @media only screen and (max-width: 420px) {
 
   .person-donate {
-    width: auto;
+    width: 130%;
     height: 100%;
     position: relative;
-    bottom: 5%;
+    bottom: 15%;
   }
 
   .invisible {
@@ -78,7 +78,7 @@ p{
     height: 150%;
     position: relative;
     bottom: 55%;
-    left: 10%;
+    left: 20%;
   }
 
   #donate-section{
@@ -94,16 +94,16 @@ p{
 @media only screen and (min-width: 1024px) {
 
   .person-donate {
-    width: auto;
+    width: 60%;
     height: 200%;
     position: relative;
-    bottom: 90%;
+    bottom: 53%;
   }
 
   .about-top-text{
     margin: 0;
-    padding-left: 6rem;
-    padding-right: 12rem;
+    padding-left: calc(10vh);
+    padding-right: calc(10vh);
   }
 
   .about-top-text p{
@@ -119,4 +119,17 @@ p{
   #donate-section p {
     text-align: middle;
   }
+
+  .app-logo{
+    padding-bottom: 3rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .about-top-text{
+    margin: 0;
+    padding-left: calc(20vh);
+    padding-right: calc(20vh);
+  }
+
 }

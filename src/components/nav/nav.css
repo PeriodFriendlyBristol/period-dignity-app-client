@@ -20,7 +20,8 @@ a {
 
 .material-icons.md-dark{
   color: white;
-  font-size: calc(4vh);
+  font-size: calc(3vh);
+  margin-top: 0.1rem;
 }
 
 a:focus,
