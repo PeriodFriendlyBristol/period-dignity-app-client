@@ -102,7 +102,7 @@
     width: auto;
     height: 200%;
     position: relative;
-    bottom: calc(90% + 3vh);
+    bottom: 110%;
   }
 
   .about-top-text{
