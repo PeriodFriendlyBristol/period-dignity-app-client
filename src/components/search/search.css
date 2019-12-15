@@ -34,14 +34,31 @@
   padding: 1rem;
   box-sizing: border-box;
   font-size: inherit;
+  height: 48px;
+  position: relative;
+  justify-content: center;
 }
+
+@media only screen and (min-width: 380px) {
+  .search-box {
+    top: 18.9rem;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+   .search-box {
+    top: -20.9rem;
+    left: 0.5rem;
+  }
+}
+
 
 .search-box::placeholder {
   color: rgba(0, 0, 0, 0.24);
 }
 
-.search-component-container #geo-icon {
-  position: absolute;
+/* .search-component-container #geo-icon {
+  position: relative;
   top: 50%;
   right: 8px;
   transform: translateY(-50%);
@@ -70,7 +87,7 @@
   .search-component-container #geo-icon {
     top: -11.8rem;
   }
-}
+} */
 
 #error {
   background-color: white;

@@ -160,7 +160,13 @@ footer {
     top: -18rem;
     width: 8rem;
    }
+   /* .search-box {
+    top: -20.9rem;
+    left: 0.5rem;
+  } */
 }
+
+
 
 @media only screen and (min-width: 420px) {
   .landing-text-3 {
@@ -221,6 +227,15 @@ footer {
   }
 }
 
+@media only screen and (min-width: 420px) {
+  .human3 {
+    height: 90%;
+    width: 90%;
+    position: relative;
+    top: -8.4rem;
+  }
+}
+
 @media only screen and (min-width: 680px) {
   .human3 {
     width: auto;
@@ -254,25 +269,25 @@ footer {
   margin-top: 3rem;
 }
 
-/* .search-box {
-  height: 48px;
+.search-box {
+  /* height: 48px;
   left: 1.8rem;
   background: #FFFFFF;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24), 0px 0px 2px rgba(0, 0, 0, 0.12);
   border-radius: 2px;
   position: relative;
   width: 87%;
-  justify-content: center;
-  top: -16.9rem;
+  justify-content: center; */
+  /* top: -16.9rem; */
 }
-@media only screen and (max-width: 468px) {
+/* @media only screen and (max-width: 468px) {
   .search-box {
     top: -19rem;
     left: 0.5rem;
   }
 
-}
-@media only screen and (min-width: 504px) {
+} */
+/* @media only screen and (min-width: 504px) {
   .search-box {
       top: -10.4rem !important;
   }
