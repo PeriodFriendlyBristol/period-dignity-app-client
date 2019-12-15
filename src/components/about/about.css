@@ -14,7 +14,6 @@ p{
 
 .bottom-section {
   background-color: #D81921;
-  padding-bottom: 2rem;
 }
 
 .padding-left-1 {
@@ -52,10 +51,10 @@ p{
 @media only screen and (max-width: 420px) {
 
   .person-donate {
-    width: 130%;
-    height: 100%;
+    width: auto;
+    height: 90%;
     position: relative;
-    bottom: 15%;
+    bottom: 12%;
   }
 
   .invisible {
@@ -88,16 +87,22 @@ p{
   #donate-section p {
     text-align: middle;
   }
+
+  /* Safari SVG scale*/
+  .person-donate:not(:root:root) {
+    width: 70%;
+    bottom: calc(30% + 10vh);
+  }
 }
 
 
 @media only screen and (min-width: 1024px) {
 
   .person-donate {
-    width: 60%;
+    width: auto;
     height: 200%;
     position: relative;
-    bottom: 53%;
+    bottom: calc(90% + 3vh);
   }
 
   .about-top-text{
@@ -109,7 +114,6 @@ p{
   .about-top-text p{
     margin-bottom: 0;
   }
-
 
   #donate-section{
     margin-right:  calc(12rem + 10vh);
@@ -131,5 +135,4 @@ p{
     padding-left: calc(20vh);
     padding-right: calc(20vh);
   }
-
 }
