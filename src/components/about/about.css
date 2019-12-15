@@ -1,3 +1,7 @@
+body {
+  overflow: hidden;
+}
+
 .about-top-text{
   padding-left: 2rem;
   padding-right: 2rem;
@@ -102,7 +106,7 @@
     width: auto;
     height: 200%;
     position: relative;
-    bottom: 110%;
+    bottom: 2rem;
   }
 
   .about-top-text{

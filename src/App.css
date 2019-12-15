@@ -245,7 +245,7 @@ footer {
   height: 40%;
 }
 /* container with grey circle background*/
-.container-circle {
+.app-container-circle {
   background-image: url(assets/circle_grey.svg);
   background-position: 100px -50px; /*TODO: find rem equivalent*/
   background-repeat: no-repeat;
@@ -302,11 +302,6 @@ footer {
 }
 
 @media only screen and (min-width: 900px) {
-  .container-circle {
-    background-position: 100px -150px; /*TODO: find rem equivalent*/
-    background-size: 100% 170%;
-  }
-
   .footer {
     visibility: inherit;
   }
