@@ -222,12 +222,25 @@ footer {
   width: 100%;
   padding: 1rem 0;
   text-align: center;
-  margin: 2rem 0 1rem 0;
+  margin: 2rem 0 3rem 0;
   display: block;
+  border: none;
 }
 
 .logo {
   height: 40%;
+}
+/* container with grey circle background*/
+.container-circle {
+  background-image: url(assets/circle_grey.svg);
+  background-position: 100px -50px; /*TODO: find rem equivalent*/
+  background-repeat: no-repeat;
+  background-size: 90% 120%;
+}
+
+.app-logo {
+  width: 80%;
+  height: 20%;
 }
 
 .top-list {
@@ -284,8 +297,9 @@ footer {
     visibility: inherit;
   }
 
-  .logo {
-    height: 60%;
+  .app-logo {
+    height: 50%;
+    width: 50%;
   }
 
   #header {
@@ -300,7 +314,6 @@ footer {
 }
 
 .logo {
-  width: 36%;
   padding-top: -1rem;
   padding-left: 2rem;
   max-width: 130px;

@@ -13,14 +13,17 @@
 }
 
 a {
+  display: block;
   text-decoration: none;
   color: white;
 }
 
-.material-icons{
-  margin: 0;
-  padding: 0;
-  line-height: 0.5rem;
+.material-icons.md-dark{
+  color: white;
+}
+
+a:active, .material-icons.md-dark:active {
+  color: #FBAF1E;
 }
 
 .nav-list{
@@ -36,11 +39,15 @@ a {
   width: 33.33%;
 }
 
+.nav-item:active {
+  color: #FBAF1E;
+}
+
 .nav-text {
   display: block;
   white-space: nowrap;
   margin: 0;
-  padding: 0;
+  padding-bottom: 1rem;
 }
 
 @media only screen and (min-width: 900px) {

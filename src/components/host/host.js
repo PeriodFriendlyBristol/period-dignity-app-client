@@ -9,7 +9,6 @@ function Host() {
 
   const getValues = e => {
     e.persist();
-    e.preventDefault();
     setContact(contact => ({ ...contact, [e.target.name]: e.target.value }));
   };
 
@@ -26,10 +25,10 @@ function Host() {
   };
   return (
     <div>
-      <h1 className="title">Host a Period Dignity Box</h1>
       <div className="container-circle top-section row">
+        <h1 className="host-title row">Host a Period Dignity Box</h1>
         <div className="top-text-left column">
-          <Person className="person" />
+          <Person className="person-host" alt=""/>
         </div>
         <div className="top-text column">
           <p>Once approved, you will need:</p>
@@ -38,7 +37,7 @@ function Host() {
             <li>A printed red label</li>
             <li>To inform everybody who works on site</li>
           </ul>
-          <Logo className="logo" />
+          <Logo className="app-logo" />
         </div>
       </div>
       <div className="middle-section row">
@@ -133,7 +132,7 @@ function Host() {
               <label className="control radio">
                 <input
                   id="radio-wheelchair-yes"
-                  name="radio"
+                  name="radio-wheelchair-yes"
                   type="radio"
                   value="yes"
                   onChange={getValues}
@@ -144,7 +143,7 @@ function Host() {
               <label className="control radio">
                 <input
                   id="radio-wheelchair-no"
-                  name="radio"
+                  name="radio-wheelchair-no"
                   type="radio"
                   value="no"
                   onChange={getValues}
@@ -160,7 +159,7 @@ function Host() {
               <label className="control radio">
                 <input
                   id="radio-toilet-yes"
-                  name="radio"
+                  name="radio-toilet-yes"
                   type="radio"
                   value="yes"
                   onChange={getValues}
@@ -170,8 +169,8 @@ function Host() {
               </label>
               <label className="control radio">
                 <input
-                  id="radio-toilet-yes"
-                  name="radio"
+                  id="radio-toilet-no"
+                  name="radio-toilet-no"
                   type="radio"
                   value="no"
                   onChange={getValues}
@@ -181,40 +180,21 @@ function Host() {
               </label>
             </div>
           </div>
-          <div className="form-submit__item row">
+          <div className="form-submit__item">
+            <label htmlFor="opening_hours">
             Opening hours
-            <div className="row">
-              <label htmlFor="day_of_the_week" className="long_column">
-                Day of the week
-                <input
-                  type="text"
-                  name="day_of_the_week"
-                  id="day_of_the_week"
+              <div className="row">
+                <textarea
+                  name="opening_hours"
+                  id="opening_hours"
+                  className="textarea row"
                   onChange={getValues}
                 />
-              </label>
-              <label htmlFor="from_time" className="short_column">
-                From
-                <input
-                  type="text"
-                  name="from_time"
-                  id="from_time"
-                  onChange={getValues}
-                />
-              </label>
-              <label htmlFor="to_time" className="short_column">
-                To
-                <input
-                  type="text"
-                  name="to_time"
-                  id="to_time"
-                  onChange={getValues}
-                />
-              </label>
-            </div>
+              </div>
+            </label>
           </div>
           <div className="form-submit__item">
-            <label htmlFor="terms" className="tcs">
+            <label htmlFor="terms" className="control tcs">
               <input
                 type="checkbox"
                 name="terms"

@@ -10,10 +10,11 @@ function redirectToPayPal() {
 function About() {
   return (
     <div>
-      <h1 className="title">Period friendly Bristol</h1>
       <div className="container-circle top-section row">
-        <div className="invisible column" />
-        <div className="top-text column">
+        <h1 className="about-title row">Period Friendly Bristol</h1>
+        <div className="invisible column">
+        </div>
+        <div className="about-top-text column">
           <p>
             Bristol has pledged to take a leading role in making period products
             available to all who need them, while also combating outdated
@@ -25,12 +26,12 @@ function About() {
             against simply for having a period – this is part of our journey to
             being a period friendly city.
           </p>
-          <Logo className="logo" />
+          <Logo className="app-logo" />
         </div>
       </div>
       <div className="bottom-section row">
         <div className="call-to-action column">
-          <Person className="person_donate" />
+          <Person className="person-donate" alt=""/>
         </div>
         <div
           className="call-to-action padding-right-1 column"
