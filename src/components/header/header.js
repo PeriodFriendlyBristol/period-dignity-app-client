@@ -6,7 +6,7 @@ class Header extends React.Component {
     return (
       <header id="header">
         <a href="/">
-          <h1>Period Friendly Bristol</h1>
+          <div className="header">Period Friendly Bristol</div>
         </a>
       </header>
     );

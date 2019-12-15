@@ -10,6 +10,7 @@ body {
 h1 {
   font-weight: normal;
   font-size: calc(24px + 1vw);
+  padding-left: 1rem;
 }
 h2 {
   font-size: 1.2em;
@@ -49,7 +50,7 @@ footer {
 }
 
 .footer {
-  position: sticky;
+  position: fixed;
   width: 100%;
   bottom: 0;
   height: 2rem;
@@ -227,6 +228,15 @@ footer {
   border: none;
 }
 
+.button:focus {
+  outline: none;
+  background: #fcc762;
+}
+
+.button:hover {
+  background: #fcc762;
+}
+
 .logo {
   height: 40%;
 }
@@ -303,7 +313,7 @@ footer {
   }
 
   #header {
-    width: 50%;
+    width: 70%;
     height: 5em;
   }
 }
@@ -324,6 +334,10 @@ footer {
     left: -14rem;
     position: absolute;
     height: 70.25px;
+  }
+
+  h1 {
+    padding-left: calc(2rem + 8vh);
   }
 }
 @media only screen and (min-width: 800px) {

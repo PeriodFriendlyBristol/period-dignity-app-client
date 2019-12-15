@@ -6,8 +6,8 @@
   bottom: 0;
   overflow: hidden;
   width: 100%;
-  min-height: 60px;
-  height: 3rem;
+  min-height: 70px;
+  height: 4rem;
   background: #4f4f4f;
   padding-bottom: 0.5rem;
 }
@@ -20,9 +20,16 @@ a {
 
 .material-icons.md-dark{
   color: white;
+  font-size: calc(3vh);
+  margin-top: 0.1rem;
 }
 
-a:active, .material-icons.md-dark:active {
+a:focus,
+a:active,
+a:hover,
+.material-icons.md-dark:focus,
+.material-icons.md-dark:active,
+.material-icons.md-dark:hover {
   color: #FBAF1E;
 }
 
@@ -32,23 +39,29 @@ a:active, .material-icons.md-dark:active {
 
 .nav-item{
   text-align: center;
-  font-size: calc(0.7rem + 1vh);
+  font-size: 0.7rem;
   display: inline-block;
   list-style-type: none;
   color: white;
   width: 33.33%;
 }
 
-.nav-item:active {
+.nav-item: hover{
   color: #FBAF1E;
 }
 
 .nav-text {
   display: block;
-  white-space: nowrap;
-  margin: 0;
   padding-bottom: 1rem;
 }
+
+@media only screen and (min-width: 600px) {
+  .navbar {
+    height: 5rem;
+  }
+}
+
+
 
 @media only screen and (min-width: 900px) {
   .navbar {
@@ -56,15 +69,10 @@ a:active, .material-icons.md-dark:active {
     position: absolute;
     top: 0;
     right: 0;
-    width: 50%;
+    width: 30%;
     background: #d81921;
-    min-height: 60px;
+    min-height: 70px;
     height: 5em;
     padding-bottom: 0;
   }
-
-  .nav-item{
-    padding-top: 0.5rem;
-  }
-
 }
