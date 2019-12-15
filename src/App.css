@@ -188,20 +188,26 @@ footer {
 @media only screen and (min-width: 680px) {
   .landing-text-3 {
     padding-left: 30rem;
+    top: -20rem;
   }
 }
 
 @media only screen and (min-width: 699px) {
   .landing-text-3 {
     text-align: center;
-    top: -17rem;
+    top: -20rem;
   }
 }
-
-@media only screen and (min-width: 820px) {
+@media only screen and (min-width: 820px) and (max-width:831px) {
   .landing-text-3 {
-    top: 2rem;
-    padding-left: 43%;
+    top: -21rem;
+    padding-left: 30rem;
+  }
+}
+@media only screen and (min-width: 831px) {
+  .landing-text-3 {
+    top: 1rem;
+    padding-left: 43% !important;
   }
 }
 

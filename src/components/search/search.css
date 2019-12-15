@@ -61,26 +61,22 @@
     left: 23.5rem;
   }
 }
-@media only screen and (min-width: 720px) and (max-width: 830px) {
+@media only screen and (min-width: 720px) and (max-width: 831px) {
   .search-box {
     top: -14.5rem !important;
     left: -4rem;
   }
 }
+
+@media only screen and (min-width: 829px) and (max-width: 831px) {
+  .search-box {
+    left: 28rem;
+  }
+}
+
 @media only screen and (min-width: 800px) {
   .search-box {
     top: -15.5rem !important; 
-    /* top: -15.5rem !important;
-    left: 44%;
-    width: 39% !important;
-    max-width: 320px; */
-    /* top: -13.7rem !important;
-    max-width: 304px;
-    left: 20.5rem; */
-    /* max-width: 269px;
-    left: -5.5rem; */
-    /* max-width: 14rem;
-    left: 23.5rem; */
   }
 } 
 
