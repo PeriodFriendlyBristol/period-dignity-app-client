@@ -79,6 +79,12 @@ input[type="email"],
   font-size: calc(14px + 1vh);
 }
 
+textarea:focus,
+input[type]:focus,
+select:focus{
+  outline: none;
+}
+
 label {
   line-height: 150%;
 }
