@@ -93,9 +93,17 @@
   }
 
   /* Safari SVG scale*/
+
   .person-donate:not(:root:root) {
-    width: 70%;
-    bottom: calc(30% + 10vh);
+    width: 50%;
+    height: 60%;
+    position: absolute;
+    top: 24rem;
+    left: 0
+  }
+
+  .bottom-section:not(:root:root) {
+    min-height: 20rem;
   }
 }
 
@@ -137,6 +145,6 @@
   .about-top-text{
     margin: 0;
     padding-left: calc(20vh);
-    padding-right: calc(20vh);
+    padding-right: calc(26vh);
   }
 }
