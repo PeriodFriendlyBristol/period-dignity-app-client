@@ -34,7 +34,7 @@ function About() {
           <Person className="person-donate" alt=""/>
         </div>
         <div
-          className="call-to-action padding-right-1 column"
+          className="about-bottom-text column"
           id="donate-section"
         >
           <button className="button donate" onClick={redirectToPayPal}>
