@@ -1,3 +1,7 @@
+.about-page{
+  overflow: hidden;
+}
+
 .about-top-text{
   padding-left: 2rem;
   padding-right: 2rem;
@@ -89,9 +93,14 @@
   }
 
   /* Safari SVG scale*/
+
   .person-donate:not(:root:root) {
-    width: 70%;
-    bottom: calc(30% + 10vh);
+    height: 120%;
+    width: 100%;
+    margin: 0;
+  }
+
+  .bottom-section:not(:root:root) {
   }
 }
 
@@ -102,7 +111,7 @@
     width: auto;
     height: 200%;
     position: relative;
-    bottom: 2rem;
+    bottom: 23.5em;
   }
 
   .about-top-text{
@@ -133,6 +142,6 @@
   .about-top-text{
     margin: 0;
     padding-left: calc(20vh);
-    padding-right: calc(20vh);
+    padding-right: calc(26vh);
   }
 }

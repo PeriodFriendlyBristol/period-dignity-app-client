@@ -10,7 +10,7 @@
 
 .custom-bullet-list li{
     position: relative;
-    padding-left: 1rem;
+    padding-left: 3rem;
     padding-bottom: 1rem;
     display: block;
 }
@@ -272,7 +272,7 @@ label {
   }
 
   .form-submit {
-    padding-right: 12rem;
+    padding-right: calc(4rem + 3vh);
     padding-left: calc(16rem + 10vh);
   }
 
@@ -317,4 +317,3 @@ label {
     margin-left: calc(0rem + 1vh);
   }
 }
-

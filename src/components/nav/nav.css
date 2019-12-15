@@ -24,6 +24,7 @@ a {
   display: block;
 }
 
+.active,
 a:focus,
 a:active,
 a:hover,
@@ -31,6 +32,24 @@ a:hover,
 .material-icons.md-dark:active,
 .material-icons.md-dark:hover {
   color: #FBAF1E;
+}
+
+#find::before {
+  font-family: 'Material Icons';
+  content: "search";
+  font-size: calc(1rem + 2vh);
+}
+
+#host::before {
+  font-family: 'Material Icons';
+  content: "favorite";
+  font-size: calc(1rem + 2vh);
+}
+
+#about::before {
+  font-family: 'Material Icons';
+  content: "person";
+  font-size: calc(1rem + 2vh);
 }
 
 .nav-list{
