@@ -272,7 +272,7 @@ label {
   }
 
   .form-submit {
-    padding-right: 12rem;
+    padding-right: calc(4rem + 3vh);
     padding-left: calc(16rem + 10vh);
   }
 
