@@ -318,10 +318,3 @@ label {
   }
 }
 
-_::-webkit-full-page-media, _:future, :root .safari_only {
-  .person-host {
-  width: auto;
-
-  }
-}
-
