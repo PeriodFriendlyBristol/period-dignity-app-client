@@ -40,7 +40,7 @@ function Host() {
           <Logo className="app-logo" />
         </div>
       </div>
-      <div className="bottom-section row">
+      <div className="bottom-section host row">
         <form
           onSubmit={sendContact}
           encType="multipart/form-data"
