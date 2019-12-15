@@ -247,9 +247,9 @@ footer {
 /* container with grey circle background*/
 .app-container-circle {
   background-image: url(assets/circle_grey.svg);
-  background-position: 100px -50px; /*TODO: find rem equivalent*/
+  background-position: 100px -100px;
   background-repeat: no-repeat;
-  background-size: 90% 120%;
+  background-size: 100% 140%;
 }
 
 .app-logo {
