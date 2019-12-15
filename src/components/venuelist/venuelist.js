@@ -1,4 +1,5 @@
 import React from "react";
+import MaterialIcon from "material-icons-react";
 import "./venuelist.css";
 import { ReactComponent as WC } from "./svg/wc-icon.svg";
 import { ReactComponent as Access } from "./svg/accessible-icon.svg";
@@ -61,6 +62,18 @@ export default class VenueList extends React.Component {
                       <span></span>
                     )}
                   </p>
+                </div>
+                <div className="venue-direction">
+                  <a
+                    href={
+                      "https://www.google.co.uk/maps/place/" +
+                      venue.location.latitude +
+                      "," +
+                      venue.location.longitude
+                    }
+                  >
+                    <MaterialIcon icon="directions" color="#8C0571" />
+                  </a>
                 </div>
               </li>
             );
