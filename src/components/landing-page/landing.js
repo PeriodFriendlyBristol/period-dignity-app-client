@@ -8,7 +8,7 @@ class Landing extends React.Component {
     return (
         <div>
             <div className="container-circle container-height row">
-                <div className="landing-title row">
+                <div className="row"> 
                     <h1>Free period products for people in Bristol who need them</h1>
                 </div>
                 <div className="invisible column"></div>

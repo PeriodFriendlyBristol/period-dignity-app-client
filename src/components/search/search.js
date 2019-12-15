@@ -103,9 +103,9 @@ class SearchComponent extends React.Component {
           </div>
           <div className="search-input-container call-to-action column">
             <div className="text-right row">
-              <div className="landing-text-3">Find a Period Friendly Box near you</div>
+              {/* <div className="landing-text-3">Find a Period Friendly Box near you</div> */}
+              <h2 className="landing-text-3">Find a Period Friendly Box near you</h2>
             </div>
-            {/* <div className="row"> */}
           </div>
         <Geo id="geo-icon" onClick={this.doMyLocationSearch} />
           <input
