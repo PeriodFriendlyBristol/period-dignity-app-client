@@ -107,7 +107,8 @@ class SearchComponent extends React.Component {
               <h2 className="landing-text-3">Find a Period Friendly Box near you</h2>
             </div>
           </div>
-        <Geo id="geo-icon" onClick={this.doMyLocationSearch} />
+          {/* causing bugs */}
+        {/* <Geo id="geo-icon" onClick={this.doMyLocationSearch} /> */}
           <input
           placeholder="my postcode, e.g. BS5 9QP"
           value={this.state.postcode}
