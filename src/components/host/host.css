@@ -23,6 +23,7 @@
     background-image: url(../../assets/logo_bullet_point.svg);
     background-repeat: no-repeat;
     background-size: 70% 100%;
+    margin-left: -1.5rem;
 }
 
 .person-host{
