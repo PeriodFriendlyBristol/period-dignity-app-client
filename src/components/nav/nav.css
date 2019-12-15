@@ -21,6 +21,7 @@ a {
 .material-icons.md-dark{
   color: white;
   margin-top: 0.1rem;
+  display: block;
 }
 
 a:focus,
