@@ -95,15 +95,12 @@
   /* Safari SVG scale*/
 
   .person-donate:not(:root:root) {
-    width: 50%;
-    height: 60%;
-    position: absolute;
-    top: 24rem;
-    left: 0
+    height: 120%;
+    width: 100%;
+    margin: 0;
   }
 
   .bottom-section:not(:root:root) {
-    min-height: 20rem;
   }
 }
 

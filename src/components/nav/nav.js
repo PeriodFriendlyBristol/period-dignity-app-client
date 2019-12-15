@@ -7,7 +7,7 @@ class Nav extends React.Component {
   render () {
     return (
       <nav className="navbar">
-        <MaterialIcon/>
+        <MaterialIcon icon=""/>
          <ul className="nav-list">
           <NavLink to="/" activeClassName="active" className="nav-item" id="find">
             <div className="nav-text">Find a Box</div>

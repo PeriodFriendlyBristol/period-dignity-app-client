@@ -317,11 +317,3 @@ label {
     margin-left: calc(0rem + 1vh);
   }
 }
-
-_::-webkit-full-page-media, _:future, :root .safari_only {
-  .person-host {
-  width: auto;
-
-  }
-}
-
