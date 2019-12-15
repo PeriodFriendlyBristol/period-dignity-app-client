@@ -28,6 +28,7 @@
 
 .venue-details {
   padding-left: 10px;
+  padding-right: 8px;
   width: 100%;
 }
 .venue-details p {
@@ -37,7 +38,6 @@
 
 .venue-icons {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
 }
 
@@ -49,4 +49,13 @@
 
 .venue-icons #wc {
   height: 0.6em;
+}
+
+.venue-direction a {
+  display: block;
+  line-height: 0;
+}
+.venue-direction a .material-icons {
+  font-size: 3rem;
+  margin-right: -2px;
 }

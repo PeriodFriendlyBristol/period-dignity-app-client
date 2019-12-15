@@ -1,9 +1,10 @@
-import React from 'react';
-import Search from '../search/search'
-import { ReactComponent as Logo } from './svg/period_logo.svg'
+import React from "react";
+import Search from "../search/search";
+import { ReactComponent as Logo } from "./svg/period_logo.svg";
+import "./landing.css";
 
 class Landing extends React.Component {
-  render () {
+  render() {
     return (
         <div>
             <div className="container-circle container-height row">
@@ -23,7 +24,7 @@ class Landing extends React.Component {
             </div>
                 <Search />
         </div>
-    )
+    );
   }
 }
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { Redirect } from "react-router-dom";
-import { ReactComponent as Person } from './svg/humaaan_3.svg';
+import { ReactComponent as Person } from "./svg/humaaan_3.svg";
 import { ReactComponent as Geo } from "./svg/geo.svg";
 import "./search.css";
 
@@ -40,6 +40,9 @@ class SearchComponent extends React.Component {
           if (data.detail) {
             //There is an error
             this.setState({ error: data.detail });
+          } else if (data === undefined || data.length === 0) {
+            //No venues found
+            this.setState({ error: "No venues found for that location" });
           } else {
             //Do search!
             this.setState({ venues: data.slice(0, 9), doSearch: true });
@@ -104,19 +107,18 @@ class SearchComponent extends React.Component {
             </div>
             {/* <div className="row"> */}
           </div>
-                  <Geo id="geo-icon" onClick={this.doMyLocationSearch} />
-                    <input
-                    placeholder="my postcode, e.g. BS5 9QP"
-                    value={this.state.postcode}
-                    onChange={this.postcodeChange}
-                    onKeyDown={this._handleKeyDown}
-                    id="search-postcode"
-                    className="search-box"
-                  />
-              {/* </div> */}
-            <p className="error">{this.state.error}</p>
-          {/* </div> */}
-          {/* </div> */}
+        <Geo id="geo-icon" onClick={this.doMyLocationSearch} />
+          <input
+          placeholder="my postcode, e.g. BS5 9QP"
+          value={this.state.postcode}
+          onChange={this.postcodeChange}
+          onKeyDown={this._handleKeyDown}
+          id="search-postcode"
+          className="search-box"
+        />
+        <p id="error" className={this.state.error ? "has-error" : ""}>
+          {this.state.error}
+        </p>
       </div>
     );
   }

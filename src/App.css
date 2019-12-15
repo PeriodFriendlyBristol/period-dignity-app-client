@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,500,700&display=swap");
 
 body {
   font-family: Lato, sans-serif;
@@ -10,7 +10,11 @@ body {
 h1 {
   font-weight: normal;
   font-size: calc(24px + 1vw);
+<<<<<<< HEAD
   line-height: 29px;
+=======
+  padding-left: 1rem;
+>>>>>>> d132fe1a3c3fefa8420cedf7e1eea10c5c7663fe
 }
 h2 {
   font-size: 1.2em;
@@ -25,59 +29,11 @@ h2 {
 }
 
 /* Wrappers and Containers Styles */
-.container-landing {
-  height: 50rem;
-  position: relative;
-  top: 5rem;
-  width: 100%;
-}
-
-.container-home {
-  height: 21rem;
-  /* background-color: #E5E5E5 */
-}
-
 .container-middle {
   height: 24rem;
   position: relative;
   top: 5rem;
   width: 100%;
-}
-
-.text-wrapper {
-  padding: 2rem;
-  @media screen and (min-width: 400px) {
-    body {
-      background-color: lightgreen;
-    }
-  }
-  height: 20%;
-  padding-left: 40%;
-}
-
-@media screen and (min-width: 540px) {
-  .text-wrapper {
-    padding-left: 50%;
-  }
-}
-@media screen and (min-width: 746px) {
-  .text-wrapper {
-    padding-left: 55%;
-  }
-}
-
-/* @media screen and (min-width: 1013px) {
-  .text-wrapper {
-    padding-left: %;
-  }
-} */
-
-.search-box-wrapper {
-  height: 36rem;
-  position: relative;
-  width: 100%;
-  /* Period red */
-  background: #d81921;
 }
 
 .map-container {
@@ -92,13 +48,13 @@ h2 {
   margin-left: 2rem;
 }
 
-Footer {
+footer {
   display: flex;
   flex-direction: column;
 }
 
 .footer {
-  position: sticky;
+  position: fixed;
   width: 100%;
   bottom: 0;
   height: 2rem;
@@ -191,6 +147,7 @@ Footer {
   height: 50vh;
 }
 
+<<<<<<< HEAD
 /* text */
 .landing-text-1 {
   position: relative;
@@ -272,14 +229,16 @@ padding-left: 60%; */
     /* padding-left: 55%; */
   }
 }
+=======
+>>>>>>> d132fe1a3c3fefa8420cedf7e1eea10c5c7663fe
 .padding-top-2 {
   padding-top: 20px;
 }
 
 .column {
   flex-direction: column;
-  width: 50%;
 }
+<<<<<<< HEAD
 /* assets */
 .human3 {
   position: relative;
@@ -307,6 +266,11 @@ padding-left: 60%; */
     height: 150%;
     position: relative;
     top: -15.5rem;
+=======
+@media only screen and (min-width: 640px) {
+  .column {
+    width: 50%;
+>>>>>>> d132fe1a3c3fefa8420cedf7e1eea10c5c7663fe
   }
 }
 
@@ -326,6 +290,7 @@ padding-left: 60%; */
   margin-top: 3rem;
 }
 
+<<<<<<< HEAD
 .search-box {
   height: 48px;
   left: 1.8rem;
@@ -370,17 +335,23 @@ padding-left: 60%; */
   }
 }
 
+=======
+>>>>>>> d132fe1a3c3fefa8420cedf7e1eea10c5c7663fe
 .search-component-container {
   /* position: relative;
   width: 100%;
   box-sizing: border-box;
   position: relative;
-  background: #D81921;
+  background: #d81921;
   bottom: 3rem;
   margin-top: 0rem;
+<<<<<<< HEAD
   height: 536px; */
   background-color: #D81921;
   padding-bottom: 2rem;
+=======
+  /* height: 536px; */
+>>>>>>> d132fe1a3c3fefa8420cedf7e1eea10c5c7663fe
 }
 
 .bullet-point {
@@ -436,6 +407,18 @@ padding-left: 60%; */
   border: none;
 }
 
+.button:focus {
+  outline: none;
+  background: #fcc762;
+}
+
+.button:hover {
+  background: #fcc762;
+}
+
+.logo {
+  height: 40%;
+}
 /* container with grey circle background*/
 .container-circle {
   background-image: url(assets/circle_grey.svg);
@@ -449,7 +432,7 @@ padding-left: 60%; */
   height: 20%;
 }
 
-.top-list{
+.top-list {
   list-style: none;
   padding-top: 20%;
   margin-top: 5rem;
@@ -457,7 +440,7 @@ padding-left: 60%; */
 }
 
 /* need to be reviewed  */
- .landing-bullet-list li{
+.landing-bullet-list li {
   position: relative;
   padding-left: 3rem;
   padding-bottom: 1rem;
@@ -479,13 +462,19 @@ padding-left: 60%; */
 
 .home-container-padding-top {
   padding-top: 1rem;
-  left: 1rem;
+  /* left: 1rem; */
 }
 
-.flex {
+.search-row {
   display: flex;
+  flex-direction: column;
 }
 
+@media only screen and (min-width: 640px) {
+  .search-row {
+    flex-direction: row;
+  }
+}
 
 @media only screen and (min-width: 900px) {
   .container-circle {
@@ -503,7 +492,7 @@ padding-left: 60%; */
   }
 
   #header {
-    width: 50%;
+    width: 70%;
     height: 5em;
   }
 }
@@ -523,6 +512,10 @@ padding-left: 60%; */
   .logo {
     left: -14rem;
     height: 70.25px;
+  }
+
+  h1 {
+    padding-left: calc(2rem + 8vh);
   }
 }
 @media only screen and (min-width: 800px) {

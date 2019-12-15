@@ -1,8 +1,5 @@
-.host-title {
-  padding-left: 2rem;
-}
-
-top-section{
+.top-text-host{
+  padding-right: 2rem;
 }
 
 .top-list{
@@ -26,6 +23,7 @@ top-section{
     background-image: url(../../assets/logo_bullet_point.svg);
     background-repeat: no-repeat;
     background-size: 70% 100%;
+    margin-left: -1.5rem;
 }
 
 .person-host{
@@ -36,14 +34,21 @@ top-section{
   padding-left: 1rem;
 }
 
-.middle-section {
-  background-color: #D81921;
-  height: 8rem;
+.info{
+  margin: 0;
+  text-align: right;
+  margin-left: 20em;
+  font-size: calc(0.2rem + 1vh);
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .form-submit{
   color: #ffffff;
-  padding: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
 }
 
 .form-submit__item:not(:last-of-type){
@@ -67,6 +72,7 @@ input[type="email"],
   padding: 0.5rem 0 0.5rem 0;
   outline: 0;
   border: none;
+  font-size: calc(14px + 1vh);
 }
 
 label {
@@ -84,8 +90,6 @@ label {
 .call-to-action {
   text-align: right;
   color: #FFFFFF;
-  padding-right: 1rem;
-  padding-left: 2rem;
 }
 
 
@@ -167,6 +171,9 @@ label {
 }
 
 /* Radio modifiers */
+.radio {
+  margin-top: 0.2rem;
+}
 .radio .control-indicator {
   border-radius: 50%;
 }
@@ -234,7 +241,7 @@ label {
 
 @media only screen and (max-width: 600px) {
   .person-host {
-    width: 100%;
+    width: 90%;
     height: 80%;
     position: relative;
     top: 10rem;
@@ -244,31 +251,67 @@ label {
 
 @media only screen and (min-width: 601px) {
   .person-host {
+    width: 90%;
+    height: 100%;
+    top: 10rem;
+  }
+
+  .info {
+    text-align: left;
+    margin: 0;
+  }
+
+  .form-submit {
+    padding-right: 12rem;
+    padding-left: calc(16rem + 10vh);
+  }
+
+  .call-to-action{
+    text-align: left;
+    margin-left: -10rem;
+    margin-right: 12rem;
+  }
+
+  .call-to-action p {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .person-host {
+    width: auto;
+    height: 110%;
     top: 10rem;
   }
 }
 
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1025px) {
   .person-host {
-    width: 50%;
-    height: 120%;
+    width: 65%;
+    height: 110%;
     position: relative;
     z-index: 0;
+    top: 13em;
+    left: 3rem;
   }
+
   .form-submit {
-    padding-right: 12rem;
-    padding-left: calc(26rem + 10vh);
+    padding-right: 10rem;
+    padding-left: calc(36rem + 15vh);
   }
 
   .call-to-action{
-    margin-right: 12rem;
-    font-size: larger;
+    text-align: left;
+    margin-right: 6rem;
+    margin-left: calc(0rem + 1vh);
   }
+}
 
-  .call-to-action p {
-    padding-left: 1rem;
-    padding-top: 0.5rem;
+_::-webkit-full-page-media, _:future, :root .safari_only {
+  .person-host {
+  width: auto;
+
   }
 }
 

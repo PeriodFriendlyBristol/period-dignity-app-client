@@ -26,12 +26,12 @@ function Host() {
   return (
     <div>
       <div className="container-circle top-section row">
-        <h1 className="host-title row">Host a Period Dignity Box</h1>
+        <h1 className="host-title row">Host a Period Friendly Box</h1>
         <div className="top-text-left column">
           <Person className="person-host" alt=""/>
         </div>
-        <div className="top-text column">
-          <p>Once approved, you will need:</p>
+        <div className="top-text-host column">
+          <h2>Once approved, you will need:</h2>
           <ul className="top-list custom-bullet-list">
             <li>A box, ideally clear</li>
             <li>A printed red label</li>
@@ -40,21 +40,16 @@ function Host() {
           <Logo className="app-logo" />
         </div>
       </div>
-      <div className="middle-section row">
-        <div className="padding-left-1 column"></div>
-        <div className="call-to-action column">
-          <p>
-            This information will be reviewed and displayed publicly. Do not
-            enter private/personal information.
-          </p>
-        </div>
-      </div>
       <div className="bottom-section row">
         <form
           onSubmit={sendContact}
           encType="multipart/form-data"
           className="form-submit"
         >
+        <p className="info">
+          This information will be reviewed and displayed publicly. Do not
+          enter private/personal information.
+        </p>
           <div className="form-submit__item">
             <label htmlFor="email">
               Email
@@ -110,7 +105,7 @@ function Host() {
                 type="text"
                 name="postcode"
                 id="postcode"
-                className="row"
+                className="long_column"
                 onChange={getValues}
               />
             </label>
@@ -128,11 +123,11 @@ function Host() {
           </div>
           <div className="form-submit__item row">
             Wheelchair access on site?
-            <div className="row">
+            <div className="radio row">
               <label className="control radio">
                 <input
                   id="radio-wheelchair-yes"
-                  name="radio-wheelchair-yes"
+                  name="radio-wheelchair"
                   type="radio"
                   value="yes"
                   onChange={getValues}
@@ -143,7 +138,7 @@ function Host() {
               <label className="control radio">
                 <input
                   id="radio-wheelchair-no"
-                  name="radio-wheelchair-no"
+                  name="radio-wheelchair"
                   type="radio"
                   value="no"
                   onChange={getValues}
@@ -155,11 +150,11 @@ function Host() {
           </div>
           <div className="form-submit__item row">
             Public accessible toilet available on site?
-            <div className="row">
+            <div className="radio row">
               <label className="control radio">
                 <input
                   id="radio-toilet-yes"
-                  name="radio-toilet-yes"
+                  name="radio-toilet"
                   type="radio"
                   value="yes"
                   onChange={getValues}
@@ -170,7 +165,7 @@ function Host() {
               <label className="control radio">
                 <input
                   id="radio-toilet-no"
-                  name="radio-toilet-no"
+                  name="radio-toilet"
                   type="radio"
                   value="no"
                   onChange={getValues}

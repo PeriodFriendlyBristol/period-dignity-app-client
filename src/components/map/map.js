@@ -4,6 +4,17 @@ import L from "leaflet";
 import "./map.css";
 
 export default class MapComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      venues: null,
+      mapDefaults: {
+        zoom: 13,
+        lat: 51.4545,
+        lng: -2.5879
+      }
+    };
+  }
   getIcon(number) {
     const icon = new L.Icon({
       iconUrl: require("../../assets/pins/pin-" + number + ".svg"),
@@ -14,8 +25,8 @@ export default class MapComponent extends React.Component {
   }
 
   render() {
-    let position = [this.props.mapDefaults.lat, this.props.mapDefaults.lng];
-    if (this.props.venues) {
+    let position = [this.state.mapDefaults.lat, this.state.mapDefaults.lng];
+    if (this.props.venues && this.props.venues[0]) {
       position = [
         this.props.venues[0].location.latitude,
         this.props.venues[0].location.longitude
@@ -23,7 +34,7 @@ export default class MapComponent extends React.Component {
       return (
         <Map
           center={position}
-          zoom={this.props.mapDefaults.zoom}
+          zoom={this.state.mapDefaults.zoom}
           zoomControl={false}
         >
           <TileLayer
@@ -44,7 +55,7 @@ export default class MapComponent extends React.Component {
       );
     } else {
       return (
-        <Map center={position} zoom={this.props.mapData.zoom}>
+        <Map center={position} zoom={this.state.mapDefaults.zoom}>
           <TileLayer
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
