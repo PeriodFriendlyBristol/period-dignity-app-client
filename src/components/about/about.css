@@ -3,10 +3,6 @@
   padding-right: 2rem;
 }
 
-p{
-  font-size: calc(10px + 1vh);
-}
-
 .person-donate {
   position: relative;
   z-index: 0;
