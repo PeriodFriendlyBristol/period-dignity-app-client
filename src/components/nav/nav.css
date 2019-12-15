@@ -20,8 +20,8 @@ a {
 
 .material-icons.md-dark{
   color: white;
-  font-size: calc(3vh);
   margin-top: 0.1rem;
+  display: block;
 }
 
 a:focus,
@@ -39,7 +39,6 @@ a:hover,
 
 .nav-item{
   text-align: center;
-  font-size: 0.7rem;
   display: inline-block;
   list-style-type: none;
   color: white;

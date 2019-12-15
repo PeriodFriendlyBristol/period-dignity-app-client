@@ -10,7 +10,7 @@ function redirectToPayPal() {
 function About() {
   return (
     <div>
-      <div className="container-circle top-section row">
+      <div className="app-container-circle top-section row">
         <h1 className="about-title row">Period Friendly Bristol</h1>
         <div className="invisible column">
         </div>
@@ -34,7 +34,7 @@ function About() {
           <Person className="person-donate" alt=""/>
         </div>
         <div
-          className="call-to-action padding-right-1 column"
+          className="about-bottom-text column"
           id="donate-section"
         >
           <button className="button donate" onClick={redirectToPayPal}>

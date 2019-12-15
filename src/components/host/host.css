@@ -37,11 +37,15 @@
 .info{
   margin: 0;
   text-align: right;
-  margin-left: 20em;
+  margin-left: 12em;
   font-size: calc(0.2rem + 1vh);
   padding-bottom: 1rem;
   padding-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.host {
+  padding-bottom: 5rem;
 }
 
 .form-submit{
@@ -69,10 +73,16 @@ input[type="text"],
 input[type="email"],
 .textarea {
   border-radius: 0.3rem;
-  padding: 0.5rem 0 0.5rem 0;
+  padding: 0.5rem;
   outline: 0;
   border: none;
   font-size: calc(14px + 1vh);
+}
+
+textarea:focus,
+input[type]:focus,
+select:focus{
+  outline: none;
 }
 
 label {

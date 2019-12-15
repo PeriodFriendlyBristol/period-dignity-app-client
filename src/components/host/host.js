@@ -25,7 +25,7 @@ function Host() {
   };
   return (
     <div>
-      <div className="container-circle top-section row">
+      <div className="app-container-circle top-section row">
         <h1 className="host-title row">Host a Period Friendly Box</h1>
         <div className="top-text-left column">
           <Person className="person-host" alt=""/>
@@ -40,7 +40,7 @@ function Host() {
           <Logo className="app-logo" />
         </div>
       </div>
-      <div className="bottom-section row">
+      <div className="bottom-section host row">
         <form
           onSubmit={sendContact}
           encType="multipart/form-data"
