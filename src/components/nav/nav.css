@@ -24,6 +24,7 @@ a {
   display: block;
 }
 
+.active,
 a:focus,
 a:active,
 a:hover,
