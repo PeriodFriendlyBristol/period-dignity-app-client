@@ -9,7 +9,7 @@ function redirectToPayPal() {
 
 function About() {
   return (
-    <div>
+    <div className="about-page">
       <div className="app-container-circle top-section row">
         <h1 className="about-title row">Period Friendly Bristol</h1>
         <div className="invisible column">
