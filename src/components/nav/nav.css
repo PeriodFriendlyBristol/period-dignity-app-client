@@ -34,6 +34,24 @@ a:hover,
   color: #FBAF1E;
 }
 
+#find::before {
+  font-family: 'Material Icons';
+  content: "search";
+  font-size: calc(1rem + 2vh);
+}
+
+#host::before {
+  font-family: 'Material Icons';
+  content: "favorite";
+  font-size: calc(1rem + 2vh);
+}
+
+#about::before {
+  font-family: 'Material Icons';
+  content: "person";
+  font-size: calc(1rem + 2vh);
+}
+
 .nav-list{
   padding: 0;
 }
