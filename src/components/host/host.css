@@ -73,7 +73,7 @@ input[type="text"],
 input[type="email"],
 .textarea {
   border-radius: 0.3rem;
-  padding: 0.5rem 0 0.5rem 0;
+  padding: 0.5rem;
   outline: 0;
   border: none;
   font-size: calc(14px + 1vh);
