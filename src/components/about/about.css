@@ -26,7 +26,8 @@
   font-size: 1rem;
 }
 
-.about-bottom-text {
+.about-bottom-text{
+  padding-right: 1rem;
   color: #ffffff;
 }
 

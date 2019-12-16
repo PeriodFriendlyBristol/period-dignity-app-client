@@ -11,7 +11,8 @@ body {
 h1 {
   font-weight: normal;
   font-size: calc(24px + 1vw);
-  color: #4f4f4f;
+  padding-left: 1rem;
+  color: #4F4F4F;
   margin-top: 0;
 }
 
@@ -211,6 +212,7 @@ footer {
 
 /* container with grey circle background*/
 .app-container-circle {
+  max-height: 35rem;
   background-color: white;
   background-image: url(assets/circle_grey.svg);
   background-position: 100px -100px;
@@ -317,6 +319,7 @@ footer {
     height: 70.25px;
   }
 }
+
 @media only screen and (min-width: 800px) {
   .logo {
     left: -18rem;
