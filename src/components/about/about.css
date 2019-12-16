@@ -1,3 +1,7 @@
+.about-page{
+  margin-bottom: 78px;
+}
+
 .about-page a{
   display: unset;
   color: #fbaf1e;
@@ -58,9 +62,9 @@
 @media only screen and (max-width: 420px) {
   .person-donate {
     width: auto;
-    height: 50%;
+    height: 40%;
     position: relative;
-    bottom: 12%;
+    bottom: 2rem;
   }
 
   .invisible {
@@ -69,9 +73,12 @@
 }
 
 @media only screen and (min-width: 680px) {
+  .about-bottom-text{
+    font-size: inherit;
+  }
+
   .about-top-text {
     margin-left: 50%;
-    margin-right: 15%;
   }
 
   .top-text p {
@@ -79,15 +86,9 @@
   }
 
   .person-donate {
-    width: auto;
-    height: 150%;
-    position: relative;
-    bottom: 55%;
-    left: 20%;
-  }
-
-  #donate-section {
-    margin-right: calc(2rem + 10vh);
+    height: 120%;
+    width: 120%;
+    bottom: 10rem;
   }
 
   #donate-section p {
@@ -111,7 +112,6 @@
   }
 
   #donate-section {
-    margin-right: calc(12rem + 10vh);
     margin-left: calc(-12rem + 10vh);
   }
 
@@ -122,4 +122,5 @@
   .app-logo {
     padding-bottom: 3rem;
   }
+
 }

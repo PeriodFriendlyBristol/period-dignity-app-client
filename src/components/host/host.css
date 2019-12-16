@@ -274,16 +274,6 @@ label {
     padding-right: calc(4rem + 3vh);
     padding-left: calc(16rem + 10vh);
   }
-
-  .call-to-action{
-    text-align: left;
-    margin-left: -10rem;
-    margin-right: 12rem;
-  }
-
-  .call-to-action p {
-    font-size: 0.8rem;
-  }
 }
 
 @media only screen and (min-width: 767px) {
