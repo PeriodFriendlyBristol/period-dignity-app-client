@@ -119,4 +119,15 @@
   #donate-section p {
     text-align: middle;
   }
+
+  #about-app-logo{
+    width: 10%;
+    position: absolute;
+    top: 20rem;
+    left: 35rem;
+  }
+
+  .about-bottom-text{
+    padding: 2rem;
+  }
 }
