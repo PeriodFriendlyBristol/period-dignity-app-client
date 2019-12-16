@@ -100,7 +100,7 @@ class SearchComponent extends React.Component {
       <div className="search-component-container">
         <div className="search-row">
           <div className="column human-wrapper">
-            <Person className="human3 padding-left-" />
+            <Person className="human3" />
           </div>
           <div className="column search-wrapper">
             <h2 className="landing-text-3">
