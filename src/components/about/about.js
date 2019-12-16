@@ -28,7 +28,7 @@ function About() {
           </p>
           <p>The Period Friendly Bristol web app is a <a href="https://www.bristolonecity.com/one-city-plan/">One City</a> project stewarded by Period Friendly Places Charity and powered by <a href="https://www.bristolisopen.com/">Bristol is Open</a>.</p>
           <p>We are just at the beginning of this journey. To share feedback, please get in touch at <a href="mailto:hello@periodfriendlybristol.org">hello@periodfriendlybristol.org</a></p>
-          <Logo className="app-logo" id="about-app-logo"/>
+          <Logo className="app-logo" id="app-logo"/>
         </div>
       </div>
       <div className="bottom-section row">
