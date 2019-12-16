@@ -41,18 +41,7 @@
 
 /* text */
 .landing-text-1 {
-  padding: 1rem 1rem 0;
-  font-size: calc(24px + 1vw);
-  line-height: 1.2;
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-  color: #4f4f4f;
-}
-@media screen and (min-width: 360px) {
-  .landing-text-1 {
-    padding: 2rem;
-  }
+  max-width: 530px;
 }
 
 .landing-text-3 {
@@ -92,5 +81,11 @@
     padding-left: 1.4rem;
     height: auto;
     width: 90%;
+  }
+}
+
+@media only screen and (min-width: 1040px) {
+  .human3 {
+    width: 60%;
   }
 }

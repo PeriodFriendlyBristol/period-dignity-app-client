@@ -8,9 +8,9 @@ class Landing extends React.Component {
     return (
       <div className="landing-page">
         <div className="container-circle">
-          <div className="landing-text-1 home-container-padding-top">
+          <h1 className="landing-text-1">
             Free period products for people in Bristol who need them
-          </div>
+          </h1>
           <div className="text-wrapper">
             <ul className="top-list landing-bullet-list">
               <li>Pick up points all over the city</li>
