@@ -159,17 +159,6 @@ footer {
   margin-top: 3rem;
 }
 
-.search-component-container {
-  position: relative;
-  width: 100%;
-  box-sizing: border-box;
-  position: relative;
-  background: #d81921;
-  bottom: 3rem;
-  margin-top: 0rem;
-  /* height: 536px; */
-}
-
 .bullet-point {
   height: 17px;
   width: 17px;
