@@ -12,7 +12,20 @@ h1 {
   font-weight: normal;
   font-size: calc(24px + 1vw);
   color: #4f4f4f;
-  padding-top: 1rem;
+  padding-left: 1rem;
+}
+@media screen and (min-width: 360px) {
+  h1 {
+    padding-left: 2rem;
+    padding-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  h1 {
+    padding-top: 1.5rem;
+    padding-left: calc(2rem + 8vh);
+  }
 }
 
 h2 {
@@ -341,11 +354,6 @@ footer {
     left: -14rem;
     position: absolute;
     height: 70.25px;
-  }
-
-  h1 {
-    padding-top: 1.5rem;
-    padding-left: calc(2rem + 8vh);
   }
 }
 @media only screen and (min-width: 800px) {
