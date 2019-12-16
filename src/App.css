@@ -88,45 +88,11 @@ footer {
   visibility: hidden;
 }
 
-/* Regular 12pt */
-
-.left-li {
-  /* position: absolute;
-  width: 96px;
-  height: 12px;
-  left: calc(50% - 96px/2 - 120px);
-  top: calc(50% - 12px/2 + 12px); */
-  /* identical to box height, or 100% */
-
-  /* display: flex;
-  align-items: flex-end;
-  text-align: center; */
-}
-
 .center-li {
-  /* position: absolute;
-  width: 96px;
-  height: 12px;
-  left: calc(50% - 96px/2);
-  top: calc(50% - 12px/2 + 12px); */
-
-  /* display: flex;
-  align-items: flex-end;
-  text-align: center; */
-
   color: #ffffff;
 }
 
 .right-li {
-  /* position: absolute;
-  width: 96px;
-  height: 12px;
-  left: calc(50% - 96px/2 + 120px);
-  top: calc(50% - 12px/2 + 12px); */
-  /* display: flex;
-  align-items: flex-end;
-  text-align: center;
-   */
   color: #ffffff;
 }
 
