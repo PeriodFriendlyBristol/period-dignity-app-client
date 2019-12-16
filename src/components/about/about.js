@@ -12,7 +12,8 @@ function About() {
     <div className="about-page">
       <div className="app-container-circle top-section row">
         <h1 className="about-title row">Period Friendly Bristol</h1>
-        <div className="invisible column"></div>
+        <div className="invisible column">
+        </div>
         <div className="about-top-text column">
           <p>
             Bristol has pledged to take a leading role in making period products

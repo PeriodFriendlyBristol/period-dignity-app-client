@@ -113,6 +113,7 @@
 
   #donate-section {
     margin-left: calc(-12rem + 10vh);
+    margin-right: 5rem;
   }
 
   #donate-section p {
