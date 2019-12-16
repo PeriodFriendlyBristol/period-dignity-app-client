@@ -254,7 +254,7 @@ label {
     width: 90%;
     height: 80%;
     position: relative;
-    top: 10rem;
+    top: 11rem;
     z-index: 0;
   }
 }
@@ -264,6 +264,7 @@ label {
     width: 90%;
     height: 100%;
     top: 10rem;
+    left: -5rem;
   }
 
   .info {
