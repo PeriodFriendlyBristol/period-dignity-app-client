@@ -2,11 +2,6 @@
   overflow: hidden;
 }
 
-.about-top-text {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
 .person-donate {
   position: relative;
   z-index: 0;
