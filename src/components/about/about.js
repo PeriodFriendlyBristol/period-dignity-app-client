@@ -25,6 +25,8 @@ function About() {
             against simply for having a period – this is part of our journey to
             being a period friendly city.
           </p>
+          <p>The Period Friendly Bristol web app is a <a href="https://www.bristolonecity.com/one-city-plan/">One City</a> project stewarded by Period Friendly Places Charity and powered by <a href="https://www.bristolisopen.com/">Bristol is Open</a>.</p>
+          <p>We are just at the beginning of this journey. To share feedback, please get in touch at hello@periodfriendlybristol.org</p>
           <Logo className="app-logo" />
         </div>
       </div>
@@ -38,7 +40,6 @@ function About() {
             DONATE
           </button>
           */}
-          <p>The Period Friendly Bristol web app is a <a href="https://www.bristolonecity.com/one-city-plan/">One City</a> project stewarded by Period Friendly Places Charity and powered by <a href="https://www.bristolisopen.com/">Bristol is Open</a>.</p>
           <p>The period dignity web app has been made by local web service designers and developers.
             Supported by Marius Jennings @ Bristol City Council's Innovation team, <a href="https://www.linkedin.com/in/ajara-i-pfannenschmidt/">Ajara Pfannenschmidt</a> and&nbsp;
             <a href="https://www.linkedin.com/in/john-kellas-0a63635b/" target="_blank">John Kellas</a>&nbsp;co-facilitated the wonderful dev team that included: &nbsp;
@@ -50,7 +51,6 @@ function About() {
             <a href="https://www.linkedin.com/in/jonah-freeland-6386a329/" target="_blank">Jonah Freeland</a>.
             Many thanks to these dedicated folks and the others that helped through the Hackathon.
           </p>
-          <p>We are just at the beginning of this journey. To share feedback, please get in touch at hello@periodfriendlybristol.org</p>
         </div>
       </div>
     </div>
