@@ -24,6 +24,11 @@
   }
 }
 
+@media screen and (min-width: 1040px) {
+  .search-wrapper {
+    padding-right: 20rem;
+  }
+}
 .search-wrapper {
   padding-bottom: 2rem;
 }

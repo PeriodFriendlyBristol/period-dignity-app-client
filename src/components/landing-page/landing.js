@@ -17,7 +17,7 @@ class Landing extends React.Component {
               <li>Pick up points all over the city</li>
               <li className="landing-list">Donate products to help others</li>
             </ul>
-            <Logo className="app-logo" />
+            <Logo className="app-logo logo-large-placement" />
           </div>
         </div>
         <Search />

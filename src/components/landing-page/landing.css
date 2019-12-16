@@ -60,6 +60,7 @@
 @media only screen and (min-width: 360px) {
   .landing-text-3 {
     margin-top: -7.1rem;
+    width: 11rem;
   }
 }
 @media only screen and (min-width: 640px) {
@@ -87,5 +88,7 @@
 @media only screen and (min-width: 1040px) {
   .human3 {
     width: 60%;
+    padding-left: 8rem;
+    padding-top: 1rem;
   }
 }

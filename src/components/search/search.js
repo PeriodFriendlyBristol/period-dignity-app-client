@@ -100,12 +100,12 @@ class SearchComponent extends React.Component {
       <div className="search-component-container">
         <div className="search-row">
           <div className="column human-wrapper">
-            <Person className="human3 padding-left-" />
+            <Person className="human3" />
           </div>
           <div className="column search-wrapper">
-            <div className="landing-text-3">
+            <h2 className="landing-text-3">
               Find a Period Friendly Box near you
-            </div>
+            </h2>
             <div className="search-input-container">
               <Geo id="geo-icon" onClick={this.doMyLocationSearch} />
               <input
