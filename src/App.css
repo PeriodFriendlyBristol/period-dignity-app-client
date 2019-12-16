@@ -4,14 +4,13 @@ body {
   font-family: Lato, sans-serif;
   font-weight: 400;
   font-size: calc(16px + 0.2vw);
-  line-height: calc(1.1em + 0.2vw);
+  line-height: calc(1.2em + 0.2vw);
   margin: 0;
 }
 
 h1 {
   font-weight: normal;
   font-size: calc(24px + 1vw);
-  padding-left: 1rem;
   color: #4F4F4F;
   margin-top: 0;
 }

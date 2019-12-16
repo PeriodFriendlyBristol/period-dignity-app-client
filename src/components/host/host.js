@@ -37,7 +37,7 @@ function Host() {
             <li>A printed red label</li>
             <li>To inform everybody who works on site</li>
           </ul>
-          <Logo className="app-logo" />
+          <Logo className="app-logo" id="app-logo" />
         </div>
       </div>
       <div className="bottom-section host row">
@@ -46,10 +46,6 @@ function Host() {
           encType="multipart/form-data"
           className="form-submit"
         >
-          <p className="info">
-            This information will be reviewed and displayed publicly. Do not
-            enter private/personal information.
-          </p>
           <div className="form-submit__item">
             <label htmlFor="email">
               Email
@@ -197,8 +193,10 @@ function Host() {
                 onChange={getValues}
               />
               <span className="checkbox"></span>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              <p className="info">
+                The information submitted in this form will be publicly available. By ticking the box, you are confirming that the information provided is already public domain, or that you have permission to make it public domain. Please do not include any information you do not wish to be public. 
+                If you would like a box to collect products for redistribution, but to not be listed on the website, please email hello@periodfriendlybristol.org for assistance.
+              </p>
             </label>
           </div>
           <input
