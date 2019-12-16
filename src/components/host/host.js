@@ -46,10 +46,6 @@ function Host() {
           encType="multipart/form-data"
           className="form-submit"
         >
-          <p className="info">
-            This information will be reviewed and displayed publicly. Do not
-            enter private/personal information.
-          </p>
           <div className="form-submit__item">
             <label htmlFor="email">
               Email

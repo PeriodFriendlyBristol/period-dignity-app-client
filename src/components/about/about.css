@@ -2,6 +2,11 @@
   display: unset;
 }
 
+.about-page a:hover{
+  color: #fbaf1e;
+  text-decoration: underline;
+}
+
 .person-donate {
   position: relative;
   z-index: 0;
@@ -46,6 +51,7 @@
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
+  width: 50%;
 }
 
 @media only screen and (max-width: 420px) {
@@ -62,6 +68,9 @@
 }
 
 @media only screen and (min-width: 680px) {
+  .about-top-text {
+  }
+
   .top-text p {
     width: 60%;
   }
@@ -87,7 +96,8 @@
 
 @media only screen and (min-width: 1024px) {
   .about-top-text {
-    padding: 0 12%;
+    margin-left: 50%;
+    margin-right: 15%;
   }
 
   .person-donate {

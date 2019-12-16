@@ -36,8 +36,6 @@
 
 .info{
   margin: 0;
-  text-align: right;
-  margin-left: 12em;
   font-size: calc(0.2rem + 1vh);
   padding-bottom: 1rem;
   margin-bottom: 1rem;
@@ -49,6 +47,7 @@
 
 .form-submit{
   color: #ffffff;
+  padding-top: 5rem;
   padding-left: 2rem;
   padding-right: 2rem;
   padding-bottom: 1rem;
@@ -253,7 +252,7 @@ label {
     width: 90%;
     height: 80%;
     position: relative;
-    top: 11rem;
+    top: 12rem;
     z-index: 0;
   }
 }
