@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./host.css";
 import { ReactComponent as Person } from "./svg/host.svg";
-import { ReactComponent as Logo } from "../../assets/period_logo.svg";
+import { ReactComponent as Logo } from "../../assets/pfb-logo.svg";
 
 function Host() {
   const [contact, setContact] = useState({});
@@ -28,7 +28,7 @@ function Host() {
       <div className="app-container-circle top-section row">
         <h1 className="host-title row">Host a Period Friendly Box</h1>
         <div className="top-text-left column">
-          <Person className="person-host" alt=""/>
+          <Person className="person-host" alt="" />
         </div>
         <div className="top-text-host column">
           <h2>Once approved, you will need:</h2>
@@ -46,10 +46,10 @@ function Host() {
           encType="multipart/form-data"
           className="form-submit"
         >
-        <p className="info">
-          This information will be reviewed and displayed publicly. Do not
-          enter private/personal information.
-        </p>
+          <p className="info">
+            This information will be reviewed and displayed publicly. Do not
+            enter private/personal information.
+          </p>
           <div className="form-submit__item">
             <label htmlFor="email">
               Email
@@ -177,7 +177,7 @@ function Host() {
           </div>
           <div className="form-submit__item">
             <label htmlFor="opening_hours">
-            Opening hours
+              Opening hours
               <div className="row">
                 <textarea
                   name="opening_hours"

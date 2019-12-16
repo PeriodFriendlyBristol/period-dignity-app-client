@@ -1,6 +1,7 @@
 import React from "react";
 import Search from "../search/search";
-import { ReactComponent as Logo } from "./svg/period_logo.svg";
+import { ReactComponent as Logo } from "../../assets/pfb-logo.svg";
+
 import "./landing.css";
 
 class Landing extends React.Component {
@@ -15,10 +16,8 @@ class Landing extends React.Component {
             <ul className="top-list landing-bullet-list">
               <li>Pick up points all over the city</li>
               <li className="landing-list">Donate products to help others</li>
-              <li className="no-bullet">
-                <Logo className="logo" />
-              </li>
             </ul>
+            <Logo className="app-logo" />
           </div>
         </div>
         <Search />
