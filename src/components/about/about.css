@@ -1,10 +1,5 @@
-.about-page{
+.about-page {
   overflow: hidden;
-}
-
-.about-top-text{
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
 .person-donate {
@@ -13,7 +8,7 @@
 }
 
 .bottom-section {
-  background-color: #D81921;
+  background-color: #d81921;
 }
 
 .padding-left-1 {
@@ -26,7 +21,7 @@
 
 .call-to-action {
   text-align: right;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 0 1rem 0 0;
   font-size: 1rem;
 }
@@ -36,7 +31,7 @@
   color: #ffffff;
 }
 
-.donate{
+.donate {
   margin-bottom: 1rem;
 }
 
@@ -54,7 +49,6 @@
 }
 
 @media only screen and (max-width: 420px) {
-
   .person-donate {
     width: auto;
     height: 90%;
@@ -68,12 +62,10 @@
 }
 
 @media only screen and (min-width: 680px) {
-  .about-top-text{
-    padding-left: 5rem;
-    padding-right: 5rem;
+  .about-top-text {
+    margin-left: 50%;
   }
-
-  .top-text p{
+  .top-text p {
     width: 60%;
   }
 
@@ -85,8 +77,8 @@
     left: 20%;
   }
 
-  #donate-section{
-    margin-right:  calc(2rem + 10vh);
+  #donate-section {
+    margin-right: calc(2rem + 10vh);
   }
 
   #donate-section p {
@@ -105,9 +97,7 @@
   }
 }
 
-
 @media only screen and (min-width: 1024px) {
-
   .person-donate {
     width: auto;
     height: 200%;
@@ -115,18 +105,12 @@
     bottom: 23.5em;
   }
 
-  .about-top-text{
-    margin: 0;
-    padding-left: calc(10vh);
-    padding-right: calc(10vh);
-  }
-
-  .about-top-text p{
+  .about-top-text p {
     margin-bottom: 0;
   }
 
-  #donate-section{
-    margin-right:  calc(12rem + 10vh);
+  #donate-section {
+    margin-right: calc(12rem + 10vh);
     margin-left: calc(-12rem + 10vh);
   }
 
@@ -134,15 +118,7 @@
     text-align: middle;
   }
 
-  .app-logo{
+  .app-logo {
     padding-bottom: 3rem;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .about-top-text{
-    margin: 0;
-    padding-left: calc(20vh);
-    padding-right: calc(26vh);
   }
 }

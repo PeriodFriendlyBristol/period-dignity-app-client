@@ -1,7 +1,7 @@
 import React from "react";
 import "./about.css";
 import { ReactComponent as Person } from "./svg/about.svg";
-import { ReactComponent as Logo } from "../../assets/period_logo.svg";
+import { ReactComponent as Logo } from "../../assets/pfb-logo.svg";
 
 function redirectToPayPal() {
   window.open("http://www.paypal.com/");
@@ -12,8 +12,7 @@ function About() {
     <div className="about-page">
       <div className="app-container-circle top-section row">
         <h1 className="about-title row">Period Friendly Bristol</h1>
-        <div className="invisible column">
-        </div>
+        <div className="invisible column"></div>
         <div className="about-top-text column">
           <p>
             Bristol has pledged to take a leading role in making period products
@@ -31,12 +30,9 @@ function About() {
       </div>
       <div className="bottom-section row">
         <div className="call-to-action column">
-          <Person className="person-donate" alt=""/>
+          <Person className="person-donate" alt="" />
         </div>
-        <div
-          className="about-bottom-text column"
-          id="donate-section"
-        >
+        <div className="about-bottom-text column" id="donate-section">
           <button className="button donate" onClick={redirectToPayPal}>
             DONATE
           </button>
