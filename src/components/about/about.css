@@ -1,5 +1,5 @@
-.about-page {
-  overflow: hidden;
+.about-page a{
+  display: unset;
 }
 
 .person-donate {
@@ -83,15 +83,6 @@
   }
 
   /* Safari SVG scale*/
-
-  .person-donate:not(:root:root) {
-    height: 120%;
-    width: 100%;
-    margin: 0;
-  }
-
-  .bottom-section:not(:root:root) {
-  }
 }
 
 @media only screen and (min-width: 1024px) {

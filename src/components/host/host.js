@@ -197,8 +197,10 @@ function Host() {
                 onChange={getValues}
               />
               <span className="checkbox"></span>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              <p className="info">
+                The information submitted in this form will be publicly available. By ticking the box, you are confirming that the information provided is already public domain, or that you have permission to make it public domain. Please do not include any information you do not wish to be public. 
+                If you would like a box to collect products for redistribution, but to not be listed on the website, please email hello@periodfriendlybristol.org for assistance.
+              </p>
             </label>
           </div>
           <input
