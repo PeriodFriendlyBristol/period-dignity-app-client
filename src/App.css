@@ -329,3 +329,11 @@ footer {
 .pl-0 {
   padding-left: 0;
 }
+
+@media only screen and (min-width: 1024px) {
+  .logo-large-placement {
+      left: -97%;
+      position: relative;
+      top: 5rem;
+  }
+}
