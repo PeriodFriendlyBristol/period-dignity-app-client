@@ -12,19 +12,7 @@ h1 {
   font-weight: normal;
   font-size: calc(24px + 1vw);
   color: #4f4f4f;
-  padding: 0 1rem;
   margin-top: 0;
-}
-@media screen and (min-width: 360px) {
-  h1 {
-    padding: 1rem 2rem 0;
-  }
-}
-
-@media screen and (min-width: 720px) {
-  h1 {
-    padding: 1.5rem calc(2rem + 8vh) 0;
-  }
 }
 
 h2 {
@@ -223,10 +211,30 @@ footer {
 
 /* container with grey circle background*/
 .app-container-circle {
+  background-color: white;
   background-image: url(assets/circle_grey.svg);
   background-position: 100px -100px;
   background-repeat: no-repeat;
   background-size: 100% 140%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 360px) {
+  .app-container-circle {
+    padding: 1rem 2rem;
+  }
+}
+@media screen and (min-width: 480px) {
+  .app-container-circle {
+    padding: 1.5rem 2rem;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .app-container-circle {
+    padding: 1.5rem calc(2rem + 8vh);
+  }
 }
 
 .app-logo {

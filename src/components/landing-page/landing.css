@@ -3,7 +3,7 @@
   min-height: calc(100vh - 120px);
 }
 
-.container-circle {
+/* .container-circle {
   background-image: url(../../assets/grey-circle.svg);
   background-position: center right -20vw;
   background-repeat: no-repeat;
@@ -15,7 +15,7 @@
   .container-circle {
     min-height: 450px;
   }
-}
+} */
 
 .text-wrapper {
   padding: 2rem 1rem;

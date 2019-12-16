@@ -8,7 +8,7 @@ class Landing extends React.Component {
   render() {
     return (
       <div className="landing-page">
-        <div className="container-circle">
+        <div className="app-container-circle">
           <h1 className="landing-text-1">
             Free period products for people in Bristol who need them
           </h1>
