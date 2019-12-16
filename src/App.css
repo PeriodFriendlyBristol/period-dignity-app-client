@@ -12,6 +12,7 @@ h1 {
   font-weight: normal;
   font-size: calc(24px + 1vw);
   color: #4f4f4f;
+  padding-top: 1rem;
 }
 
 h2 {
