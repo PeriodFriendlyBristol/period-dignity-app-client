@@ -1,9 +1,9 @@
 .about-page a{
   display: unset;
+  color: #fbaf1e;
 }
 
 .about-page a:hover{
-  color: #fbaf1e;
   text-decoration: underline;
 }
 
@@ -32,6 +32,7 @@
 }
 
 .about-bottom-text{
+  font-size: 0.8rem;
   padding-right: 1rem;
   color: #ffffff;
 }
@@ -57,7 +58,7 @@
 @media only screen and (max-width: 420px) {
   .person-donate {
     width: auto;
-    height: 90%;
+    height: 50%;
     position: relative;
     bottom: 12%;
   }
@@ -69,6 +70,8 @@
 
 @media only screen and (min-width: 680px) {
   .about-top-text {
+    margin-left: 50%;
+    margin-right: 15%;
   }
 
   .top-text p {
@@ -95,10 +98,6 @@
 }
 
 @media only screen and (min-width: 1024px) {
-  .about-top-text {
-    margin-left: 50%;
-    margin-right: 15%;
-  }
 
   .person-donate {
     width: auto;

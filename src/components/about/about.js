@@ -40,14 +40,14 @@ function About() {
           */}
           <p>The Period Friendly Bristol web app is a <a href="https://www.bristolonecity.com/one-city-plan/">One City</a> project stewarded by Period Friendly Places Charity and powered by <a href="https://www.bristolisopen.com/">Bristol is Open</a>.</p>
           <p>The period dignity web app has been made by local web service designers and developers.
-            Supported by Marius Jennings @ Bristol City Council's Innovation team, <a href="https://www.linkedin.com/in/ajara-i-pfannenschmidt/">Ajara Pfannenschmidt</a> and
-            <a href="https://www.linkedin.com/in/john-kellas-0a63635b/">John Kellas</a>co-facilitated the wonderful dev team that included: &nbsp;
-            <a href="https://www.linkedin.com/in/cgillions/?originalSubdomain=uk">Charlie Gillions</a>,&nbsp;
-            <a href="https://www.linkedin.com/in/elisa-covato-phd-1845b7147/?originalSubdomain=uk">Elisa Covato</a>,&nbsp;
-            <a href="https://www.linkedin.com/in/fran-zuch-seccl/?originalSubdomain=uk">Fran Zuch</a>,&nbsp;
-            <a href="https://www.linkedin.com/in/genesis-self-fordham-22655a88/">Genesis Self-Fordham</a>,&nbsp;
-            <a href="https://www.linkedin.com/in/jayceecheong/">Jaycee Cheong</a>,&nbsp;
-            <a href="https://www.linkedin.com/in/jonah-freeland-6386a329/">Jonah Freeland</a>.
+            Supported by Marius Jennings @ Bristol City Council's Innovation team, <a href="https://www.linkedin.com/in/ajara-i-pfannenschmidt/">Ajara Pfannenschmidt</a> and&nbsp;
+            <a href="https://www.linkedin.com/in/john-kellas-0a63635b/" target="_blank">John Kellas</a>&nbsp;co-facilitated the wonderful dev team that included: &nbsp;
+            <a href="https://www.linkedin.com/in/cgillions/?originalSubdomain=uk" target="_blank">Charlie Gillions</a>,&nbsp;
+            <a href="https://www.linkedin.com/in/elisa-covato-phd-1845b7147/?originalSubdomain=uk" target="_blank">Elisa Covato</a>,&nbsp;
+            <a href="https://www.linkedin.com/in/fran-zuch-seccl/?originalSubdomain=uk" target="_blank">Fran Zuch</a>,&nbsp;
+            <a href="https://www.linkedin.com/in/genesis-self-fordham-22655a88/" target="_blank">Genesis Self-Fordham</a>,&nbsp;
+            <a href="https://www.linkedin.com/in/jayceecheong/" target="_blank">Jaycee Cheong</a>,&nbsp;
+            <a href="https://www.linkedin.com/in/jonah-freeland-6386a329/" target="_blank">Jonah Freeland</a>.
             Many thanks to these dedicated folks and the others that helped through the Hackathon.
           </p>
           <p>We are just at the beginning of this journey. To share feedback, please get in touch at hello@periodfriendlybristol.org</p>
