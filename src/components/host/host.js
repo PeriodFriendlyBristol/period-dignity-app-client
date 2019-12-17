@@ -53,6 +53,7 @@ function Host() {
                 type="email"
                 name="email"
                 id="email"
+                required="true"
                 className="row"
                 onChange={getValues}
               />
@@ -65,6 +66,7 @@ function Host() {
                 type="text"
                 name="phone"
                 id="number"
+                required="true"
                 className="row"
                 onChange={getValues}
               />
@@ -77,6 +79,7 @@ function Host() {
                 type="text"
                 name="location_name"
                 id="location"
+                required="true"
                 className="row"
                 onChange={getValues}
               />
@@ -89,6 +92,7 @@ function Host() {
                 type="text"
                 name="address"
                 id="address"
+                required="true"
                 className="row"
                 onChange={getValues}
               />
@@ -101,6 +105,7 @@ function Host() {
                 type="text"
                 name="postcode"
                 id="postcode"
+                required="true"
                 className="long_column"
                 onChange={getValues}
               />
@@ -112,6 +117,7 @@ function Host() {
               <textarea
                 name="box_location"
                 id="box_location"
+                required="true"
                 className="textarea row"
                 onChange={getValues}
               />
@@ -124,6 +130,7 @@ function Host() {
                 <input
                   id="radio-wheelchair-yes"
                   name="radio-wheelchair"
+                  required="true"
                   type="radio"
                   value="yes"
                   onChange={getValues}
@@ -152,6 +159,7 @@ function Host() {
                   id="radio-toilet-yes"
                   name="radio-toilet"
                   type="radio"
+                  required="true"
                   value="yes"
                   onChange={getValues}
                 />
@@ -178,6 +186,7 @@ function Host() {
                 <textarea
                   name="opening_hours"
                   id="opening_hours"
+                  required="true"
                   className="textarea row"
                   onChange={getValues}
                 />
@@ -190,6 +199,7 @@ function Host() {
                 type="checkbox"
                 name="terms"
                 id="terms"
+                required="true"
                 onChange={getValues}
               />
               <span className="checkbox"></span>
