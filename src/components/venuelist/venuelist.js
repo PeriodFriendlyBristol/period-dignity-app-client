@@ -57,7 +57,7 @@ export default class VenueList extends React.Component {
                   </div>
                   <p>
                     {venue.product_location !== "TBD" ? (
-                      <span>venue.product_location</span>
+                      <span>{venue.product_location}</span>
                     ) : (
                       <span></span>
                     )}
