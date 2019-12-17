@@ -45,6 +45,7 @@ function About() {
             Supported by Marius Jennings @ Bristol City Council's Innovation team, <a href="https://www.linkedin.com/in/ajara-i-pfannenschmidt/">Ajara Pfannenschmidt</a> and&nbsp;
             <a href="https://www.linkedin.com/in/john-kellas-0a63635b/" target="_blank">John Kellas</a>&nbsp;co-facilitated the wonderful dev team that included: &nbsp;
             <a href="https://www.linkedin.com/in/cgillions/?originalSubdomain=uk" target="_blank">Charlie Gillions</a>,&nbsp;
+            <a href="https://www.linkedin.com/in/adam-waterman-1336269b/?originalSubdomain=uk" target="_blank">Adam Waterman</a>,&nbsp;
             <a href="https://www.linkedin.com/in/elisa-covato-phd-1845b7147/?originalSubdomain=uk" target="_blank">Elisa Covato</a>,&nbsp;
             <a href="https://www.linkedin.com/in/fran-zuch-seccl/?originalSubdomain=uk" target="_blank">Fran Zuch</a>,&nbsp;
             <a href="https://www.linkedin.com/in/genesis-self-fordham-22655a88/" target="_blank">Genesis Self-Fordham</a>,&nbsp;
