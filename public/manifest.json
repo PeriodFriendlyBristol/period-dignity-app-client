@@ -3,7 +3,7 @@
   "short name": "Period Dignity",
   "theme_color": "#d81921",
   "background_color": "#ffffff",
-  "display": "browser",
+  "display": "minimal-ui",
   "scope": "/",
   "start_url": "/",
   "icons": [
