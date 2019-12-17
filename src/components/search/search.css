@@ -63,3 +63,12 @@
 #error.has-error {
   display: block;
 }
+
+@media only screen and (max-width: 640px) {
+  .human-wrapper {
+    width: 50%;
+  }
+  .search-wrapper {
+    width: 100%;
+  }
+}
