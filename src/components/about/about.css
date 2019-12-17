@@ -101,12 +101,12 @@
     height: 200%;
     position: relative;
     bottom: 22rem;
-    left: 3rem;
+    left: 1rem;
   }
 
   .about-top-text {
     margin-left: 50%;
-    margin-right: 20%;
+    margin-right: 14%;
   }
 
   .about-top-text p {
@@ -125,8 +125,8 @@
   #app-logo{
     width: 10%;
     position: absolute;
-    top: 20rem;
-    left: 35rem;
+    top: 26rem;
+    left: 26rem;
   }
 
   .about-bottom-text{
