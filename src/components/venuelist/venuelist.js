@@ -41,12 +41,16 @@ export default class VenueList extends React.Component {
                 <div className="venue-details">
                   <h2>{venue.name}</h2>
                   <p>
-                    {venue[dayOpen] ? (
-                      <span>
-                        {this.capitalize(day)}, open{" "}
-                        {venue[dayOpen].slice(0, -3)}, closes at{" "}
-                        {venue[dayClose].slice(0, -3)}
-                      </span>
+                    {venue.opening_hours ? (
+                      venue[dayOpen] ? (
+                        <span>
+                          {this.capitalize(day)}, open{" "}
+                          {venue[dayOpen].slice(0, -3)}, closes at{" "}
+                          {venue[dayClose].slice(0, -3)}
+                        </span>
+                      ) : (
+                        <span>Closed today</span>
+                      )
                     ) : (
                       <span></span>
                     )}
