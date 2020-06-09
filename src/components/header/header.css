@@ -1,4 +1,4 @@
-#header {
+#app-header {
   position: sticky;
   z-index: 1000;
   display: flex;
@@ -7,19 +7,26 @@
   background-color: #d81921;
   min-height: 60px;
 }
-#header h1 {
-  margin: 0;
-}
 
-#header a {
+#app-title-link {
   display: block;
-  color: white;
   text-decoration: none;
   padding: 1rem 1rem;
 }
 
 @media screen and (min-width: 360px) {
-  #header a {
+  #app-title-link {
     padding: 1rem 2rem;
+  }
+}
+
+#app-header .main-nav {
+  display: none;
+  margin: 0 auto;
+  width: 400px;
+}
+@media screen and (min-width: 900px) {
+  #app-header .main-nav {
+    display: block;
   }
 }

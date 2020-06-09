@@ -1,26 +1,42 @@
-import React from 'react';
-import MaterialIcon from 'material-icons-react';
-import { NavLink } from 'react-router-dom';
-import './nav.css';
+import React from "react";
+import MaterialIcon from "material-icons-react";
+import { NavLink } from "react-router-dom";
+import "./nav.css";
 
 class Nav extends React.Component {
-  render () {
+  render() {
     return (
-      <nav className="navbar">
-        <MaterialIcon icon=""/>
-         <ul className="nav-list">
-          <NavLink to="/" activeClassName="active" className="nav-item" id="find">
+      <nav className="main-nav">
+        <MaterialIcon icon="" />
+        <ul className="nav-list">
+          <NavLink
+            exact
+            to="/"
+            activeClassName="active"
+            className="nav-item"
+            id="find"
+          >
             <div className="nav-text">Find a Box</div>
           </NavLink>
-          <NavLink to="/host" activeClassName="active" className="nav-item" id="host">
+          <NavLink
+            to="/host"
+            activeClassName="active"
+            className="nav-item"
+            id="host"
+          >
             <div className="nav-text">Host a Box</div>
           </NavLink>
-          <NavLink to="/about" activeClassName="active" className="nav-item" id="about">
+          <NavLink
+            to="/about"
+            activeClassName="active"
+            className="nav-item"
+            id="about"
+          >
             <div className="nav-text">About</div>
           </NavLink>
         </ul>
       </nav>
-    )
+    );
   }
 }
 

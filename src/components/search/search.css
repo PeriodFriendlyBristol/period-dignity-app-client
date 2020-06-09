@@ -2,7 +2,7 @@
   width: 100%;
   padding: 0 1rem 5rem;
   box-sizing: border-box;
-  background: #d81921;
+  /* background: #d81921; */
 }
 @media screen and (min-width: 360px) {
   .search-component-container {

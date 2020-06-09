@@ -1,29 +1,29 @@
 import React from "react";
+import { ReactComponent as Person } from "./svg/person-landing.svg";
+
 import Search from "../search/search";
-import { ReactComponent as Logo } from "../../assets/pfb-logo.svg";
 
 import "./landing.css";
 
 class Landing extends React.Component {
   render() {
     return (
-      <div className="landing-page">
-        <div className="app-container-circle">
-          <h1 className="landing-text-1">
-            Free period products for people in Bristol who need them
-          </h1>
-          <div className="text-wrapper">
-            <ul className="top-list landing-bullet-list">
-              <li>Pick up points all over the city</li>
-              <li className="landing-list">Donate products to help others</li>
-            </ul>
-            <Logo className="app-logo logo-large-placement" />
-          </div>
+      <div id="page-content">
+        <h1 id="page-title">
+          Free period products for people in Bristol who need them
+        </h1>
+        <div className="person-grid">
+          <Person className="person" />
+          <ul className="fancy-list">
+            <li>Pick up points all over the city</li>
+            <li>Donate products to help others</li>
+          </ul>
+          <h2 id="search-title">Find a Period Friendly Box near you</h2>
         </div>
-        <Search />
+
+        <Search id="search-component" />
       </div>
     );
   }
 }
-
 export default Landing;

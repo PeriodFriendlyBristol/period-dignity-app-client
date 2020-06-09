@@ -1,0 +1,8 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background: #4f4f4f;
+}

@@ -1,11 +1,15 @@
-import React from 'react';
+import React from "react";
+import Nav from "../nav/nav";
+
+import "./footer.css";
 
 class Footer extends React.Component {
-  render () {
+  render() {
     return (
-      <footer className="footer">
+      <footer className="page-footer">
+        <Nav />
       </footer>
-    )
+    );
   }
 }
 

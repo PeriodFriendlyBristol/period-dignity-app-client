@@ -1,27 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import { BrowserRouter, Route } from "react-router-dom";
-import Header from "./components/header/header";
-import Nav from "./components/nav/nav";
-import Footer from "./components/footer/footer";
-import About from "./components/about/about";
-import Landing from "./components/landing-page/landing";
-import Venues from "./containers/venues";
-import Host from "./components/host/host";
+import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
   <BrowserRouter>
-    <Header />
-    <Nav />
     <App />
-    <Route exact path="/" component={Landing} />
-    <Route path="/venues" component={Venues} />
-    <Route path="/about" component={About} />
-    <Route path="/host" component={Host} />
-    <Footer />
   </BrowserRouter>,
   document.getElementById("root")
 );

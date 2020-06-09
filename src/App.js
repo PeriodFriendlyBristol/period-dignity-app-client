@@ -1,10 +1,20 @@
 import React from "react";
+import Header from "./components/header/header";
+import Main from "./components/main/main";
 
+import Footer from "./components/footer/footer";
+
+import "./reset.css";
+import "./vars.css";
+import "./fonts.css";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
+      <Header />
+      <Main />
+      <Footer />
     </div>
   );
 }

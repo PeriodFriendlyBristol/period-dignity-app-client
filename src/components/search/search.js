@@ -1,6 +1,5 @@
 import React from "react";
 import { Redirect } from "react-router-dom";
-import { ReactComponent as Person } from "./svg/humaaan_3.svg";
 import { ReactComponent as Geo } from "./svg/geo.svg";
 import "./search.css";
 
@@ -99,28 +98,20 @@ class SearchComponent extends React.Component {
     return (
       <div className="search-component-container">
         <div className="search-row">
-          <div className="column human-wrapper">
-            <Person className="human3" />
+          <div className="search-input-container">
+            <Geo id="geo-icon" onClick={this.doMyLocationSearch} />
+            <input
+              placeholder="my postcode, e.g. BS5 9QP"
+              value={this.state.postcode}
+              onChange={this.postcodeChange}
+              onKeyDown={this._handleKeyDown}
+              id="search-postcode"
+              className="search-box"
+            />
           </div>
-          <div className="column search-wrapper">
-            <h2 className="landing-text-3">
-              Find a Period Friendly Box near you
-            </h2>
-            <div className="search-input-container">
-              <Geo id="geo-icon" onClick={this.doMyLocationSearch} />
-              <input
-                placeholder="my postcode, e.g. BS5 9QP"
-                value={this.state.postcode}
-                onChange={this.postcodeChange}
-                onKeyDown={this._handleKeyDown}
-                id="search-postcode"
-                className="search-box"
-              />
-            </div>
-            <p id="error" className={this.state.error ? "has-error" : ""}>
-              {this.state.error}
-            </p>
-          </div>
+          <p id="error" className={this.state.error ? "has-error" : ""}>
+            {this.state.error}
+          </p>
         </div>
       </div>
     );
