@@ -1,6 +1,6 @@
 import React from "react";
 import MaterialIcon from "material-icons-react";
-import "./venuelist.css";
+import "./venue-list.css";
 import { ReactComponent as WC } from "./svg/wc-icon.svg";
 import { ReactComponent as Access } from "./svg/accessible-icon.svg";
 
@@ -14,7 +14,7 @@ export default class VenueList extends React.Component {
       4: "thursday",
       5: "friday",
       6: "saturday",
-      7: "sunday"
+      7: "sunday",
     };
   }
   capitalize(string) {

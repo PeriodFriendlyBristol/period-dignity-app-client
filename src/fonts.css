@@ -1,22 +1,28 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:400,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,500,600,700&display=swap");
+
+:root {
+  font-size: clamp(100%, 50% + 0.666vw, 150%);
+}
 
 body {
   font-family: Lato, sans-serif;
   font-weight: 400;
-  font-size: calc(16px + 0.2vw);
-  line-height: calc(1.2em + 0.2vw);
+  font-size: 1em;
+  line-height: 1.2;
 }
 
 h1 {
   font-weight: normal;
-  font-size: calc(24px + 1vw);
+  font-size: 1.5em;
   color: #4f4f4f;
   margin-top: 0;
+  font-weight: 500;
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-weight: normal;
+  font-weight: 500;
 }
 
 h1,
@@ -26,4 +32,28 @@ h4,
 h5,
 h6 {
   line-height: 1.2;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.center-li {
+  color: #ffffff;
+}
+
+.right-li {
+  color: #ffffff;
+}
+
+.selected-text {
+  color: #fbaf1e;
+}
+
+.footer-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
 }

@@ -1,22 +1,23 @@
 import React, { useState } from "react";
+import "./form.css";
 
 import axios from "axios";
 function Form() {
   const [contact, setContact] = useState({});
 
-  const getValues = e => {
+  const getValues = (e) => {
     e.persist();
-    setContact(contact => ({ ...contact, [e.target.name]: e.target.value }));
+    setContact((contact) => ({ ...contact, [e.target.name]: e.target.value }));
   };
 
-  const sendContact = e => {
+  const sendContact = (e) => {
     e.preventDefault();
     axios
       .post(`https://mailthis.to/${process.env.REACT_APP_FORM_ALIAS}`, contact)
-      .then(response => {
+      .then((response) => {
         window.location.href = "https://mailthis.to/confirm";
       })
-      .catch(err => {
+      .catch((err) => {
         alert("Something went wrong, please contact us");
       });
   };

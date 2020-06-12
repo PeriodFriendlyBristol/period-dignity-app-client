@@ -1,3 +1,6 @@
+.leaflet-container {
+  height: 50vh;
+}
 .leaflet-bottom {
   z-index: 500;
 }

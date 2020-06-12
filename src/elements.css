@@ -1,0 +1,72 @@
+/*
+** Lists
+*/
+ul li {
+  list-style-image: url(./assets/list-image.svg);
+  font-size: 1.125em;
+  color: #4f4f4f;
+  font-weight: normal;
+  margin-bottom: 0.625em;
+}
+
+/*
+** Buttons
+*/
+.button {
+  border-radius: 0.2rem;
+  color: #8c0571;
+  font-weight: 600;
+  font-size: large;
+  background: #fbaf1e;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  margin: 2rem 0 3rem 0;
+  display: block;
+  border: none;
+}
+
+.button:focus {
+  background: #fcc762;
+}
+
+.button:hover {
+  background: #fcc762;
+}
+
+/*
+** Links
+*/
+a {
+  text-decoration: none;
+  color: #fbaf1e;
+}
+.active,
+a:focus,
+a:active,
+a:hover,
+.material-icons.md-dark:focus,
+.material-icons.md-dark:active,
+.material-icons.md-dark:hover {
+  color: #fbaf1e;
+}
+
+a:focus,
+a:active,
+a:hover {
+  text-decoration: underline;
+}
+
+/*
+** Forms
+*/
+
+input,
+textarea {
+  margin-top: 0.25em;
+}
+
+input:focus,
+textarea:focus {
+  outline: 3px solid rgb(var(--color-accent));
+}

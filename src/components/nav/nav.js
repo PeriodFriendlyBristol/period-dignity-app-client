@@ -6,7 +6,7 @@ import "./nav.css";
 class Nav extends React.Component {
   render() {
     return (
-      <nav className="main-nav">
+      <nav id="app-nav">
         <MaterialIcon icon="" />
         <ul className="nav-list">
           <NavLink

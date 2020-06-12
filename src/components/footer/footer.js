@@ -6,7 +6,7 @@ import "./footer.css";
 class Footer extends React.Component {
   render() {
     return (
-      <footer className="page-footer">
+      <footer id="app-footer">
         <Nav />
       </footer>
     );

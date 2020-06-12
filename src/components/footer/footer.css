@@ -1,8 +1,15 @@
-.page-footer {
+#app-footer {
   display: flex;
   flex-direction: column;
-  position: fixed;
   width: 100%;
+  position: fixed;
   bottom: 0;
   background: #4f4f4f;
+}
+
+@media (min-width: 900px) {
+  #app-footer {
+    position: static;
+    background-color: var(--color-main);
+  }
 }
