@@ -22,7 +22,7 @@ class Find extends React.Component {
           </ul>
         </div>
         <div id="cell-4" class="cell">
-          <h2 id="search-title">Find a Period Friendly Box near you</h2>
+          <h2>Find a Period Friendly Box near you</h2>
         </div>
         <div id="cell-5" class="cell">
           <Search id="search-component" />

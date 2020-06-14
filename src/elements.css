@@ -3,10 +3,11 @@
 */
 ul li {
   list-style-image: url(./assets/list-image.svg);
-  font-size: 1.125em;
+  font-size: 1.2em;
   color: #4f4f4f;
   font-weight: normal;
-  margin-bottom: 0.625em;
+  margin-bottom: 1em;
+  padding-left: 0.3em;
 }
 
 /*

@@ -42,7 +42,8 @@ function About() {
       </div>
       <div id="cell-3" class="cell"></div>
 
-      <div id="cell-4" class="cell">
+      <div id="cell-4" class="cell"></div>
+      <div id="cell-5" class="cell">
         <p>
           The period dignity web app has been made by local web service
           designers and developers. Supported by Marius Jennings @ Bristol City
@@ -112,7 +113,6 @@ function About() {
           </button>
           */}
       </div>
-      <div id="cell-5" class="cell"></div>
       <div id="bg-top"></div>
       <div id="bg-bottom"></div>
     </>
